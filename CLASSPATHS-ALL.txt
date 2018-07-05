@@ -1,0 +1,433 @@
+ALL CLASS PATHS						[USER VARIABLES]
+------------------------
+
+PATH		:	C:\Program Files\Java\jdk1.6.0_03\bin;F:\Oracle\app\oracle\product\10.2.0\server\BIN;.	} system recoznize these s/ws
+
+																								}
+CLASSPATH	:	C:\Program Files\Apache Software Foundation\Tomcat 5.5\common\lib\jsp-api.jar;		}	
+				C:\Program Files\Apache Software Foundation\Tomcat 5.5\common\lib\servlet-api.jar;	} Java recognize these s/w 's
+				F:\Oracle\app\oracle\product\10.2.0\server\jdbc\lib\ojdbc14.jar;.					}
+																								}
+identified
+				Some Rules
+				------------------------------
+				-Add " ;. " at end of Last one
+				-Add NEW ones in Beggining
+				-in path	Add  <Java_home> 1st then	<Oracle_home>
+
+
+
+
+JAVA_HOME	:	C:\Program Files\Java\jdk1.6.0_03;. 
+
+TEMP		:	%USERPROFILE%\Local Settings\Temp
+
+TMP			:	%USERPROFILE%\Local Settings\Temp
+
+________________________________________________________________________________________________________________________
+
+"UNLOCK" SCOTT/ TIGER
+
+
+Fonts Putting
+_________________________________________________
+
+$JAVA_HOME/jre/lib/font
+
+
+
+
+
+________________________________________________________________________________________________________________________
+
+Cntrl + C				:	exit from server
+
+Serilaize emty method	:	C:\Program Files\Java\jdk1.6.0_03\src\java\io
+
+________________________________________________________________________________________________________________________
+
+along with o.s we get def. ODBC	 Driver	:	CONTROLPANEL	-> PERFOMANCE&MAINTANCE	 ->ADMIN.TOOLS	-> ODBC -> D'CLICK
+
+
+
+JDK has 1 built in jdbc driver			:	C:\Program Files\Java\jdk1.6.0_03\jre\lib\rt\sun\jdbc\odbc\JdbcOdbcDriver
+
+										{						java					    }.jdbc.odbc.JdbcOdbcDriver
+
+
+
+________________________________________________________________________________________________________________________				
+
+
+Procedure to Create DSN for M-soft Odbc for Oracle
+-----------------------------------------------------------------
+
+	START	-> CNTRL PANEL	->	Performance and Maintenance	->	Administrative Tools	->	Data Sources (ODBC)	->	Add	-> 
+
+	select	: microst ODBC for ORACLE	  -D'CLIK,	
+
+	DataSource Name	:	oradsn
+	username			:	scott
+
+	[ok]
+
+________________________________________________________________________________________________________________________
+
+
+Problem to Create DSN for M-soft Odbc for Oracle ??
+-----------------------------------------------------------------
+
+	Mycomuter	->	Properties	->	Advancd	->	Envi. Variables	->	Edit		->	Var. Name	:	Path
+																					Value	:	F:\oracle\app\oracle\product\10.2.0\server\bin;.
+
+	(	;.	) -------> Current Directory
+	(	;..	)  ------>  Parant Directory
+
+________________________________________________________________________________________________________________________
+
+
+----------------->	if any error occres change User/pwad
+
+________________________________________________________________________________________________________________________
+
+NET BEANS - IDE
+--------------------------------
+1.CREATE PROJECT
+
+		File	->  new proj	->  java  -  java Applcation	->  next	->  prj. name	:TestProj  ->  [ _/]	create main class	  ->  contnue  ->  FINSH
+
+2.ADD JAVA CLASS TO PROJ
+
+		Ri8 Cl'k on Proj	  ->  new : java class	  ->  classname : DropTest	  ->  FINISH
+
+3.COMPLE
+		RI8 CLICK ON PROG	->	properties	->	run	: mainclass
+		RUN		: R8 ON PROJ		-->	RUN
+
+3.SHORT CUTS
+			
+		All short cuts Must Begn with '1st two letters'
+			
+		all codes SHRTCUT + then TAB +			[then SPACE]--->optional
+
+		help   ->  keybord Short cuts
+
+4. Cntl + shift + i			:	import stmts
+
+________________________________________________________________________________________________________________________
+
+Vendor DB Library for Oracle		[ .dll	 ]
+
+F:\Oracle\app\oracle\product\10.2.0\server\BIN\oci.dll
+
+_________________________________________________________________________________________________________________
+Logical DB of Oracle		SID
+			1.SQL> select * from global_name;
+			 XE
+
+			 2.con pan->	perfor&main->	admintools->	services->	Oracleservice->	OracleServiceXE
+
+			 3.C:\oraclexe\app\oracle\product\10.2.0\server\NETWORK\ADMIN\tnsnames.ora   --->   (SERVICE_NAME = XE)
+
+
+
+
+________________________________________________________________________________________________________________
+
+Type-4 JDBC DRIVER LOCTION
+
+		C:\oraclexe\app\oracle\product\10.2.0\server\jdbc\lib\ojdbc14_g.jar  put 1st in class path
+
+		and Dont touch any thing
+
+		XE --> comes by default
+
+		1521-> Also comes at installation tme, so no need to chane
+
+		N0 need to add 'Oracle Xe at Datasources'
+
+
+________________________________________________________________________________________________________________
+
+MS- ACCESS DATABASE
+----------------------------------
+
+
+Office->acess->	new	 ->	flename:	showroom	->	location	: [----]	->create[create showroom.accdbfle]
+
+->r8 c'k on table1	->	dsign view	->tablename: product	->	enter details
+
+CNTRL + w		-> yes	->D'clik on Product	->	insert records	-> SAVE
+
+
+Create DSN for MS-ACESS
+------------------------------------
+
+START	-> CNTRL PANEL	->	Performance and Maintenance	->	Administrative Tools	->	Data Sources (ODBC)	->	
+
+Add	->	microsot access driver(*accdb)	->	Dataouceaname	: accdsn	Path: showroom.accdb
+
+
+___________________________________________________________________________________________________________________
+
+
+
+
+Approch1:
+SQL> select *from global_name;
+
+GLOBAL_NAME
+--------------------------------------------------------------------------------
+
+XE
+
+
+
+Approch2:
+F:\Oracle\app\oracle\product\10.2.0\server\NETWORK\ADMIN
+
+all port nos:
+
+C:\>netstat -a
+
+Active Connections
+
+  Proto  Local Address          Foreign Address        State
+  TCP    i-5013035a42024:epmap  0.0.0.0:0              LISTENING
+  TCP    i-5013035a42024:microsoft-ds  0.0.0.0:0              LISTENING
+  TCP    i-5013035a42024:1033   0.0.0.0:0              LISTENING
+  TCP    i-5013035a42024:1521   0.0.0.0:0              LISTENING
+  TCP    i-5013035a42024:2869   0.0.0.0:0              LISTENING
+  TCP    i-5013035a42024:8080   0.0.0.0:0              LISTENING
+  TCP    i-5013035a42024:1031   0.0.0.0:0              LISTENING
+  TCP    i-5013035a42024:1034   localhost:1521         ESTABLISHED
+  TCP    i-5013035a42024:1036   0.0.0.0:0              LISTENING
+  TCP    i-5013035a42024:1521   localhost:1034         ESTABLISHED
+  UDP    i-5013035a42024:microsoft-ds  *:*
+  UDP    i-5013035a42024:isakmp  *:*
+  UDP    i-5013035a42024:1037   *:*
+  UDP    i-5013035a42024:4500   *:*
+  UDP    i-5013035a42024:ntp    *:*
+  UDP    i-5013035a42024:1038   *:*
+  UDP    i-5013035a42024:1040   *:*
+  UDP    i-5013035a42024:1900   *:*
+
+C:\>
+
+
+---------------------
+Oracle Driver Location
+
+F:\Oracle\app\oracle\product\10.2.0\server\jdbc\lib\ojdbc14\oracle\jdbc
+
+scott/tiger unlock
+----------------------------
+
+
+SQL> alter user  unlock  scott   identified  by  tiger[no  --> ';']
+SQL>connect scott
+
+-----------------------------------------
+
+
+
+
+
+Cntrl + B -----> browser in EDIT PLUS
+Cache??	Opera	:	tools--->Advancd --> cache 
+
+ALL	- >CLASSPATH = "
+C:\Program Files\Apache Software Foundation\Tomcat 5.5\common\lib\jsp-api.jar;
+C:\Program Files\Apache Software Foundation\Tomcat 5.5\common\lib\servlet-api.jar;
+F:\Oracle\app\oracle\product\10.2.0\server\jdbc\lib\ojdbc14.jar;."
+
+
+
+
+Servlets
+_____________________________________________________________
+Change PORT number
+----------------------------------------
+
+C:\Program Files\Apache Software Foundation\Tomcat 5.5\conf\server.xml
+<Connector	port="7080"               maxHttpHeaderSize="8192">
+_______________________________________________________________
+
+Servlet Contaner ------> CATALINA
+
+servlet-api.jar
+---------------------
+C:\Program Files\Apache Software Foundation\Tomcat 5.5\common\lib\servlet-api.jar ---> ni Copy to 
+
+C:\Program Files\Java\jdk1.6.0_03\jre\lib\ext\
+
+		---OR-----
+
+Environmt varble	
+			name	:CLASSPATH
+			value	:C:\Program Files\Apache Software Foundation\Tomcat 5.5\common\lib\servlet-api.jar ; .
+
+_______________________________________________________________
+MIME TYPES
+------------------
+
+REG EDIT --------------> HKEY_CLASSES_ROOT
+
+_______________________________________________________________
+To Change USERNAME - PASSWORD
+-----------------------------------------------
+C:\Program Files\Apache Software Foundation\Tomcat 5.5\conf\tomcat-users
+
+CHECK 2 LINES PRESENT OR NOT
+<tomcat-users>
+  <role rolename="manager"/>
+  <user username="admin" password="" roles="admin,manager"/>
+
+________________________________________________________________
+Req,Res Objcect class names in CATALINA.jar
+
+Req	:	C:\Program Files\Apache Software Foundation\Tomcat 5.5\server\lib\catalina\org\apache\catalina\connector\RequestFacade.class
+Res	:	C:\Program Files\Apache Software Foundation\Tomcat 5.5\server\lib\catalina\org\apache\catalina\connector\ResponseFacade.class
+
+main method of serv conaner
+
+[C:\Program Files\Apache Software Foundation\Tomcat 5.5\bin\bootstrap.jar\org\apache\catalina\startup ]
+
+______________________________________________________________
+Adding JDBC jar files to Our Servlet Prog
+
+we must add odbc.jar to class path ...bcoz JDK reconizes for comipling
+	-CLASSPATH 
+	-OR
+	-ext\folder lo copy chey
+-----------------------------------------------------------------------
+TO RECOGNIZE ServletCobtainer
+
+APP-1
+---------
+WEB-INF\lib\odbc.jar
+
+APP-2
+----------
+
+F:\Oracle\app\oracle\product\10.2.0\server\jdbc\lib\ojdbc14.jar;.
+
+COPY THIS TO
+
+C:\Program Files\Apache Software Foundation\Tomcat 5.5\common\lib\ojdbc14.jar;.
+
+_______________________________________________________________
+
+
+
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+
+Start
+-------------------------
+
+Cmd line
+
+Run	:	sqlplus
+Enter user-name	:scott
+	pwd:tiger
+
+---->	cl scr
+
+
+
+_______________________________________________________________
+
+
+
+
+_______________________________________________________________
+
+_______________________________________________________________
+
+_______________________________________________________________
+
+_______________________________________________________________
+
+_______________________________________________________________
+
+_______________________________________________________________
+
+_______________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+   Type-1
+
+   1.Used by any DataBase s/w
+
+   2.comes by defalut with Jre/JDK
+
+   3.Internally uses ODBC
+
+   4.It can not interct with DBase         directly & it takes Support of ODBC
+
+   5.It uses Native code[C C++ code ] internally to interct with ODBC Drivers
+
+
+Type-2
+
+   1.Used by Specific DataBase s/w
+
+   2.NOT by defalut with Jre/JDK
+
+   3.NOT using ODBC
+
+   4.It can Will interct with DBase  Directly Without Support of ODBC
+
+   5.It uses Native code[C C++ code ] internally to interct with Vendor DB Lib [.dll]
+
+
+Type-3
+
+   1.It is NOT a Driver...It'a PROTOCAL
+
+   2.It conatains RULES to intract with JDBC CONNECTION POOL
+
+   2.It will intercat with SERVER.
+
+   3.SERVER take care about JDBC/ODBC Drivers & Vendor DB(.dll)
+
+   4.It is NOT Directly  interact with DATABASE, but it Intract Through SERVER
+
+   5.It Interact with SERVER to get Connection Pool
+
+   6. 3-Tyre Environment	[ Java + SERVER  + DATABASE]
+
+Type-4
+
+   1.Used by Specific DataBase s/w
+
+   2.NOT by defalut with Jre/JDK
+
+   3.NOT using ODBC, Vendor DB [ .dll ]
+
+   4.It can Will DIRECTLY Interct with DBase 
+
+   5.NOT uses Native code[C C++ code ] internally .Fully Developed in JAVA only
+
+   JDBC Driver Location  :     sun.jdbc.odbc.JdbcOdbcDriver
+	URL	     :     jdbc:odbc:oradsn
+
+
+
+
+
+
+
+

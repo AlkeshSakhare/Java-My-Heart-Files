@@ -1,0 +1,2 @@
+The workspace is the directory where your work will be stored. For now, just click OK to pick the default location
+
