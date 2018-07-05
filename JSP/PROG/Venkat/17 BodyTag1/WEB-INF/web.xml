@@ -1,0 +1,6 @@
+<web-app>
+<taglib>
+<taglib-uri>http://www.abc.com/TagLibDemo</taglib-uri>
+<taglib-location>/WEB-INF/tlds/BodyTag.tld</taglib-location>
+</taglib>
+</web-app>

@@ -1,0 +1,50 @@
+Package
+
+ javax.servlet.jsp 
+------------------------
+Classes and interfaces for the Core JSP 2.0 API. 
+
+Interface
+-----------------
+HttpJspPage	:
+
+	The HttpJspPage interface describes the interaction that a JSP Page Implementation Class 
+must satisfy when using the HTTP protocol.
+
+
+JspPage		:
+	The JspPage interface describes the generic interaction that a JSP Page Implementation class must satisfy; 
+                                  pages that use the HTTP protocol are described by the HttpJspPage interface.
+
+  
+Class
+-------------------
+ErrorData		:	Contains information about an error, for error pages.
+
+JspContext	:	JspContext serves as the base class for the PageContext class and abstracts all information
+			 that is not specific to servlets.
+
+JspEngineInfo	:	The JspEngineInfo is an abstract class that provides information on the current JSP engine.
+
+JspFactory	:	The JspFactory is an abstract class that defines a number of factory methods available to a JSP page 
+			at runtime for the purposes of creating instances of various interfaces and classes used to support 
+			the JSP implementation.
+
+JspWriter		:	The actions and template data in a JSP page is written using the JspWriter object that is referenced 
+			by the implicit variable out which is initialized automatically using methods in the PageContext object.
+
+PageContext	:	PageContext extends JspContext to provide useful context information for when JSP technology is used 
+			in a Servlet environment.
+
+  
+Exception
+--------------------
+
+JspException	A generic exception known to the JSP engine; uncaught JspExceptions will result in an invocation of the errorpage machinery.
+
+JspTagException	Exception to be used by a Tag Handler to indicate some unrecoverable error.
+
+SkipPageException	Exception to indicate the calling page must cease evaluation.
+
+  
+

@@ -1,0 +1,19 @@
+-Arrys	
+-InnerCls   
+-Factory method
+-Object type cast
+- Hashing Mechanisums
+- Binary Trees
+-Reflecton API
+- Multi Tasking of O.S
+-CPU Scheduling Algorithms
+-InterThread Communction
+- enums	 X
+
+-----------scjp
+
+StringBuilder
+
+annotations
+
+genercs

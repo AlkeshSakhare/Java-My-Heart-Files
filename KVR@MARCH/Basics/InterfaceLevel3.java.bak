@@ -1,0 +1,89 @@
+interface i1
+{
+	void f1();
+}
+
+interface i2 extends i1
+{
+	void f2();
+}
+
+abstract class c1 implements i2
+{
+	public void f1()
+	{
+		System.out.println("f1():declared in INT i1 ---:> defnds in C1");
+	}
+
+public void f3()
+	{
+		System.out.println("f3():Specially DIFIEND in C1");
+	}
+
+}
+
+class c2 extends c1
+{
+	public void f1()
+	{
+		System.out.println("f1():OVERIDDEN in C2");
+	}
+
+public void f2()
+	{
+		System.out.println("f2(): Decraed in i2 difiends in in C2");
+	}
+
+	public void f3()
+	{
+		System.out.println("f3():OVERRIDDEN In C2");
+	}
+
+ void f4()
+	{
+		System.out.println("f4():Specially DIFIEND in C2");
+	}
+
+
+}
+
+
+
+class InterfaceLevel3 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("");
+
+		i1 o1 = new c2();
+		o1.f1();
+		//o1.f2();
+		//o1.f3();
+		//o1.f4();
+
+			System.out.println("");
+
+		i2 o2 = new c2();
+		o2.f1();
+		o2.f2();
+	//	o2.f3();
+		//o2.f4();
+
+		System.out.println("");
+
+		c1 o3 = new c2();
+		o3.f1();
+		o3.f2();
+		o3.f3();
+		//o3.f4();
+System.out.println("");
+
+		c1 o3 = new c2();
+		o3.f1();
+		o3.f2();
+		o3.f3();
+		o3.f4();
+
+
+	}
+}

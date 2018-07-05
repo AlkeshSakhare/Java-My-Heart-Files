@@ -1,0 +1,33 @@
+Compiled from "Button.java"
+public class   Button extends   Component implements javax.accessibility.Accessible{
+     String label;
+     String actionCommand;
+    transient   event.ActionListener actionListener;
+
+
+    public   Button()       throws   HeadlessException;
+    public   Button( String)       throws   HeadlessException;
+
+
+     String constructComponentName();
+
+    public void addNotify();
+
+    public  String getLabel();
+    public void setLabel( String);
+
+    public void setActionCommand( String);
+    public  String getActionCommand();
+
+    public synchronized void addActionListener(  event.ActionListener);
+    public synchronized void removeActionListener(  event.ActionListener);
+    public synchronized   event.ActionListener[] getActionListeners();
+    public java.util.EventListener[] getListeners( Class);
+    boolean eventEnabled(  AWTEvent);
+    protected void processEvent(  AWTEvent);
+    protected void processActionEvent(  event.ActionEvent);
+    protected  String paramString();
+    public javax.accessibility.AccessibleContext getAccessibleContext();
+    static {};
+}
+

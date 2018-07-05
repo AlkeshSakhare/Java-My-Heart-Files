@@ -1,0 +1,20 @@
+class ConstructorDemo2 
+{
+
+	int a,b;
+	ConstructorDemo2(int x,int y)
+	{
+		a=x;
+		b=y;
+		
+		System.out.println("param contructor.....[  object. ConstructorDemo()  ] Not Rqrd but  ConstructorDemo(10,20 reqred)"+x+""+y);
+	}
+	public static void main(String[] args) 
+	{
+		System.out.println("OUTPUT----OUTPUT----OUTPUT----OUTPUT----OUTPUT----OUTPUT");
+		System.out.println("________________________________________________________________");
+		System.out.println("from Static main....im boss i will exicute first");
+		ConstructorDemo2 cd = new ConstructorDemo2(15,40);
+		System.out.println("________________________________________________________________");
+	}
+}

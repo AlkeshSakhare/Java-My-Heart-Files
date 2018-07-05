@@ -1,0 +1,22 @@
+import java.io.*;
+
+
+
+class DataInputOutput 
+{
+	public static void main(String[] args) throws Exception
+	{
+
+		DataInputStream di = new DataInputStream(System.in);
+		System.out.println("1st :	");
+		int a = (int)di.readInt();
+
+		System.out.println("2nd :	");
+		int b = di.readInt();
+
+				System.out.println("A :	"+a+"B	:"+b);
+		int c = a+b;
+		System.out.println("Sum	:	"+c);
+	}
+}
+

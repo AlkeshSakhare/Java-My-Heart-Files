@@ -1,0 +1,11 @@
+
+<html>
+<body>
+<h1>
+<%@ taglib	 uri = "http://www.abc.com/EmptyTagDemo"  prefix = "ct"%>
+
+<ct:adderess/>
+
+</h1>
+</body>
+</html>

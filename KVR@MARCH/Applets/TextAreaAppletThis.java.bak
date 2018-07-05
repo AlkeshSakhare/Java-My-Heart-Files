@@ -1,0 +1,63 @@
+/*<applet code =TextAreaAppletThis height = 500 width = 500>
+</applet>*/
+
+
+
+
+import  java.awt.*;
+import  java.awt.event.*;
+import java.applet.Applet;
+
+public class TextAreaAppletThis extends  Applet implements TextListener
+{
+	Label l1,l2;
+	TextField t1;
+	TextArea ta;
+
+public void init()
+	{
+		setSize(400,400);
+		setVisible(true);
+		FlowLayout f = new FlowLayout();
+		setLayout(f);
+
+		l1 = new Label("Enter Line of Text:");
+		l2 = new Label("Ur Text:");
+		t1 = new TextField(10);
+		ta = new TextArea(10,20);
+
+		add(l1); 		add(t1); 		add(l2); 		add(ta);
+
+		}//init
+
+
+public void start()
+	{
+		TextAreaApplet apl= new TextAreaApplet();
+
+		
+		t1.addTextListener(this);
+
+	}//start
+	
+
+	public void textValueChanged(TextEvent te)
+	{
+
+		String s1 = t1.getText();
+
+		ta.append(s1+"\n");
+		
+		}//method
+
+	
+
+}//class 1st
+
+
+
+class  TextAreaApplet
+{
+		TextAreaAppletThis o = new TextAreaAppletThis();
+	
+}

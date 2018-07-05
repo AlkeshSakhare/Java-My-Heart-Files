@@ -1,0 +1,49 @@
+class Test
+{
+int a,b;
+
+	Test ()
+	{
+	System.out.println ("im from defalut");
+	a=b=0;
+	}
+
+
+	Test (int a, int b)
+	{
+	this.a=a;
+	this.b=b;
+	System.out.println ("im from 2param");
+	}
+
+
+Test sum (Test T)//[3,4]
+{
+
+Test T11=new Test ();
+T11.a=this.a+T.a;
+T11.b=this.b+T.b;
+System.out.println ("object param const");
+return (T11);
+}
+
+
+void display ()
+{
+System.out.println ("im from Display method");
+System.out.println ("VALUE OF a = "+a);
+System.out.println ("VALUE OF b = "+b);
+}
+
+}
+
+class SumDemo1
+{
+public static void main (String k[])
+{
+int n1=Integer.parseInt (k[0]);//1
+int n2=Integer.parseInt (k[1]);//2
+int n3=Integer.parseInt (k[2]);//3
+int n4=Integer.parseInt (k[3]);//4
+
+Test t1=new Test (n1,n2);//1

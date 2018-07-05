@@ -1,0 +1,10 @@
+package stage1;
+
+
+public class  Validate 
+{
+	public Validate(String s)
+	{
+	super(s);
+	}
+}

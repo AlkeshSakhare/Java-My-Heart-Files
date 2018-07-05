@@ -1,0 +1,112 @@
+//AbstractLevel2 : ONE AbstractClass EXTENDED by MANY undefiend Subclasees must be Declared As ABSTRACT DERIVED CLASSES
+//So........ABSTRACT CLASS  +  ABSTRACT DERIVED CLASS + CONCRETE CLASS
+
+abstract class c1
+{
+	abstract void f1();
+	abstract void f2();
+	abstract void f3();
+	void f4()
+	{
+		System.out.println("f4() : defined in C1 class");
+		System.out.println("");
+		System.out.println("");
+	}
+}
+
+abstract class c2 extends c1
+{
+	//abstract void f1();
+	//abstract void f2();  ----}} Logically presents
+	 void f3()
+	{
+		System.out.println("f3() :extended frm C1: defined in C2 class");
+		System.out.println("");
+		System.out.println("");
+	}
+	void f4()
+	{
+	//	super.f4();
+		System.out.println("f4() : defined in C1 class:OVERIDDEN AND defends in C2 ");
+				System.out.println("");
+	}
+}
+
+ class c3 extends c2
+{
+	 void f1()
+	{
+		System.out.println("f1() :extended frm C1:then extended frm C2 : defined in C3 class");
+				System.out.println("");
+	}
+	 void f2()
+	{
+			System.out.println("f2() :extended frm C1:then extended frm C2 : defined in C3 class");
+					System.out.println("");
+	}
+	 void f3()
+	{
+		System.out.println("f3() :OVERIDEEN frm C2: Once Defned in C3 class");
+				System.out.println("");
+
+	}
+
+	 void f5()
+	{
+		System.out.println("f5() specillay defiend in C3");
+				System.out.println("");
+
+	}
+}
+
+
+
+
+
+
+
+class AbstractLevel2 
+{
+	public static void main(String[] args) 
+	{
+				System.out.println("");
+		System.out.println("***1.INTHETENCE*** says crete OBJ. for Bottom most Derived Class: so obj. of C3 class contains all class methods LOGICALY");
+				System.out.println("");
+		c3 ob = new c3();
+		    ob.f1();
+			ob.f2();
+			ob.f3();
+			ob.f4();//it Goes to C2 bcoz here f4() is not logically prest ...bt Defiend so it will exicute
+			ob.f5();
+
+					System.out.println("");
+		System.out.println("***2.DYNAMIC BINDING*** says crete OBJ. for Parent Class: so obj. of C2 class ");
+		     // c2 ob1 = new c2();   //ha ha ha NOT POSSIBLE
+
+                 c2 ob1 = new c3();
+			ob1.f1();//f1() called wrt ob1....ob1 is obj of c2...cntl goes to c2 look for signaure 'abstact f1() present' and cheks addres bt that is in another class...goes to that
+								//class and look 4 signature MATCHED executed
+			ob1.f2();//
+			ob1.f3();//exicuted
+			ob1.f4();//f4() called wrt ob1....ob1 is obj of c2...cntl goes to c2 look for signaure.. 'f4() defined and present' and cheks addres bt that is in another class...
+							//goes to that class and look 4 signature MATCHED executed
+		
+			   //ob1.f5();
+			//f5() called wrt ob1....ob1 is obj of c2...cntl goes to c2 look for signaure ' f5() logicaly/physicaly NOT present' ...so C_T_ERROR is COMES...
+
+
+
+
+							System.out.println("");
+		System.out.println("***3.DYNAMIC BINDING*** says crete OBJ. for Parent Class: so now crate obj. of C1 class ");
+
+		c1 ob2 = new c3();
+		    ob2.f1();
+			ob2.f2();
+			ob2.f3();
+			ob2.f4();
+			//ob2.f5();//f5() called wrt ob2....ob2 is obj of c1...cntl goes to c1 look for signaure ' f5() logicaly/physicaly NOT present' ...so C_T_ERROR is COMES...
+
+
+	}
+}

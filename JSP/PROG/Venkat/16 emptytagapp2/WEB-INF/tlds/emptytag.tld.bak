@@ -1,0 +1,15 @@
+<taglib>
+<tlib-version>1.0</tlib-version>
+<jsp-version>1.2</jsp-version>
+
+<tag>
+
+	<name>message</name>
+	<tag-class>demo.EmptyTagDemo</tag-class>
+	<attribute>	
+	<name>howMany</name>
+	</attribute>
+	<body-content>JSP</body-content>
+</tag>
+
+</taglib>

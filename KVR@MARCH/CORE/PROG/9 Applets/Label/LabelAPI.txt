@@ -1,0 +1,38 @@
+Compiled from "Label.java"
+public class Label extends Component implements javax.accessibility.Accessible
+{
+
+Datamembers
+___________________
+    public static final int LEFT;
+    public static final int CENTER;
+    public static final int RIGHT;
+
+
+    String text;
+    int alignment;
+
+Cons:
+-----------------
+    public Label()       throws HeadlessException;
+    public Label(String)       throws HeadlessException;
+    public Label(String, int)       throws HeadlessException;
+
+Methods
+---------------------
+    String constructComponentName();
+
+    public void addNotify();
+     public int getAlignment();
+    
+    public synchronized void setAlignment(int);
+    
+    public String getText();
+    public void setText(String);
+    
+    protected String paramString();
+    
+    public javax.accessibility.AccessibleContext getAccessibleContext();
+    static {};
+}
+

@@ -1,0 +1,11 @@
+Compiled from "WindowListener.java"
+public interface   WindowListener extends java.util.EventListener{
+    public abstract void windowOpened(  WindowEvent);
+    public abstract void windowClosing(  WindowEvent);
+    public abstract void windowClosed(  WindowEvent);
+    public abstract void windowIconified(  WindowEvent);
+    public abstract void windowDeiconified(  WindowEvent);
+    public abstract void windowActivated(  WindowEvent);
+    public abstract void windowDeactivated(  WindowEvent);
+}
+

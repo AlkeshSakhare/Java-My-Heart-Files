@@ -1,0 +1,38 @@
+class Bc
+{
+	int a;
+	Bc()
+	{
+		a = 25;
+		System.out.println("BC def. Constuctor");
+		System.out.println("BC def. Constuctor"+a);
+	}
+}
+
+class Dc extends Bc
+{
+	int b;
+
+	Dc()//if two constuctor are there u  must call them Explictily ....other wise it will not work
+	{
+	System.out.println("DC Defalut Constuctor");
+	}
+
+	Dc(int x)
+	{  
+		//super(); Optional....in my View Super is a Constuctor/Object Depends On time
+		b = x;
+		System.out.println("DC Param. Constuctor");
+		System.out.println("DC Param. Constuctor"+b);
+	}
+}
+
+
+class SuperPosibility3
+{
+	public static void main(String[] args) 
+	{
+		Dc ob = new Dc(10);// this also call BC implecetly
+		new Dc();//so it will call BC implecetly
+	}
+}

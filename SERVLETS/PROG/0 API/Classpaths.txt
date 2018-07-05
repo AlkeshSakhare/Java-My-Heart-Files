@@ -1,0 +1,106 @@
+Cntrl + B -----> browser in EDIT PLUS
+Cache??	Opera	:	tools--->Advancd --> cache 
+
+ALL	- >CLASSPATH = "
+C:\Program Files\Apache Software Foundation\Tomcat 5.5\common\lib\jsp-api.jar;
+C:\Program Files\Apache Software Foundation\Tomcat 5.5\common\lib\servlet-api.jar;
+F:\Oracle\app\oracle\product\10.2.0\server\jdbc\lib\ojdbc14.jar;."
+
+
+
+
+Servlets
+_____________________________________________________________
+Change PORT number
+----------------------------------------
+
+C:\Program Files\Apache Software Foundation\Tomcat 5.5\conf\server.xml
+<Connector	port="7080"               maxHttpHeaderSize="8192">
+_______________________________________________________________
+
+Servlet Contaner ------> CATALINA
+
+servlet-api.jar
+---------------------
+C:\Program Files\Apache Software Foundation\Tomcat 5.5\common\lib\servlet-api.jar ---> ni Copy to 
+
+C:\Program Files\Java\jdk1.6.0_03\jre\lib\ext\
+
+		---OR-----
+
+Environmt varble	
+			name	:CLASSPATH
+			value	:C:\Program Files\Apache Software Foundation\Tomcat 5.5\common\lib\servlet-api.jar ; .
+
+_______________________________________________________________
+MIME TYPES
+------------------
+
+REG EDIT --------------> HKEY_CLASSES_ROOT
+
+_______________________________________________________________
+To Change USERNAME - PASSWORD
+-----------------------------------------------
+C:\Program Files\Apache Software Foundation\Tomcat 5.5\conf\tomcat-users
+
+CHECK 2 LINES PRESENT OR NOT
+<tomcat-users>
+  <role rolename="manager"/>
+  <user username="admin" password="" roles="admin,manager"/>
+
+________________________________________________________________
+Req,Res Objcect class names in CATALINA.jar
+
+Req	:	C:\Program Files\Apache Software Foundation\Tomcat 5.5\server\lib\catalina\org\apache\catalina\connector\RequestFacade.class
+Res	:	C:\Program Files\Apache Software Foundation\Tomcat 5.5\server\lib\catalina\org\apache\catalina\connector\ResponseFacade.class
+
+main method of serv conaner
+
+[C:\Program Files\Apache Software Foundation\Tomcat 5.5\bin\bootstrap.jar\org\apache\catalina\startup ]
+
+______________________________________________________________
+Adding JDBC jar files to Our Servlet Prog
+
+we must add odbc.jar to class path ...bcoz JDK reconizes for comipling
+	-CLASSPATH 
+	-OR
+	-ext\folder lo copy chey
+-----------------------------------------------------------------------
+TO RECOGNIZE ServletContainer
+
+APP-1
+---------
+WEB-INF\lib\odbc.jar
+
+APP-2
+----------
+
+F:\Oracle\app\oracle\product\10.2.0\server\jdbc\lib\ojdbc14.jar;.
+
+COPY THIS TO
+
+C:\Program Files\Apache Software Foundation\Tomcat 5.5\common\lib\ojdbc14.jar;.
+
+_______________________________________________________________
+
+
+
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+
+_______________________________________________________________
+
+_______________________________________________________________
+
+_______________________________________________________________
+
+_______________________________________________________________
+
+_______________________________________________________________
+
+_______________________________________________________________
+
+_______________________________________________________________
+

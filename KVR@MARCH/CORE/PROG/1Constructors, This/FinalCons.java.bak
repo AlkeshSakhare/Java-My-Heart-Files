@@ -1,0 +1,15 @@
+class FinalCons 
+{
+
+		final FinalCons()
+	{
+	
+		System.out.println("Final constectr is alloewed");
+	}
+
+	public static void main(String[] args) 
+	{
+	
+	FinalCons ob = new FinalCons();
+	}
+}

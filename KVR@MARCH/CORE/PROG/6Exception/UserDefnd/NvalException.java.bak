@@ -1,0 +1,9 @@
+package neg;
+
+public class NvalException extends Exception
+{
+		NvalException(String s)
+		{
+			super(s);
+		}
+}

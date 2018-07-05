@@ -1,0 +1,27 @@
+<web-app>
+<servlet>
+        <servlet-name>a</servlet-name>
+        <servlet-class>srv1</servlet-class>
+</servlet>
+
+<servlet>
+        <servlet-name>b</servlet-name>
+        <servlet-class>srv2</servlet-class>
+</servlet>
+
+
+  <servlet-mapping>
+        <servlet-name>a</servlet-name>
+        <url-pattern>/s1</url-pattern>
+    </servlet-mapping>
+
+	  <servlet-mapping>
+        <servlet-name>b</servlet-name>
+        <url-pattern>/s2</url-pattern>
+    </servlet-mapping>
+
+	<welcome-file-list>
+			<welcome-file>input.html</welcome-file>
+	</welcome-file-list>
+
+</web-app>

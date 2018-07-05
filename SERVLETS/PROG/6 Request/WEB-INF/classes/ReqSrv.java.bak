@@ -1,0 +1,54 @@
+import javax.servlet.*;
+import javax.servlet.GenericServlet;
+import java.io.*;
+import java.util.Date;
+
+public class ReqSrv extends GenericServlet
+{
+	
+
+	public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException
+	{
+	
+			res.setContentType("text/html");
+
+			Date d = new Date();
+
+			String dd = d.toString();
+
+			PrintWriter pw = res.getWriter();
+
+			 pw.println("  getProtocol "+req.getProtocol() );
+			 pw.println("  getServerName "+req.getServerName() );
+
+ pw.println("  getServerPort "+req.getServerPort() );
+ pw.println(" getRemotePort  "+req.getRemotePort() );
+ pw.println("  getLocalPort "+req.getLocalPort() );
+
+   pw.println("  getAttributeNames "+req.getAttributeNames() );
+   pw.println("   getParameterNames"+req.getParameterNames() );
+  
+   pw.println(" getContentType  "+req.getContentType() );
+	pw.println("  getContentLength "+req.getContentLength() );
+   pw.println("  getCharacterEncoding "+req.getCharacterEncoding() );
+ 
+
+   pw.println("  getRemoteAddr "+req.getRemoteAddr() );
+   pw.println("   getRemoteHost() );"+req.getRemoteHost() );
+   pw.println("   .getLocalName() );"+req.getLocalName() );
+   pw.println("  +req.getLocalAddr() ); "+req.getLocalAddr() );
+   pw.println(" eq. getLocale() );  "+req. getLocale() );
+   pw.println("   getLocales() );"+req.getLocales() );
+
+   pw.println(" req.getScheme  "+req.getScheme() );
+ 
+   pw.println(" req.getScheme  "+req.isSecure() );
+
+
+			pw.close();
+
+
+	}
+
+	
+	}

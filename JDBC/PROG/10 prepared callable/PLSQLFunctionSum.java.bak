@@ -1,0 +1,42 @@
+/*
+create or replace function sum(x in number,y out number)
+	return number
+is
+z number;
+begin 
+y  := x*x;
+z  := x*x*x;
+return z;
+end sum;
+/ */
+
+import java.sql.*;
+import java.util.*;
+
+
+
+class PLSQLFunctionSum 
+{
+	public static void main(String[] args)	 throws Exception
+	{
+
+		Class.forName("oracle.jdbc.driver.OracleDriver");
+		Connection con =		DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","a");
+
+		String qry = "{? = call sum(?,?)}";
+		CallableStatement cs = con.prepareCall(qry);
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter X		:	");
+		int x = sc.nextInt();
+
+		cs.registerOutParameter(1,Types.INTEGER);
+		cs.setInt(2,x);
+		cs.registerOutParameter(3,Types.INTEGER);
+
+		cs.execute();
+		
+		System.out.println("Y - Squre	:	"+cs.getInt(3));
+		System.out.println("Z - CUBE	:	"+cs.getInt(1));
+	}
+}

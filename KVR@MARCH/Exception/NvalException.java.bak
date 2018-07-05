@@ -1,0 +1,14 @@
+//stage1--->: exception sub classes
+
+package nval;
+
+
+public class  NvalException extends Exception,RuntimeException
+{
+public  NvalException(String s)
+	{
+     super(s);
+
+	}
+	
+}

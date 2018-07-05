@@ -1,0 +1,49 @@
+abstract class Op
+{
+   abstract void sum();
+    void disp()
+	{
+		System.out.println("OP:disp()");
+	
+	}
+   
+   Op()
+	{
+   	System.out.println("He He He CONSTRUCTORS ALLOW IN abstact....FOLLISH");
+     }
+
+}
+
+class fsum //extends Op
+{
+    void sum()
+	{
+		System.out.println("F sum");
+	}
+
+}
+
+class isum extends Op
+{
+    void sum()
+	{
+		System.out.println("I sum");
+	}
+
+}
+
+
+
+
+class AbstractDemo 
+{
+	public static void main(String[] args) 
+	{
+		Op ob;
+		ob = new fsum();
+		ob.sum();
+		ob = new isum();
+		ob.sum();
+		ob.disp();//logically presents
+	}
+}

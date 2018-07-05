@@ -1,0 +1,120 @@
+//RadioButtonFrameThis
+
+import java.awt.*;
+import java.awt.event.*;
+import java.awt.Frame;
+
+class RadioButtonFrame extends Frame implements ItemListener,ActionListener
+{
+	Checkbox cb1,cb2,cb3,cb4;
+	CheckboxGroup g1,g2;
+	Label l1;
+	Button b1;
+
+RadioButtonFrame()
+	{
+	setSize(300,300);
+
+	FlowLayout f =  new FlowLayout();
+	setLayout(f);
+
+
+	cb1 = new Checkbox("C");
+	cb2 = new Checkbox("C++");
+	cb3 = new Checkbox("JAVA");
+	cb4 = new Checkbox(".NET");
+	l1 =  new Label("");
+	b1 = new Button("OUT");
+
+	g1 = new CheckboxGroup();
+	g2 = new CheckboxGroup();
+
+	cb1.setCheckboxGroup(g1);
+	cb2.setCheckboxGroup(g1);
+	cb3.setCheckboxGroup(g2);
+	cb4.setCheckboxGroup(g2);
+
+	add(cb1); add(cb2); add(cb3); add(cb4);  add(l1); add(b1);
+
+RadioButtonFrameThis ob = new RadioButtonFrameThis();
+
+	cb1.addItemListener(this);
+	cb2.addItemListener(this);
+	cb3.addItemListener(this);
+	cb4.addItemListener(this);
+	b1.addItemListener(this);
+		setVisible(true);
+	
+	}//constrtor
+
+	public void itemStateChanged(ItemEvent ie)
+	{
+	  if(ie.getSource()==cb1)
+		{
+			if(cb1.getState())
+			{
+			l1.setText("Ur Selected Course	:"+cb1.getLabel());
+			
+			}//if
+	  
+	  
+	  }//if
+	
+	if(ie.getSource()==cb2)
+		{
+			if(cb2.getState())
+			{
+			l1.setText("Ur Selected Course	:"+cb2.getLabel());
+			
+			}//if
+	  
+	  
+	  }//if
+
+	  if(ie.getSource()==cb3)
+		{
+			if(cb3.getState())
+			{
+			l1.setText("Ur Selected Course	:"+cb3.getLabel());
+			
+			}//if
+	  
+	  
+	  }//if
+	
+	if(ie.getSource()==cb4)
+		{
+			if(cb4.getState())
+			{
+			l1.setText("Ur Selected Course	:"+cb4.getLabel());
+			
+			}//if
+	  
+	  
+	  }//if
+	
+	
+	}//itemStateChanaged
+
+	public void actionPerformed(ActionEvent ae)
+	{
+	if(ae.getSource()==b1)
+		{
+	System.exit(0);
+	
+		}
+	}//actionPerformed
+
+
+
+}//class A
+
+
+class RadioButtonFrameThis
+{
+	public static void main(String args[])
+	{
+	RadioButtonFrame o = new RadioButtonFrame();
+	
+	}
+}

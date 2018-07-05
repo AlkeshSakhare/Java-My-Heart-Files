@@ -1,0 +1,50 @@
+import java.awt.*;
+
+
+class  Demoo extends Frame implements ActionEvent
+{
+
+Demoo()
+{
+
+	setSize(500,500);
+	FlowLayout fl = new FlowLayout();
+	setLayout(fl);
+
+	Label l1 = new Label("UserName");
+	Button b1 = new Button("OK");
+	Button b2 = new Button("CANCEL");
+
+	add(l1);
+	add(b1);
+
+	b1.addActionListner(this);
+}
+
+
+	public void actionPerformed(ActionEvent ae)
+	{
+		if(ae.getSource == b1)
+		{
+			l1.setText("Ur Pressed OK");
+		}
+
+		if(ae.getSource == b2)
+		{
+			l1.setText("Ur Pressed CANCEL");
+		
+		}
+	
+	
+	}//method
+
+}//cons
+}//class
+
+public class Demo2
+{
+	public static void main(String[] args) 
+	{
+		Demoo ob = new Demoo();
+	}
+}

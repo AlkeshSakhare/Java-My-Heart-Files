@@ -1,0 +1,10 @@
+Compiled from "DriverPropertyInfo.java"
+public class java.sql.DriverPropertyInfo extends java.lang.Object{
+    public java.lang.String name;
+    public java.lang.String description;
+    public boolean required;
+    public java.lang.String value;
+    public java.lang.String[] choices;
+    public java.sql.DriverPropertyInfo(java.lang.String, java.lang.String);
+}
+

@@ -1,0 +1,7 @@
+
+KAR		:		BANG
+TM		:		CHENNAI
+MH		:		MUMBAI
+AP		:		HYD
+----------------------------
+NO IDEA

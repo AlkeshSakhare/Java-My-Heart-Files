@@ -1,0 +1,45 @@
+Compiled from "BorderLayout.java"
+public class  BorderLayout extends
+  Object implements  LayoutManager2,java.io.Serializable
+{
+    int hgap;
+    int vgap;
+     Component north;
+     Component west;
+     Component east;
+     Component south;
+     Component center;
+     Component firstLine;
+     Component lastLine;
+     Component firstItem;
+     Component lastItem;
+    public static final  String NORTH;
+    public static final  String SOUTH;
+    public static final  String EAST;
+    public static final  String WEST;
+    public static final  String CENTER;
+    public static final  String BEFORE_FIRST_LINE;
+    public static final  String AFTER_LAST_LINE;
+    public static final  String BEFORE_LINE_BEGINS;
+    public static final  String AFTER_LINE_ENDS;
+    public static final  String PAGE_START;
+    public static final  String PAGE_END;
+    public static final  String LINE_START;
+    public static final  String LINE_END;
+
+    public  BorderLayout();
+    public  BorderLayout(int, int);
+
+    public int getHgap();
+    public void setHgap(int);
+    public int getVgap();
+    public void setVgap(int);
+
+    public void addLayoutComponent( Component,  Object);
+    public void addLayoutComponent( String,  Component);
+    public void removeLayoutComponent( Component);
+
+    public  Component getLayoutComponent( Object);
+    public  Component getLayoutComponent( Container,  Object);
+
+ 

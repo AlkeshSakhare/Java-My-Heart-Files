@@ -1,0 +1,25 @@
+ import stage2.ValidateLogic;
+import stage1.Validate;
+import stage1.InValidate;
+
+class ValidateApplication 
+{
+	public static void main(String[] args) 
+	{
+		try
+		{
+			ValidateLogic vl = new ValidateLogic();
+			vl.Check(args[0],args[1]);
+		}
+		catch (Validate v)
+			{
+					System.out.println("Validate From Catch");
+		}
+
+		catch (InValidate v)
+			{
+					System.out.println("InValidate From Catch");
+		}
+
+	}
+}

@@ -1,0 +1,80 @@
+/*<applet code = CheckboxApplet height = 500 width = 500>
+</applet>*/
+
+
+/*using THIS Object...CurrrentClass*/
+//NOTES : 1
+import java.awt.*;
+import java.awt.event.*;
+import java.applet.Applet;
+
+
+public class CheckboxApplet extends Applet  
+{
+Checkbox cb1,cb2;
+Label l1,l2,l3;
+Button b;
+
+	public void init()
+	{
+
+	setSize(300,300);
+	FlowLayout f = new FlowLayout();//--1.we must setLayout ...other wise in not Visible
+	setLayout(f);
+	cb1 = new Checkbox("JAVA");
+	cb2 = new Checkbox(".NET");
+	l1 = new Label("Select Ur Courese	 :	");
+	l2 = new Label("Select Ur Courese	 :	");
+	l3 = new Label("");
+	b = new Button("EXIT");
+
+	add(l1);	add(cb1);	add(l2); 	add(cb2); 	add(l3); add(b);
+	}//init
+
+public void start()
+	{
+
+CheckboxDemo ob = new CheckboxDemo();
+	cb1.addItemListener(ob);
+	cb2.addItemListener(ob);
+	setVisible(true);
+	}//start
+	
+		
+
+
+ class CheckboxDemo  implements ItemListener
+{
+
+	public  void itemStateChanged(ItemEvent ie)
+	{
+	
+	if(ie.getSource() == cb1)
+		{
+		if(cb1.getState())
+			{
+			String s = cb1.getLabel();
+			l3.setText("Ur selected Course is	:	"+s);
+	
+			}
+		}//if
+	
+	if(ie.getSource() == cb2)
+		{
+	if(cb2.getState())
+			{
+		String s = cb2.getLabel();
+	l3.setText("Ur selected Course is	:	"+s);
+	
+		}
+		}//if
+	
+	
+	}//metho1
+
+
+	
+	}//Innerclass
+
+	}//Outer
+

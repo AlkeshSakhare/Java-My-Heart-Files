@@ -1,0 +1,90 @@
+import java.awt.*;
+import java.awt.event.*;
+import java.applet.Applet;
+/*<applet code="mouse" width=300 height=300>
+</applet>*/
+public class mouse extends Applet
+{
+String msg;
+int x,y;
+public void init (0
+{
+x=100;
+y=100;
+msg=null;
+setBackground (Color.yellow);
+setForeground (Color.green);
+}
+public void start ()
+{
+addMouseListener (new ml (this));
+addMouseMotionListener (new mml (this));
+}
+public void paint (Graphics g)
+{
+Font f=new Font ("verdana", Font.BOLD, 60);
+g.getFont (f);
+g.drawString (msg+"("+x+","+y+")",x,y);
+}
+class ml implements MouseListener
+{
+mouse m;
+ml (mouse m)
+{
+this.m=m;
+}
+public void mouseEntered (MouseEvent me)
+{
+m.showStatus ("MOUSE ENTERED IN THE WINDOW");
+}
+public void mouseExited (MouseEvent me)
+{
+m.showStatus ("MOUSE EXITED FROM WINDOW");
+}
+public void mousePressed (MouseEvent me)
+{
+m.msg="Mouse Pressed";
+m.x=me.getX ();
+m.y=me.getY ();
+m.repaint ();
+}
+public void mouseReleased (MouseEvent me)
+{
+m.msg="Mouse Released";
+m.x=me.getX ();
+J2EE (core JAVA) Notes
+By Mr. K.V.R Page 91
+m.y=me.getY ();
+m.repaint ();
+}
+public void mouseClicked (MouseEvent me)
+{
+m.msg="Mouse Clicked";
+m.x=me.getX ();
+m.y=me.getY ();
+m.repaint ();
+}
+class mml extends MouseMotionAdapter
+{
+mouse m;
+mml (mouse m)
+{
+this.m=m;
+}
+public void mouseMoved (MouseEvent me)
+{
+m.msg="Mouse Moved";
+m.x=me.getX ();
+m.y=me.getY ();
+m.repaint ();
+}
+public void mouseDragged (MouseEvent me)
+{
+m.msg="Mouse Dragged";
+m.x=me.getX ();
+m.y=me.getY ();
+m.repaint ();
+}
+}
+}
+};

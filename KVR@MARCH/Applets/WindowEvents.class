@@ -1,0 +1,16 @@
+/*<applet code = RadioButtonAppletInner height = 500 width = 500>
+</applet>*/
+
+
+
+//RadioButtonAppletInner
+
+import java.awt.*;
+import java.awt.event.*;
+import java.applet.Applet;
+
+public class RadioButtonAppletInner extends Applet //
+{
+	Checkbox cb1,cb2,cb3,cb4;
+	CheckboxGroup g1,g2;
+	Label l

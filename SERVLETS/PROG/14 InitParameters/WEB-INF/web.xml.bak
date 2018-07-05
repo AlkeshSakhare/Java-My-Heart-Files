@@ -1,0 +1,33 @@
+<web-app>
+<servlet>
+        <servlet-name>abc</servlet-name>
+        <servlet-class>Init</servlet-class>
+</servlet>
+
+<init-param>
+					<param-name>driver </param-name>
+					<param-value>oracle.jdbc.driver.OracleDriver</param-value>
+</init-param>
+
+<init-param>
+					<param-name>url</param-name>
+					<param-value>jdbc:oracle:thin:@localhost:1521:xe</param-value>
+</init-param>
+
+<init-param>
+					<param-name>uname</param-name>
+					<param-value>system</param-value>
+</init-param>
+
+
+<init-param>
+					<param-name>pswd</param-name>
+					<param-value>a</param-value>
+</init-param>
+
+
+  <servlet-mapping>
+        <servlet-name>abc</servlet-name>
+        <url-pattern>/init</url-pattern>
+    </servlet-mapping>
+</web-app>

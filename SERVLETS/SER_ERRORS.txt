@@ -1,0 +1,8 @@
+HTTP Status 500 -		deplymebt Directory Error
+
+HTTP Status 404 -		Servlet abc is not available
+
+HTTP Status 404 -		web.xml error
+
+			405			-		mismatch sytax in servce(-,-) method
+

@@ -1,0 +1,41 @@
+//Write a java program to illustrate the concept of buttons?
+//Answer:
+import java.awt.*;
+import java.awt.event.*;
+class BDemo extends Frame implements ActionListener
+{
+Button b1,b2,b3,b4;
+Label l;
+BDemo ()
+{
+super ("BUTTON EXAMPLE...");// set title
+setSize (200,200);
+b1=new Button ("NORTH");
+b2=new Button ("SOUTH");
+b3=new Button ("EAST/EXIT");
+b4=new Button ("WEST");
+l=new Label ();
+l.setAlignment (Label.CENTER);
+add (b1,"North");
+add (b2,"South");
+add (b3,"East");
+add (b4,"West");
+add (l);// add at center of border layout by default
+b1.addActionListener (this);
+b2.addActionListener (this);
+b3.addActionListener (this);
+b4.addActionListener (this);
+setVisible (true);
+}
+public void actionPerformed (ActionEvent ae)
+{
+if (ae.getSource ()==b1)
+{
+System.out.println ("U HAVE CLICKED "+b1.getLabel ());
+// String s1=b1.getLabel ();
+// l.setText (s1);
+l.setText (b1.getLabel ());
+}
+if (ae.getSource ()==b2)
+{
+System.out

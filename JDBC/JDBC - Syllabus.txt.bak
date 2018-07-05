@@ -1,0 +1,592 @@
+Jdbc Syallabus	-	Natraj
+_________________________________________
+
+1.Modules Of Java Programming	?
+
+2.Types Of Java Applications	?																															[Standalone, distributed]
+
+3.Standalone Appln	?
+
+4.	2-tyre Applicaton	?	In Same System / Separate System	?
+
+5.Applts
+
+6."Platform Independent Is Not Only O.S"	- Suppoet	?
+
+7.computer Archtectures
+		IBM		-	desctops
+		Apple	-	Apple ystem base
+		Sun		-	Server based
+
+8.Vendor?
+
+9.J2EE is s/w or Specifivcation?'
+
+10.Distributed Appln?
+
+11.Location Transparancey?	-->	location independent
+
+12.Entraprze appln?
+
+13.Uses of following
+		Servlts
+		JSP			}           WEB APPS
+
+
+13.Middleware Services?
+
+14.wat is "Domain of a Projct"
+	online -> e-commerc
+	Socket -> n/w programing
+	ppts-study  ->  E-learning
+	hosptl   - > helthCare
+
+15.J2ME
+
+16.Embaded system app'n?	where they developed?	 where they Exceuted?		ex. wash mech,	simcard,	
+
+17.types of s/w projects	?	[2]		--> prod, servic
+
+18.s/w products	[orcl, games]
+
+19.servce sector	[bank proj,	e-seva]
+
+20.Static		X		Constructor	
+			(i)StaticVsCons
+
+21.Static - > Clas level one tme Excecution
+	constror -> Object level 1 time excecution
+
+		(1)StaticVsConst.java
+
+21.if we give 'java  a'  , then how the Object is created?				-->																				[JVM loads class a and Creates Object for class a]
+
+21.is it Possible main(-) contains Another Static method?				-->																				[No, Compl_Err: illegal start of Expression]
+
+21.is it Possible non-static Datamembers use in  Static block/method?				-->																[No, Compl_Err: non -static member cannot reffenced from statc Context]
+
+21.Class.forName
+			(ii)ClassForName	-->static
+			(iii)ClassForName	--> main
+
+22.Class.forname("Demo")  --> it loads the class , but t never Creates the Object ! is it TRUE?
+
+22.access Specifer or Modifiers ? Whch 1 is correct?
+
+22.wrte the access modifires?[pub,pri,def,pro]
+
+23.which method is used to know the Class of an Object?						-->																		[getClass, --->j.l.Object class]
+
+23.	What are These?
+		getName()		->  x	
+		getSuperClass()		
+		isInterface()			
+		c.getClass()			
+
+24.Object obj = new String("z")		--->																												 the "new" keyword side is Objcect &  R.H.S is reffence  so it is an Obj of String cls
+obj is Object of whch clas? Object or Strng
+
+25.prototype of forName() metod?	[p s cls forName()]
+
+26.Factory Method?
+
+26.Object creation with 'new' keyword , presents of Class at Compile is must ?						-->														[yes]
+
+26.which is used to Create the 'Object' at Complile time?																-->														[ new ]
+
+26.which is used to Create the 'Object' at Runtime?																-->														[ newInstance()]
+
+26.we never Create an Obj for 'abs. clases' & 'interfaces'															-->														[No, indrectly we can create]					
+
+27.newInstance()?	prototype?																				-->																java.lang.Class
+
+28.Object Creation in java Using
+		- new Instance();
+
+
+29.Which is used for creating Objects of 'abstract classes ' and 'interfaces'		-->																			new Instance();
+
+				(iv)newInstanceOf PROG
+
+29.Objcet Graphing?
+
+30.NullPointerExecption?
+
+31.print msg 's without using	S.O.p
+		-PrintWriter	//1.0
+		-Conslole	//1.6
+
+32.7 approches crete object for a java class
+			1.new
+			2,static factory
+			3.instance factory
+			4.factory pattern
+			5.newInstance()
+			6.Cloaning
+			7.DeSerialization
+
+32.how to create the Obj. for a class havng 'private constructor'?							-->																using static factory
+
+32.how to create the Obj. using another object				?							-->																using instance factory
+
+33.	HashCode of an Object	?
+
+34.Marker Interface?
+
+35.Cloning Stpes?
+
+35.is constuctor is exceuted , when we create obj. with cloning?							-->																no, bcoz that data of that Obj , already intialized
+
+35.which interface must implent for cloning?
+
+36.Persistance Store?
+
+37.Persistance Operations?		[CURD]
+
+38.Persistance LOGIC?
+
+39.how many ways to Save the Data?[2]
+
+39.Files Limitations? which appln's we use files?
+
+40.Serialization & Deserialization
+
+41,where the objects are stored?																-->															[heap]		 
+
+41.selective serialzation?
+
+41.is 'static' &  'trancint' varibles participate in Serilztion?
+
+41.High Level Streams		X		Low Level Streams
+
+4i. which classes reqrd for Serialization & Deserialization?
+
+42.	Return Type 3 Notes	[return type is Concrete , absrctCls , Interface]`[skip]
+			(v) Serialization Folder
+
+43.NonSerilazableException	?
+
+44.wat concept used to send Objcet Over a network	?															-->											serlzable
+
+45.API	? how  they are in C  ,C++	, Java	?
+
+45.Diff btwn functon & method																					-->											OUTSIDE, INSIDE
+
+46.PARTY-1,		PARTY-2,	PARTY-3
+
+47.Driver	?	JDBC Driver	?	[5. PIC]
+
+48.ODBC	?[6. PIC]
+
+48.is ODBC Driver is used by any Programing Language?	[lke .net, C#]										->													yes
+
+48.is ODBC Driver is used by any DataBase s/w?	[lke ORACLE, MySQL, DB2]										->													No, ODBC Specific to 1 Dbase s/w only
+
+49.Why Java App's not using ODBC Drivers	?																	-->										[Pointers]
+
+50.S/w Specifcation?	JDBC Specfcation?
+			RULES		->	we must implemnt	[ abstract Methods ]
+			GuidLines	->	we may or may	NOT  implemnt	[ concrete Methods ]
+
+51.Property Specifcation	?																					-->													belong to one company, and visible to that cmpny only
+
+52.S/w 	Languge	[insl]		X		s/w	technology[n't instl]	?
+
+53.java.sql.*		javax.sql.*
+
+54.Example senario of JDBC spec in JDBC Driver Dev	X	 Appl'n Dev.,	?[7. PIC]
+
+55.how the JDBC Specification Uses in two ways by Vendors, Appln Devlopers?
+
+55.JDK has 1 built in jdbc driver! wat is that?			[class_path]											-->											C:\Program Files\Java\jre1.6.0_03\lib\rt\sun\jdbc\odbc\JdbcOdbcDriver
+
+55.how to recognize the DriverClass name from the no.of claases in driver?									-->												which implemtes java.sql.Driver
+
+56.why jdbc drvier has 'odbc' name in its driver cls name?
+
+56.how to actvate JDBC Driver in our Appln?																	-->														by creating obj. for our jdbc driver
+
+57.how Odbc drive can identify?																				-->										DSN
+
+58.DSN	?	DataSourceName Types	?	[3]
+		userDSN
+		systemDSn
+		FileDSN
+
+59.Procedure to Create DSN for M-soft Odbc for Oracle	?	[cls-path]
+
+60.Types of JDBC Drivers?
+
+61.Exp. Type-1 Driver with Diagram?[8. PIC]
+
+62.DriverManager?			[11. PIC]
+
+63.Prog to make a connction using Type-1 Driver
+				vi.Type1Demo
+
+64."jdbc:odbc:oradsn"	Exp each Term?
+
+65.Protocal	?	Types[2]	?
+
+66.Connection con = DriverManager.getConnection("jdbc:odbc:oradsn","scott","tiger")--->Exp internal Proces?  [13. PIC]
+
+67.'con'	 object?
+
+67.what is the internal process of 'getConnection(-.-.-)' method
+
+69.Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");---> Internal working											-->										static block contains logic to regster with DMngr Service
+
+70.is sun.jdbc.odbc.JdbcOdbcDriver , static block is already containg objct creation & registration Logic?										-->				yes
+ 
+
+70.How many Approches to registerDriver with DriverManager	?
+
+					1.sun.jdbc.odbc.JdbcOdbcDriver  od = new 		sun.jdbc.odbc.JdbcOdbcDriver();	--- X --- Why?  2 times
+											       					DriverManager.registerDriver(od);
+
+					2.sun.jdbc.odbc.JdbcOdbcDriver  od = new 		sun.jdbc.odbc.JdbcOdbcDriver();	--- X --- Why?	 od waste .. no one use
+
+					3.new 	sun.jdbc.odbc.JdbcOdbcDriver();	--- X --- Why?	 Annonumous Obj is created that will waste
+
+									-------------------------3---------------------
+
+
+					4.Class.forName("sun.jdbc.odbc.JdbcOdbcDriver")		--- @ --- why? Obj not created...no waste
+																														static block wll exicute automatically
+					5.Class.forName( args[0] )		--- @ --- why? we pass Driver from cmd line
+
+								-------------------------2---------------------
+
+					6.class demo extends  sun.jdbc.odbc.JdbcOdbcDriver   	--- @ --- why? if we extend any class , all methods will logically presents &
+
+
+					7.Strng s1 = System.getProperty("name")
+						Class.forName(s1)
+						java -d name = sun.jdbc.odbc.JdbcOdbcDriver	classname
+
+					8.	Class.forName(System.getProperty("name"))
+						java -d name = sun.jdbc.odbc.JdbcOdbcDriver	classname
+
+					9.java -d  jdbc.driver = sun.jdbc.odbc.JdbcOdbcDriver	classname
+
+							-------------------------3---------------------
+
+					10.if once register we can use untill 'deRegister'			--> java 1.5 , 1.6
+
+
+71.types of SQL querys	?	[2	-->	sel,non-sel]   [12. PIC]
+
+72.jdbc statement object?	Exp Internal flow?[[16. PIC]]
+
+73.types of excution of Querys in Db?
+	- excecuteQuery()
+	-executeUpdate()
+
+74.ResultSet?		[img.14]
+
+75.Basic Steps for JDBC App Development[8]		[img.16]    
+
+76.Statement st = con.createStatement();?	internally wat happen?
+
+77.ResultSet rs = st.executeQuery("select *from emp");?	internally wat happen?
+
+78.Where we Use Interfaces & Abstct Classes in our Proj Devlpmt?
+
+79.		{9}.//UsingColumnNames in getXXX() methods
+
+80.Scanner Class? nextXXX()?[17. PIC]
+
+81.what is Differnce with SQL String and JAVA STRNG?
+
+		{9}//UsingColumnNames in getXXX() methods
+
+		{10}UsingScanner
+
+		{11}ByUrChoiceOfOrder	:	//{13}ByUrChoiceOfOrder  --->  Retriving data by taking ur's Wish order  LIKE address1st sno , sname  uing getStrng(-)
+
+		{12}UsingColumnNames
+
+		{13}ByUrChoiceOfOrder	------>	Retriving data by taking ur's Wish order
+
+		{14}ByLikeLetter			------>	select * from student where sname like 's%';
+
+		{15}ByLikeLetter2			------>	select * from student where sname like 's%' and sadd like 'h%';
+
+		{16}ByConditions1		------>	select detals of one whose sno>= 100 and add is 'hyd' or 'kanur'
+										select * from student where sno >= 100 and sadd in('hyd', 'kanur') 
+
+		{17}AggrigateFun1		------>	select count(*) from student;
+		
+		{18}MultipleAggrigateFun	------>	select count(*), max(sno), min(sno), sum(sno), avg(sno) from student;
+
+		{19}SubQuery			------>	select * from  student where sno = (select max(sno) from student)
+
+
+81.excecuteUpdate();
+
+82.Coading Standards?	[18. PIC]
+
+83.excecuteUpdate();		AUTOCOMMIT		Can't	ROLLBACK
+
+
+		{20}DeleteRecord			------>	delete from student where sno = 205;
+
+		{21}DeleteWithCondition	------>	delete from student where sadd = 'hyd' and (sno>=100 and sno<= 300)
+
+84.printStackTrace()		X		toString()
+
+85.Insert Operations
+
+		{22}InsertRecord			------>	insert into students values(108,'Amma','hyd');
+
+
+86.HOW TO work with prmarykey constaints?
+
+86.Alter
+
+		{23}AlterTable			----->	alter table student add constraint p primary key(sno);
+
+87.wat happens if we are not intilzed localvarible?
+
+87.what are the intial values of loacl varbles(in methods)  instance varbles, static											-->													[unintilized error, 0]
+
+87.	Connection con = NULL	-  why this is recomended?
+
+87.Statement st;  what the reffence varible HOLDS?																		-->													[addres or NULL]
+
+
+88.UPDATE
+
+		{24}UpdateTable			----->	update  student set sname = 'nanna' , sadd = 'kanur' where sno = 129;
+
+89.which method used to exceute both SELECT & NON-SELECT QUETYS ?												-->														Public boolean execute()
+
+89.whch methods for getting Resultset Data?					[[19. PIC]]														-->									getResultSet
+
+89.whch methods for getting Updatecount Data?																		-->									getUpdateCount		
+
+89.why excute() is not recomended?																				-->														it reqres sepate methods
+
+
+	USING execute()
+	------------------------
+		{25}CreateTable			----->	create table tv (no number, chanel varchar(15));
+
+		{26}DropTable			----->	drop table tv ;
+
+89.NET BEANS IDE
+
+90.JAR FILES	 ?	hw they alredy utlized  in java Envi?		[20. PIC]
+
+91.Path		X		classpath
+
+92.	PATH		-> FOR ALL S/W 'S
+	CLASSPATH	-> ONLY FOR JAVA
+
+93.Native method?  [C , C++]																		-->											the method defintion writen in C, but used in java Programs for Specifc purpose bcoz  for hardware C is easy
+
+94.Vendor DB Library for Oracle		[ .dll	 ]??		[21. PIC]		F:\Oracle\app\oracle\product\10.2.0\server\BIN\oci.dll
+
+95.how to get .dll , if clint-server in same system?
+
+95.how to get .dll , if clint-server in Diffrent system?
+
+96.what is "clint db s/w" ? wat it's use?																-->																		to get vendor db lib
+
+95.	Trusted Applet																	-->																		intract wth dbase
+
+95.UnTrusted Applet															-->																				NEVER intract wth dbase
+
+96.file system?																	==>														C:, D:, E:
+
+96.TYPE-1  ,TYPE-2	,TYPE-3	,TYPE-4	Detaled Exp	?	[9. PIC]
+
+				- working
+				- adv
+				- dis adv
+
+97.Connection Pool?
+
+98.How many types of JDBC connections are there?	[ dir, pooled]
+
+99.wat JDBC DRIVER u used in ur Proj?
+
+100.Logical DB		X		Physical DB		exmple?		[22. PIC]
+
+101.SID ?	3 Approches?
+			1.SQL> select * from global_name;
+			 XE
+
+			 2.con pan->	perfor&main->	admintools->	services->	Oracleservice->	OracleServiceXE
+
+			 3.C:\oraclexe\app\oracle\product\10.2.0\server\NETWORK\ADMIN\tnsnames.ora   --->   (SERVICE_NAME = XE)
+
+102.Socket		x	port		[23. PIC]		netstat - a?															-->						communcation  end point
+
+103.Type 4 Class name	, URL
+
+104.C:\oraclexe\app\oracle\product\10.2.0\server\jdbc\lib\ojdbc14_g.jar
+
+105.procedure to add	TYPE-4 Driver ?
+
+105.Devlop App using TYPE-4 THIN Driver
+
+		{27}	Type4Select		--->	 select * from student	X
+
+106.Devlop App using TYPE-2	Driver			
+
+107.the amount of ResultSet Data Depends Upon _______________ we used?													-->										type of Driver
+
+107.Statements?   use?   how many types?
+
+107.3 types of JDBC Objects[sim , pre, call]
+
+108.what hapens when we send qry to dbase Internally?[p- e - f]		[24. PIC]
+
+109.limtations of Simple stmt Obj?[25. PIC]
+
+110.why type-4 url loger then type-1 & type - 2														-->													type-4 has no vendor Db so, it takecare these things, so long
+
+111.PreparedStatement  ?		[26. PIC]
+
+				{28}prepareinsert
+				{29}prepareinsert2
+
+
+111.Adv PreparedStatement  ?	Dis ADv?															->								it always excte one Qury
+
+111.jar files added to ENVI VARBLES are visible to IDE'S ?	Why?											-->																				no,
+
+112.MySQL
+		-install
+		-C:\mysql\bin\winmysqladmin  for login
+
+113.MySQL type-1	- connectorj		X
+
+114.Date Class Object usind Preparedstmt
+
+115.java.util.Date		X		java.sql.Date
+			{30}	DateObjTest
+
+116.import java.sql.*;		import java.util.Date;		which stmt has Higst priorti?
+
+117.SQL yog
+
+118.Retrive date values  whch stmt we use ?  simple / prepared
+
+119.Storing Files in DB
+
+120.	BLOB  &	CLOB		[27. PIC]
+
+121.	Procedure to INSERT large Objects in DB table cloums?
+			
+			{30}	InsertBlob	-->	create table blobtest(eno number(10), ename varchar(15), img blob)
+			
+122.	Procedure to RETRIVE large Objects in DB table cloums?
+			
+			{31}	RetriveBlob	-->	create table blobtest(eno number(10), ename varchar(15), img blob)
+
+123.	How s/w industry storing	 BLOG [IMG]	 objects?
+
+124.	FileUploding			X			FileDownloading
+
+125.	JDBC	Layers?
+
+126.	FAT clint  - THIN server		X		THIN clint  - FAT server	[28. PIC]
+
+127.	Where we use PL/SQL In JDBC prog?																						-->													username,paswd logn for many aplns
+
+128.	IN		x		OUT			x		INOUT
+
+129.	Diff PL/SQL		FUNCTION		X		PROCEDURE
+
+130.	JDBC data types Convers 8?
+
+131.	CallableStatement steps?
+
+131.	Why we are not regiter 'in' params with JDBC data type?
+
+132.	Callable Statement?[29. PIC]
+
+		{32}CallableSum 
+		{33}CallableEmp
+
+133.	CURSOR	?	[30. PIC]
+
+134.	OracleTypes.CURSOR?
+
+135.	SQL%ROWCOUNT
+
+136.	how to read Strings with spaces from keyboard?
+
+137.	PL/SQL Function?	hw to catch return values?
+
+			(1)
+
+138.	why in real world Procedurs are papulerd cmpair wuth Functions?
+
+138.prog for Authenticatin?
+
+138.how convert java Appln to .exe file?			[jar to exe tool]
+
+138.	SWINGS		X		APPLETS
+
+139,	NON- SCROLLABLE RESULT SET		x		SCROLLABLE RESULT SET[31. PIC]
+
+189. Which stmt is used for SCROLLABLE RESULT SET?															-->																	both simpl,prepare
+
+141 .	absolute(), relative()
+			{34}.ScrollableTest1 
+
+142.	absolute(), relative() PATHS?
+
+142.	Diff btwn SENCITIV, INSENSITIVE R_Set Object?															-->														modifications reflet-->sensi, not -> in sen
+
+142. is THIN, OCI , CONNCTOR J Supprts Sencitive r.sets?															-->															no, 
+
+142. is TYPE-1  Supprts Sencitive r.sets?															-->															yes, But  not insensitve
+
+142.	Diff btwn READ_ONLY , UPDATABLE  R_Set Object?															-->														READ - SELECT, UPD - INSERT,DELETE
+
+142.UPDATABLE ResultSet obj?
+				ResultSet rs;
+				rs.updateXXX(index,a)
+
+
+142.	MS- ACCESS DATABASE
+
+			{35} MSAcessTest
+
+
+
+143. 3 over loaded functons of DriverManager?																-->											(utl) , (url, prop), (url,unme,pwd)
+
+143 .	Batch Process?[32. PIC]
+
+144.	methods use in Batch?																						-->										addBatch(qry)
+			
+			{36}BatchDemo
+
+144.	select Qury is allows in Batch Proces?																		->																	no
+
+145.	if any Qry is not exicuted in Batch file,then  is it Error?																-->												No ERROR
+
+144 .	TRANSACTION					X--SEE
+
+145 .	META DATA[33. PIC]
+		-dbase meta data
+		-ResltSet meta data
+		-parameter meta data
+
+		{37}pageno:29		app-16
+
+146 .POST GRESS SQL
+
+
+
+
+_____________________________________________________________________________
+
+COMPLETED SUCUSSFULLY
+
+_____________________________________________________________________________

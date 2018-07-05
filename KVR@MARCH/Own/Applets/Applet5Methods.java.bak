@@ -1,0 +1,41 @@
+/*<applet code = "Applet5Methods" height = 800 width = 800 >	</applet> */
+
+import java.awt.*;
+import java.applet.Applet;
+
+
+public class Applet5Methods extends Applet
+{
+	String s = "";
+	public void init()
+	{
+setBackground (Color.black);
+setForeground (Color.white);
+	s = s+"INIT....";	
+	
+
+	}
+
+public void start()
+	{
+	s = s+"	Start...	";	
+	}
+
+	public void stop()
+	{
+	s = s+"	Stop...	";	
+	}
+
+public void destroy()
+	{
+	s = s+"	Destroy...	";	
+	}
+
+
+	public  void paint(Graphics g)
+	{
+		Font f = new Font("Agency FB",Font.BOLD,28);
+		g.setFont(f);
+	g.drawString(s,50,50);
+	}
+}

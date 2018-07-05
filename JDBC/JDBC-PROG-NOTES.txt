@@ -1,0 +1,6 @@
+//Prog:1
+
+//Static	:	for Class One time Exceuction
+//Const	:	if no of Objects are 4, then Class will Exceute 4 times
+
+

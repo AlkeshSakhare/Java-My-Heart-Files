@@ -1,0 +1,12 @@
+interface interfaceCheck
+{
+   int a=90;
+   int b=9;
+   
+   //int a,b;//must be intialize other wise C_T_ERROR___:	interfaceCheck.java:3: = expected   int a,b;        ^          ^2 errors
+   //a=10;
+   //b=20;  } this also not possible...you must intilaze at time of Declaration
+
+   void f1();
+   void f2();
+}

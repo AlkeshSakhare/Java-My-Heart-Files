@@ -1,0 +1,15 @@
+weblogic
+-------------
+
+Domain	 -	domain9
+
+uname	-	javaboss
+
+pwd	-	javaboss1
+
+port	-	7000
+
+weblogic.jar	 :	F:\Servers\wlserver_10.3\server\lib\weblogic.jar  copy ----> java\ext folder
+
+start domain9 server-->
+

@@ -1,0 +1,13 @@
+//Write a JAVA program which computes sum of two numbers by accepting the data from command prompt (DOS)?
+
+
+class  CmdPromptSum
+{
+	public static void main(String[] args) 
+	{
+		int a = Integer.parseInt(args[0]);
+		int b = Integer.parseInt(args[1]);
+		int c = (a+b);
+		System.out.println("Hello World!");
+	}
+}

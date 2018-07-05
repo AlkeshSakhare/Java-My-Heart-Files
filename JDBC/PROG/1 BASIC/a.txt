@@ -1,0 +1,2 @@
+Success
+Connection Obj	:	class sun.jdbc.odbc.JdbcOdbcConnection

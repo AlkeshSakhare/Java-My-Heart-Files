@@ -1,0 +1,11 @@
+65.Protocal	?	Types[2]	?
+
+83.excecuteUpdate();		AUTOCOMMIT		Can't	ROLLBACK
+
+89.which method used to exceute both SELECT & NON-SELECT QUETYS ?												-->														Public boolean execute()
+
+89.whch methods for getting Resultset Data?					[[19. PIC]]														-->									getResultSet
+
+89.whch methods for getting Updatecount Data?																		-->									getUpdateCount		
+
+96.what is "clint db s/w" ? wat it's use?																-->																		to get vendor db lib

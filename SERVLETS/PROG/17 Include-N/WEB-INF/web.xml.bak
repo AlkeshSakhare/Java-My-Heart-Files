@@ -1,0 +1,22 @@
+<web-app>
+<servlet>
+        <servlet-name>a</servlet-name>
+        <servlet-class>srv1</servlet-class>
+</servlet>
+
+<servlet>
+        <servlet-name>b</servlet-name>
+        <servlet-class>srv2</servlet-class>
+</servlet>
+
+  <servlet-mapping>
+        <servlet-name>abc</servlet-name>
+        <url-pattern>/submit</url-pattern>
+    </servlet-mapping>
+
+	  <servlet-mapping>
+        <servlet-name>abc</servlet-name>
+        <url-pattern>/submit</url-pattern>
+    </servlet-mapping>
+
+</web-app>

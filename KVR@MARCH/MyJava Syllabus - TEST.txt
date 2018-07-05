@@ -1,0 +1,2032 @@
+CORE JAVA By K.V.Rao
+______________________________________________
+
+1.WHAT IS S/W ...?TYPES OF S/W???--->PG:1
+
+2.types of archtectures???
+
+	-protocal
+	-db s/w
+	-firewal
+	-resourec poll		
+
+	HTTP	VS		FTP
+
+3.how the java Real wrold projects clasified?
+j2se - j2ee - firewal - dbase
+
+3.cilent ? server?
+
+3.Data persstancy???
+
+4.FireWall??
+
+5.Stateless, StateFull Protocal??
+
+-History of java   [1990 - 1995]
+
+6.Exp uses of J2SE - J2EE - J2ME
+
+6.java Features[13] /BUZZWORDS?
+ 1- simple
+ 2- platform independent
+ 3-arch. neutral
+4 -portable
+5 -networked
+6 -distributed
+ 7-multithreaded
+ 8-hig performane
+ 9- higly interpreted
+ 10- secred
+ 11-Robust
+ 12.Dynamic
+ 13-OOPs
+
+
+6.OOPS PRICIPLES?
+
+
+7.Threads?Types?? pg.7
+
+8.class & object???
+
+	(1)Demo.java
+
+9.Memory Spaces?
+
+9.Class Loader System in JVM??
+
+10.Data Abstraction??[3 levels]????												-->																phy - logi - view
+
+11.Data Encapsulation?
+
+11.Inhertance?
+
+11.Polymaorphisum?
+
+11.Dynamic Binding?
+
+11.message passing??
+
+12.Data members in java?
+
+13.types of variables???[i,s]
+
+	(2).IntanceVsStatic.java
+
+13.Constants?
+
+13.strcure of java prog?
+
+14.Hungary Notations?
+
+																																							14.FINAL[vari,method,class]??pg.22
+15.exicition logic,Busnesss Logic???
+
+16.actual ,Formal perametrs[     sum(int F_p),   o.sum(A_P)      ]
+
+17.wrapper class???																					-->											[String---->fun. datatype values]
+
+18.length attribute?
+
+18.Constructor?advantages?types???
+		--3 RULES???[1.defalt,2.param,3.def+param]
+
+		(3)ConstructorAll.java
+
+19.OBJECT PARAMETERIZED CONSTRUCTOR????
+		(4)ObjectSum.java
+
+20.'THIS' object???Uses??
+		--RULES[1.1st stmt,without this how forml,actual parms behaves??]
+		-this.varible
+		-this.cons(-)
+		-this.method()
+
+		(5)ThisDemo.java
+
+21.Source object,Target obj??[  ob.sum(),   ob.sum(T)   ]
+
+
+23.Inheritance? rules for creating Object?
+
+24,How memoey space is created ? 1st Base or Derived cls?? 
+
+	- is constrctors patcpate in inheitance?
+
+24.is 'private ' class is in java?																										-->													no
+
+22.Types of relation ships??[IS-A:simple extends...........HAS-A: obj in another Class.....USES-A: method uses Obj of another]
+examole  to each in our dily prog	lke extends Object, Sysem.out.println, p s v main( - )
+
+
+23.which is deflaule relaton shp in java?																	-->											is-a
+
+23.Super??
+	-At vaible level
+		(6)SuperAtVariable.java
+
+	-At method level	
+		(7)SuperAtMethod.java
+
+	-At Method Overriding
+		(8)SuperAtMethodOverride.java
+
+	-At Cons. level[ 4 possiblites]
+		(9)ConstructorExceution.java
+
+23.	Possibleites of super class at constrctor?
+
+24.diff btwn this(),this(....) and super (), super(....)?
+
+24.is it possible call the constctor from method?																		-->											no
+	class A
+	{
+	 -- - - 
+	 void show()
+	 {
+		super()
+	 }
+	}
+
+24.Factory method??[3 rules]
+	- purpose?
+	Rules
+	public static Class = Class.forName();
+	(3)		(2)		(1)
+
+25.factory is Disgn pattern or n built in java?																					-->											disgn pattern
+
+25.Design Patterns?
+
+25.ploymorphisum?	 - implemented in the form of "Method Overriding"
+
+26.types of polymorphisums?[s,d] which is supported by java?
+
+Static -> Complitime		javac a.java
+Dynamic -> Runtime		java a
+
+27.Memory for 'Varibles '   allocats at ____________ time [c]
+
+27.Memory for 'Methods '   allocats  at  ____________ time [r]
+
+25,Plain old java Execution																															[inheritance]
+
+25. Dynamic Binding?  what it says for Object Creation?
+
+25.Types of classes? 																														[c,a]
+
+26.Abstract Class[3 Levels]???
+	-one Abs.cls - no.of Fully derivrd
+	-one Abs. cls - no of Abs Dervd - one Concrete cls
+	-Null body.....
+
+	(10)Abstract1.java
+	(11)Abstract2.java
+	(12)NullBodyMethod.java
+
+26.Abs.method?
+
+ 26.Object of Abs. class = Obj. of it's	________________?
+
+ 26.is Abs. class n methods are declared as 'final'?																-->										no
+
+27. is defiend things alloes in Abs. clses?																			-->												yes
+
+ 27.is it possible to place 'Constructors' in Abs. class?	-->																									[Yes, ]
+
+ 27.Abs. derived class?
+
+ 27.Consequnecs of Abs. clses?  [Nullbody method, methods wth no solution/use]
+
+26.NullBodyMethod?
+
+27.abstrct Dis[2----]???...is Constror allowed in Abs.Class??
+
+28.Interface??
+
+what Type Signature of DataMembers  & Methods???
+	-public?
+	-static?																																-->    create memory space only once?
+	-final?
+
+28.'implenmets'	keyword?
+
+28.'extends'	keyword?
+
+29.Interfaces 3 Approches ?????
+
+	(13)InterfaceApp1	[	interface i1  , interface i2   ]	-->  class C1 implements i1,i2    ==  class  InterfaceApp1
+
+	(14)InterfaceApp2	[  interface i1 ]	-->	[	interface i2 extends i1	]  -->  class C1 implements i2   ==	class InterfaceApp2 
+
+	(15)InterfaceApp3	interface i1		--> 	 interface i2  extends i1			--> abstract class C2 extends C1 implements  i2			--> class C3 extends C2			--> class InterfaceApp3 
+	
+	(16)Fonts.java	Display System Fonts Program?
+
+30. is defiend things alloes in interfaces?				-->																										[no]
+
+30. is 'Constutors'  alloes in interfaces?				-->																										[no]
+
+30. is 'final'  alloes in interfaces?	 				-->																											[no]
+
+30. is 'main() method'  alloes in interfaces?	 		-->																											[no]
+
+30. is 'public'  is must for methods  in interfaces?	 				-->																											[yes, other wise complite time error]
+
+-----------------------------------x     interfaces		x	-------------------------------
+
+30.packages???									[3 types  8+1x+etc ]??
+
+31.API is Collection of ____________ 
+
+31.Pkg is Collection of ____________ +__________+ _____________									
+
+31.Need of pkg?
+
+31.Types of pkgs [] 
+- pre- def.	[	awt,lang,io........]
+-user		[iiird paty oracle.jdbc.]
+
+31.Collection Frame work???[skip it]
+
+32.Arrays VS C.F.W?
+
+32.Steps/ Guidlines to Develop Pakages?[5]   --->																																{1.pkg stmt must be 1st, 2.cls 'public',	3.constructor 'public',	4.methods 'public',	5.save with clsname.java}
+
+javac -d . filename.java
+
+		(17)Test.java
+		(18)ITest.java
+
+		
+
+32.Packge import stmts[2 Approches]???
+
+		- import stmt
+		-fully Qulified Approch
+
+33.Rules for Access Specifiers?
+
+		(19) Write a JAVA program which illustrates the concept of access rules?
+
+33.rt.jar?
+
+33.Where we have to place a java class containg 'main()' method ? and 'with out Containg main() method'?[p]
+
+
+------------
+33.Error Typers??
+
+33.Exception???types??
+
+34.Error Classes  list?
+
+34 .Exception Classes list?
+
+34.Pre defiend Exception?
+
+34.what is Asynchos, Synchrnos Exceptions? Example Classes??
+
+34.Cheked, Unchekd Exceptions? Example Classes?
+
+34.Exception Class Hirarchi??
+
+35.JVM working on Exception Handling??
+
+36.try,catch,finally,throw ????
+
+35.what happens if we write return 0; in catch?																				-->											where we stop, from their exceution is started
+
+36.what happens we write some code immdiatyly after try , before catch?
+
+36.is cntl come back to try after excute catch? is even we use 'return' stmt
+
+36.it is nessary to place catch afrer try block?
+
+36.try ...inner try is possible?
+
+36.is possible catch contans try blocks?
+
+36.is possible finally contans try..catch  blocks?
+
+36.Try, catch, finally internal working?
+
+36.Throws? dog exmp?
+
+36.Throes deals with methods only ...not by class!
+
+36.Calling, called funtions?
+
+	- Ex1.java
+	- Ex2.java
+
+37.rethrowing???
+
+37.Number of ways to find details of the exception?
+	-	Using an object of java.lang.Exception
+	-	Using printStackTrace method
+	-	Using getMessage method
+
+38.User Defiend Exceptions??? 
+
+38.How to Create User Defiend Exceptions??? 6 Steps?
+
+38.User Defiend Exception Stages?? 3??Exp. Programs???
+
+38.out,in,err in system class?
+
+38.Throw VS	throws?
+
+-------------------------------------------------------------------	X	exceptions	X	---------------------------------------------------------
+
+38.DataConversions in Java Programme?
+		- String						-->		Fundametal DataType																						[  int x = Inreger.parseInt  ]
+		- Fundametal DataType		-->		String							------------>  ANSWERS																			[ String s	=	valueOf(a)]
+		- Fundametal DataType		-->		Object																										[ Integer i	=	Integer(int)]
+		- Object						-->		Fundametal DataType																						[  int i		=	ob.intValue() ]
+		- String						-->		ObjectData																									[							]
+		- Object						-->		String						[							]
+
+
+38.Desing Patterns?
+
+38.Factory method?		Exm prog?
+
+38.Singleton Class?		Exm prog?	    [30%]																												--->																whose Object is creted one per jvm
+
+
+----------------------------------------	Applets		--------------------------------------------
+
+
+38.Standalone		VS		Distributed	Applicatons
+
+38.what is the life cycle method in Standalone Applications?
+
+38.what is the aim of Applets?
+
+38.what is ment by "Life Cycle method"?
+
+39.Applets?5 life cycle methos?
+public void init ()
+public void start ()
+public void stop () 
+public void destroy ().
+
+39.what is paint()? when it is Executed? write flow?
+
+40.Approches to Run Applet Program?
+
+41.java.awt.*;
+
+41.AWT Hirarchi?
+
+41.Standalone Gui, Distributed GUI?
+
+41.Components?	Active?	passive?
+
+41.Layout managers? 2 steps for using layout managers?
+
+41.Layouts?? 4 layouts??
+
+42.Components	
+	-Label
+	-Button
+	-Checkbox
+	-Radiobutton
+	-Choice
+	-List
+	-TextComponent
+		TextFeild
+		TextArea
+	
+
+(Q) mutators?? Inspectors??
+
+43.Label? Use? API? 
+	- DataMembers
+	- Contrctors
+	- Methods
+
+	(22).LabelDemo.java
+	(23).LabelAPI.java
+
+43.Event Deligation Model?? 4 phases??
+
+44.Active , Pasive Components??
+
+45.Button ? Use? API? 
+	- DataMembers
+	- Methods
+
+	(24).java prog when we click button , and that Label is displyed in CENTER
+
+45.
+		-	getSource()
+		-	System.exit(0)
+		-	disopose()````-terminate wndow
+
+
+45.Steps for FRAME APPLICATION DEVELOPMENT??
+ 
+46.Steps for APPLET APPLICATION DEVELOPMENT??
+
+47.Checkbox	?Use? API? 
+	- DataMembers
+	- Methods
+	- prog. using Frame, Applet, Inner, This
+
+
+48.RadioButton?
+		- CheckboxGroup?	Use?	
+
+48.Steps to convert Checkbox into RadioButton?
+
+49.Object Type Casting	-->  x																														Baseclas reffence into Subcls refferce
+
+
+50.Choice?Use? API? 
+	- DataMembers
+	- Methods
+	- prog. using Frame, Applet, Inner, This
+
+51.TextComponent
+		-TextFeild
+				Echo-TextFeild?
+				Non-Echo-TextFeild?
+
+		-TextArea
+
+52.List
+	-singleitem selection?
+	-Multiple item selection?
+
+
+**53.AdapterClass??? 
+
+54.Window Component?
+		7 methods?
+
+54.Axiulary Components	&	Logical Components?
+
+54.MouseHandling Operations
+
+55.Event Deligation model of Mouse?
+
+
+	------------------------------	APPLTS	-------------------------------
+
+56.Collection Frame Work
+
+56.Diff Arrars - CFWork
+
+56.Characterstics of CFW [4... 4.1,4.2,4.3]
+		- performance, Adaptablity, Extenciable, Algo. Orented(Serching, Sorting, stack-Q-LinkedLst)
+
+57.Types of CFW??
+
+57.New Collection Frame work
+	1D:Hirarchi & follwing[wrte on table]
+
+	i.Hirarchi
+	ii.Fuctionaly
+	iii.Organising
+	iv.Data of Displyaing
+	v.Retriving
+	
+58.1D :CFW PROCESS CHAR DIAGRAM[6 STPS]
+
+59.java.util.Collecton[hirarchi,desc,fun, methos]
+
+60.java.util.List[hirarchi,desc,fun, methos]
+
+61.java.util.Set[hirarchi,desc,fun, methos]
+
+62.java.util.SortedSet[hirarchi,desc,fun, methos]
+
+63.LinkedList  [desc, Constr, Methods, Prog]
+		-Limitations??		[more space, Execution]
+
+64.ArrayList  [desc, Constr, Methods, Prog]
+
+65.HashSet  [desc, Constr, Methods, Prog]
+
+66.TreeSet  [desc, Constr, Methods, Prog]
+
+67.2D :CFW PROCESS CHAR DIAGRAM[7 STPS]
+
+	-java.util.Map			[hirarchi,desc,fun, methos]
+	-java.util.Map.Entry		[hirarchi,desc,fun, methos]
+	-java.util.SortedMap		[hirarchi,desc,fun, methos]
+
+68.HashMap  ???   prog ???
+
+69.TreeMap    ???   prog ???
+
+69.Synchronzed[1 by 1]	non-Synchronzed[concurnt]
+
+70.LEGACY  :CFW PROCESS 
+
+	Interfaces
+		-Enumaration
+
+	1D.F.W. Classes
+		-Vector
+		-Stack
+
+	2D.F.W. Classes
+		-Dictonary
+		-Hashtable	[Late Memory Allocation, Advanced Mem Allocaton, ]
+		-Properties
+
+70.Propety file/ Resource Bundile file?(.prop, .rbf)
+
+71.
+
+71.Scanner class?
+		-public xxx nextXxx()
+		-public String nextLine();
+
+72.java.util.StringTokenizer ?
+	-Functionalty
+	-Hirarchi
+	-methods
+
+--------------------------------- CFW--------------------------------------
+
+72.Multi therading ??  Ur view examples?
+
+73.ForeGround Thread	??
+
+74.BackGround Thread??
+
+75.where RealTme implementation of threads takes place?
+
+76.How u justfi "each and every java prog is Multi threded"
+
+77.Program		X		Process
+
+78.Optimization instructions?
+
+79.Context Switch --  ?  Ex. ?
+
+80.Types of Applications? [PBA	-	TBA]
+
+81.PBA		X		TBA
+
+82.AddresSpace  / workspace?
+
+83.li8 weight , heavy weght proceses?
+
+84.Internal  workng of a  Thread? 
+
+85.Life Cycle of Thread??[ 5 states ]
+
+86.FCFS - SJF	- ROUND ROBIN ??
+
+87.Which algrothm java threds follwing?
+
+88.about 6 waiting() conditions?
+
+89.In - memory States,Out - memory States ?
+
+90.No. of ways creatng a Thread?
+
+91.No. of ways creatng a Thread in java.lang.Thread class?
+
+92.java.lang.Thread class		
+	-Datamembers[3],	
+	-Constructors[4]	
+	-InstanceMethods[11]
+	-Static methods[]
+
+93.start() method?  Services gven to thread?
+
+94.PCB working ? how they usefull to threads?
+
+95.suspend()	 -functionality?use of PCB in this?
+
+96.resume()	 -functionality?use of PCB in this?
+
+97.stop()	 -functionality?use of PCB in this?
+
+98.join()	 -functionality?use of PCB in this?
+
+99.when InturreptedException will occure in join()?
+
+100.currentThread 	 -functionality?
+
+101.sleep()	 -functionality?
+
+102.when InturreptedException will occure in sleep()?
+
+103.Intrernal flow of threads [11]
+
+			(30)print  1 to10 num with 1sec of gap
+			
+
+104.java.lang.Runnable.
+			(32)sum,sub using both Thread[c]	 , Runnable [i]
+			(33)Thread appln Scrolling Msg
+			(34)Generates Numbers Automatically
+
+105.Synchronization?		non-Synchronization?		Example?
+
+106.Need of Synchronztin?  [10,20,bal]
+
+107.when LOCKING & UNLOCKING by JVM?
+
+108.Synchronzn methods?  [2]
+
+109.Synchronzn Blocks?  [1]
+
+110.Need for Synchronzn Blocks?
+		-prog 10,20,bal;
+
+111.which O.S's 'Synxchzed ' keyword mandatory, Optional,Recomended?
+
+112.InterThread Communction?
+
+113.java.lang.Object  methods for I.T.C?
+
+-------------------------			threads		-------------------------
+
+114.	volataile App's	?		non-volataile App's?
+
+115.in which memory TEMP data is Strored?
+
+116.approaches we have  To store the data ?
+
+117. Files Disadv?	DataBase Adv?
+
+118.File?	Record?	Field?	
+
+119.Stream?
+
+120.Type Of Operations on Fles?
+
+121.READ opertion steps?
+
+121.WRITE opertion steps?
+
+122.Types of Streams in FILES?
+
+123.Byte Streams?
+		- Hirarchi?
+		- Functionality?
+
+124.FileInputStream 
+
+125.FileOuputStream 
+
+		(33) write the Data 1to 10, Read the Data from 1to 10
+
+124.DataInputStream 
+
+125.DataOuputStream 
+		sum of 2 numbers
+
+126.which is recomended  Scanner / DataInputStream?
+
+127.	Serilzation  ?	de-Serilzation?
+
+128.	Phases of Serilzation  ?	de-Serilzation?
+			(i)developing serialization sub-class: prog
+			(ii)SERIALIZATION PROCESS:prog
+			(iii)De-SERIALIZATION PROCESS:prog
+
+129.Marker Interface?
+
+130.Types of serialization:?
+
+131.-complete serialization	[whole Data mem]
+	  -selective serialization	[transein D.m]
+	- manual serialization	[imp Ser]
+	-automatic serialization	[extends ser]
+
+132. transeint?
+
+133.Character Streams?
+		- Hirarchi?
+
+134.diff btwn Applets  SWINGS?
+
+135.Network Programming-------->  venkat
+
+140.StringHandling
+
+141.String Tokenzer
+
+142.Inner classes?
+
+143.Nameless Object?
+
+144.Annonomous class?
+
+145.
+---------------venkat--------
+
+136.Array
+
+137.forEach loop?
+
+138.Acess Specifires?
+
+139.step 2 create Documenation
+
+140.StringHandling
+
+wrapper
+
+AutoBox, unbox
+
+exception handlng
+
+Straems
+
+Applets
+
+swngs
+
+inner classes
+
+Synchronzation
+
+InterThred Communcation
+
+Deemon Thread
+
+DeadLock
+
+Netwotk Programming
+
+TCP - UDP
+
+Collections
+
+Generics / Templates
+
+annotations
+
+Enumarations
+
+
+------------------------------------------------------------------------------	COMPLTED SUCESSFULLY	-----------------------------------
+								
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+													JDBC
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Jdbc Syallabus	-	Natraj
+_________________________________________
+
+1.Modules Of Java Programming	?
+
+2.Types Of Java Applications	?																															[Standalone, distributed]
+
+3.Standalone Appln	?
+
+4.	2-tyre Applicaton	?	In Same System / Separate System	?
+
+5.Applts
+
+6."Platform Independent Is Not Only O.S"	- Suppoet	?
+
+7.computer Archtectures
+		IBM		-	desctops
+		Apple	-	Apple ystem base
+		Sun		-	Server based
+
+8.Vendor?
+
+9.J2EE is s/w or Specifivcation?'
+
+10.Distributed Appln?
+
+11.Location Transparancey?	-->	location independent
+
+12.Entraprze appln?
+
+13.Uses of following
+		Servlts
+		JSP			}           WEB APPS
+
+
+13.Middleware Services?
+
+14.wat is "Domain of a Projct"
+	online -> e-commerc
+	Socket -> n/w programing
+	ppts-study  ->  E-learning
+	hosptl   - > helthCare
+
+15.J2ME
+
+16.Embaded system app'n?	where they developed?	 where they Exceuted?		ex. wash mech,	simcard,	
+
+17.types of s/w projects	?	[2]		--> prod, servic
+
+18.s/w products	[orcl, games]
+
+19.servce sector	[bank proj,	e-seva]
+
+20.Static		X		Constructor	
+			(i)StaticVsCons
+
+21.Static - > Clas level one tme Excecution
+	constror -> Object level 1 time excecution
+
+		(1)StaticVsConst.java
+
+21.if we give 'java  a'  , then how the Object is created?				-->																				[JVM loads class a and Creates Object for class a]
+
+21.is it Possible main(-) contains Another Static method?				-->																				[No, Compl_Err: illegal start of Expression]
+
+21.is it Possible non-static Datamembers use in  Static block/method?				-->																[No, Compl_Err: non -static member cannot reffenced from statc Context]
+
+21.Class.forName
+			(ii)ClassForName	-->static
+			(iii)ClassForName	--> main
+
+22.Class.forname("Demo")  --> it loads the class , but t never Creates the Object ! is it TRUE?
+
+22.access Specifer or Modifiers ? Whch 1 is correct?
+
+22.wrte the access modifires?[pub,pri,def,pro]
+
+23.which method is used to know the Class of an Object?						-->																		[getClass, --->j.l.Object class]
+
+23.	What are These?
+		getName()		->  x	
+		getSuperClass()		
+		isInterface()			
+		c.getClass()			
+
+24.Object obj = new String("z")		--->																												 the "new" keyword side is Objcect &  R.H.S is reffence  so it is an Obj of String cls
+obj is Object of whch clas? Object or Strng
+
+25.prototype of forName() metod?	[p s cls forName()]
+
+26.Factory Method?
+
+26.Object creation with 'new' keyword , presents of Class at Compile is must ?						-->														[yes]
+
+26.which is used to Create the 'Object' at Complile time?																-->														[ new ]
+
+26.which is used to Create the 'Object' at Runtime?																-->														[ newInstance()]
+
+26.we never Create an Obj for 'abs. clases' & 'interfaces'															-->														[No, indrectly we can create]					
+
+27.newInstance()?	prototype?																				-->																java.lang.Class
+
+28.Object Creation in java Using
+		- new Instance();
+
+
+29.Which is used for creating Objects of 'abstract classes ' and 'interfaces'		-->																			new Instance();
+
+				(iv)newInstanceOf
+
+29.Objcet Graphing?
+
+30.NullPointerExecption?
+
+31.print msg 's without using	S.O.p
+		-PrintWriter	//1.0
+		-Conslole	//1.6
+
+32.7 approches crete object for a java class
+			1.new
+			2,static factory
+			3.instance factory
+			4.factory pattern
+			5.newInstance()
+			6.Cloaning
+			7.DeSerialization
+
+32.how to create the Obj. for a class havng 'private constructor'?							-->																using static factory
+
+32.how to create the Obj. using another object				?							-->																using instance factory
+
+33.	HashCode of an Object	?
+
+34.Marker Interface?
+
+35.Cloning Stpes?
+
+35.is constuctor is exceuted , when we create obj. with cloning?							-->																no, bcoz that data of that Obj , already intialized
+
+35.which interface must implent for cloning?
+
+36.Persistance Store?
+
+37.Persistance Operations?		[CURD]
+
+38.Persistance LOGIC?
+
+39.how many ways to Save the Data?[2]
+
+39.Files Limitations? which appln's we use files?
+
+40.Serialization & Deserialization
+
+41,where the objects are stored?																-->															[heap]		 
+
+41.selective serialzation?
+
+41.is 'static' &  'trancint' varibles participate in Serilztion?
+
+41.High Level Streams		X		Low Level Streams
+
+4i. which classes reqrd for Serialization & Deserialization?
+
+42.	Return Type 3 Notes	[return type is Concrete , absrctCls , Interface]`[skip]
+			(v) Serialization Folder
+
+43.NonSerilazableException	?
+
+44.wat concept used to send Objcet Over a network	?															-->											serlzable
+
+45.API	? how  they are in C  ,C++	, Java	?
+
+45.Diff btwn functon & method																					-->											OUTSIDE, INSIDE
+
+46.PARTY-1,		PARTY-2,	PARTY-3
+
+47.Driver	?	JDBC Driver	?	[5. PIC]
+
+48.ODBC	?
+
+48.is ODBC Driver is used by any Programing Language?	[lke .net, C#]										->													yes
+
+48.is ODBC Driver is used by any DataBase s/w?	[lke ORACLE, MySQL, DB2]										->													No, ODBC Specific to 1 Dbase s/w only
+
+49.Why Java App's not using ODBC Drivers	?																	-->										[Pointers]
+
+50.S/w Specifcation?	JDBC Specfcation?
+			RULES		->	we must implemnt	[ abstract Methods ]
+			GuidLines	->	we may or may	NOT  implemnt	[ concrete Methods ]
+
+51.Property Specifcation	?																					-->													belong to one company, and visible to that cmpny only
+
+52.S/w 	Languge	[insl]		X		s/w	technology[n't instl]	?
+
+53.java.sql.*		javax.sql.*
+
+54.Example senario of JDBC spec in JDBC Driver Dev	X	 Appl'n Dev.,	?
+
+55.how the JDBC Specification Uses in two ways by Vendors, Appln Devlopers?
+
+55.JDK has 1 built in jdbc driver! wat is that?			[class_path]											-->											C:\Program Files\Java\jre1.6.0_03\lib\rt\sun\jdbc\odbc\JdbcOdbcDriver
+
+55.how to recognize the DriverClass name from the no.of claases in driver?									-->												which implemtes java.sql.Driver
+
+56.why jdbc drvier has 'odbc' name in its driver cls name?
+
+56.how to actvate JDBC Driver in our Appln?																	-->														by creating obj. for our jdbc driver
+
+57.how Odbc drive can identify?																				-->										DSN
+
+58.DSN	?	DataSourceName Types	?	[3]
+		userDSN
+		systemDSn
+		FileDSN
+
+59.Procedure to Create DSN for M-soft Odbc for Oracle	?	[cls-path]
+
+60.Types of JDBC Drivers?
+
+61.Exp. Type-1 Driver with Diagram?
+
+62.DriverManager?			[img 9]
+
+63.Prog to make a connction using Type-1 Driver
+				vi.Type1Demo
+
+64."jdbc:odbc:oradsn"	Exp each Term?
+
+65.Protocal	?	Types[2]	?
+
+66.Connection con = DriverManager.getConnection("jdbc:odbc:oradsn","scott","tiger")--->Exp internal Proces?
+
+67.'con'	 object?
+
+67.what is the internal process of 'getConnection(-.-.-)' method
+
+69.Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");---> Internal working											-->										static block contains logic to regster with DMngr Service
+
+70.is sun.jdbc.odbc.JdbcOdbcDriver , static block is already containg objct creation & registration Logic?										-->				yes
+ 
+
+70.How many Approches to registerDriver with DriverManager	?
+
+					1.sun.jdbc.odbc.JdbcOdbcDriver  od = new 		sun.jdbc.odbc.JdbcOdbcDriver();	--- X --- Why?  2 times
+											       					DriverManager.registerDriver(od);
+
+					2.sun.jdbc.odbc.JdbcOdbcDriver  od = new 		sun.jdbc.odbc.JdbcOdbcDriver();	--- X --- Why?	 od waste .. no one use
+
+					3.new 	sun.jdbc.odbc.JdbcOdbcDriver();	--- X --- Why?	 Annonumous Obj is created that will waste
+
+									-------------------------3---------------------
+
+
+					4.Class.forName("sun.jdbc.odbc.JdbcOdbcDriver")		--- @ --- why? Obj not created...no waste
+																														static block wll exicute automatically
+					5.Class.forName( args[0] )		--- @ --- why? we pass Driver from cmd line
+
+								-------------------------2---------------------
+
+					6.class demo extends  sun.jdbc.odbc.JdbcOdbcDriver   	--- @ --- why? if we extend any class , all methods will logically presents &
+
+
+					7.Strng s1 = System.getProperty("name")
+						Class.forName(s1)
+						java -d name = sun.jdbc.odbc.JdbcOdbcDriver	classname
+
+					8.	Class.forName(System.getProperty("name"))
+						java -d name = sun.jdbc.odbc.JdbcOdbcDriver	classname
+
+					9.java -d  jdbc.driver = sun.jdbc.odbc.JdbcOdbcDriver	classname
+
+							-------------------------3---------------------
+
+					10.if once register we can use untill 'deRegister'			--> java 1.5 , 1.6
+
+
+71.types of SQL querys	?	[2	-->	sel,non-sel]
+
+72.jdbc statement object?	Exp Internal flow?
+
+73.types of excution of Querys in Db?
+	- excecuteQuery()
+	-executeUpdate()
+
+74.ResultSet?		[img.11]
+
+75.Basic Steps for JDBC App Development[8]		[img.12]
+
+76.Statement st = con.createStatement();?	internally wat happen?
+
+77.ResultSet rs = st.executeQuery("select *from emp");?	internally wat happen?
+
+78.Where we Use Interfaces & Abstct Classes in our Proj Devlpmt?
+
+79.		{9}.//UsingColumnNames in getXXX() methods
+
+80.Scanner Class? nextXXX()?
+
+81.what is Differnce with SQL String and JAVA STRNG?
+
+		{9}//UsingColumnNames in getXXX() methods
+
+		{10}UsingScanner
+
+		{11}ByUrChoiceOfOrder	:	//{13}ByUrChoiceOfOrder  --->  Retriving data by taking ur's Wish order  LIKE address1st sno , sname  uing getStrng(-)
+
+		{12}UsingColumnNames
+
+		{13}ByUrChoiceOfOrder	------>	Retriving data by taking ur's Wish order
+
+		{14}ByLikeLetter			------>	select * from student where sname like 's%';
+
+		{15}ByLikeLetter2			------>	select * from student where sname like 's%' and sadd like 'h%';
+
+		{16}ByConditions1		------>	select detals of one whose sno>= 100 and add is 'hyd' or 'kanur'
+										select * from student where sno >= 100 and sadd in('hyd', 'kanur') 
+
+		{17}AggrigateFun1		------>	select count(*) from student;
+		
+		{18}MultipleAggrigateFun	------>	select count(*), max(sno), min(sno), sum(sno), avg(sno) from student;
+
+		{19}SubQuery			------>	select * from  student where sno = (select max(sno) from student)
+
+
+81.excecuteUpdate();
+
+82.Coading Standards?
+
+83.excecuteUpdate();		AUTOCOMMIT		Can't	ROLLBACK
+
+
+		{20}DeleteRecord			------>	delete from student where sno = 205;
+
+		{21}DeleteWithCondition	------>	delete from student where sadd = 'hyd' and (sno>=100 and sno<= 300)
+
+84.printStackTrace()		X		toString()
+
+85.Insert Operations
+
+		{22}InsertRecord			------>	insert into students values(108,'Amma','hyd');
+
+
+86.HOW TO work with prmarykey constaints?
+
+86.Alter
+
+		{23}AlterTable			----->	alter table student add constraint p primary key(sno);
+
+87.wat happens if we are not intilzed localvarible?
+
+87.what are the intial values of loacl varbles(in methods)  instance varbles, static											-->													[unintilized error, 0]
+
+87.	Connection con = NULL	-  why this is recomended?
+
+87.Statement st;  what the reffence varible HOLDS?																		-->													[addres or NULL]
+
+
+88.UPDATE
+
+		{24}UpdateTable			----->	update  student set sname = 'nanna' , sadd = 'kanur' where sno = 129;
+
+89.which method used to exceute both SELECT & NON-SELECT QUETYS ?												-->														Public boolean execute()
+
+89.whch methods for getting Resultset Data?																			-->									getResultSet
+
+89.whch methods for getting Updatecount Data?																		-->									getUpdateCount		
+
+89.why excute() is not recomended?																				-->														it reqres sepate methods
+
+
+	USING execute()
+	------------------------
+		{25}CreateTable			----->	create table tv (no number, chanel varchar(15));
+
+		{26}DropTable			----->	drop table tv ;
+
+89.NET BEANS IDE
+
+90.JAR FILES	 ?	hw they alredy utlized  in java Envi?		[img-16]
+
+91.Path		X		classpath
+
+92.	PATH		-> FOR ALL S/W 'S
+	CLASSPATH	-> ONLY FOR JAVA
+
+93.Native method?  [C , C++]																		-->											the method defintion writen in C, but used in java Programs for Specifc purpose bcoz  for hardware C is easy
+
+94.Vendor DB Library for Oracle		[ .dll	 ]??				F:\Oracle\app\oracle\product\10.2.0\server\BIN\oci.dll
+
+95.how to get .dll , if clint-server in same system?
+
+95.how to get .dll , if clint-server in Diffrent system?
+
+96.what is "clint db s/w" ? wat it's use?																-->																		to get vendor db lib
+
+95.	Trusted Applet																	-->																		intract wth dbase
+
+95.UnTrusted Applet															-->																				NEVER intract wth dbase
+
+96.file system?																	==>														C:, D:, E:
+
+96.TYPE-1	,TYPE-2	,TYPE-3	,TYPE-4	Detaled Exp	?	[ img .8 ]
+
+				- working
+				- adv
+				- dis adv
+
+97.Connection Pool?
+
+98.How many types of JDBC connections are there?	[ dir, pooled]
+
+99.wat JBC DRIVER u used in ur Proj?
+
+100.Logical DB		X		Physical DB		exmple?		
+
+101.SID ?	3 Approches?
+			1.SQL> select * from global_name;
+			 XE
+
+			 2.con pan->	perfor&main->	admintools->	services->	Oracleservice->	OracleServiceXE
+
+			 3.C:\oraclexe\app\oracle\product\10.2.0\server\NETWORK\ADMIN\tnsnames.ora   --->   (SERVICE_NAME = XE)
+
+102.Socket		x	port		[img.18]		netstat - a?															-->						communcation  end point
+
+103.Type 4 Class name	, URL
+
+104.C:\oraclexe\app\oracle\product\10.2.0\server\jdbc\lib\ojdbc14_g.jar
+
+105.procedure to add	TYPE-4 Driver ?
+
+105.Devlop App using TYPE-4 THIN Driver
+
+		{27}	Type4Select		--->	 select * from student	X
+
+106.Devlop App using TYPE-2	Driver			
+
+107.the amount of ResultSet Data Depends Upon _______________ we used?													-->										type of Driver
+
+107.Statements?   use?   how many types?
+
+107.3 types of JDBC Objects[sim , pre, call]
+
+108.what hapens when we send qry to dbase Internally?[p- e - f]
+
+109.limtations of Simple stmt Obj?
+
+110.why type-4 url loger then type-1 & type - 2														-->													type-4 has no vendor Db so, it takecare these things, so long
+
+111.PreparedStatement  ?
+
+				{28}prepareinsert
+				{29}prepareinsert2
+
+
+111.Adv PreparedStatement  ?	Dis ADv?															->								it always excte one Qury
+
+111.jar files added to ENVI VARBLES are visible to IDE'S ?	Why?											-->																				no,
+
+112.MySQL
+		-install
+		-C:\mysql\bin\winmysqladmin  for login
+
+113.MySQL type-1	- connectorj		X
+
+114.Date Class Object usind Preparedstmt
+
+115.java.util.Date		X		java.sql.Date
+			{30}	DateObjTest
+
+116.import java.sql.*;		import java.util.Date;		which stmt has Higst priorti?
+
+117.SQL yog
+
+118.Retrive date values  whch stmt we use ?  simple / prepared
+
+119.Storing Files in DB
+
+120.	BLOB  &	CLOB
+
+121.	Procedure to INSERT large Objects in DB table cloums?
+			
+			{30}	InsertBlob	-->	create table blobtest(eno number(10), ename varchar(15), img blob)
+			
+122.	Procedure to RETRIVE large Objects in DB table cloums?
+			
+			{31}	RetriveBlob	-->	create table blobtest(eno number(10), ename varchar(15), img blob)
+
+123.	How s/w industry storing	 BLOG [IMG]	 objects?
+
+124.	FileUploding			X			FileDownloading
+
+125.	JDBC	Layers?
+
+126.	FAT clint  - THIN server		X		THIN clint  - FAT server	[img-19]
+
+127.	Where we use PL/SQL In JDBC prog?																						-->													username,paswd logn for many aplns
+
+128.	IN		x		OUT			x		INOUT
+
+129.	Diff PL/SQL		FUNCTION		X		PROCEDURE
+
+130.	JDBC data types Convers 8?
+
+131.	CallableStatement steps?
+
+131.	Why we are not regiter 'in' params with JDBC data type?
+
+132.	Callable Statement?
+
+		{32}CallableSum 
+		{33}CallableEmp
+
+133.	CURSOR	?
+
+134.	OracleTypes.CURSOR?
+
+135.	SQL%ROWCOUNT
+
+136.	how to read Strings with spaces from keyboard?
+
+137.	PL/SQL Function?	hw to catch return values?
+
+			(1)
+
+138.	why in real world Procedurs are papulerd cmpair wuth Functions?
+
+138.prog for Authenticatin?
+
+138.how convert java Appln to .exe file?			[jar to exe tool]
+
+138.	SWINGS		X		APPLETS
+
+139,	NON- SCROLLABLE RESULT SET		x		SCROLLABLE RESULT SET
+
+189. Which stmt is used for SCROLLABLE RESULT SET?															-->																	both simpl,prepare
+
+141 .	absolute(), relative()
+			{34}.ScrollableTest1 
+
+142.	absolute(), relative() PATHS?
+
+142.	Diff btwn SENCITIV, INSENSITIVE R_Set Object?															-->														modifications reflet-->sensi, not -> in sen
+
+142. is THIN, OCI , CONNCTOR J Supprts Sencitive r.sets?															-->															no, 
+
+142. is TYPE-1  Supprts Sencitive r.sets?															-->															yes, But  not insensitve
+
+142.	Diff btwn READ_ONLY , UPDATABLE  R_Set Object?															-->														READ - SELECT, UPD - INSERT,DELETE
+
+142.UPDATABLE ResultSet obj?
+				ResultSet rs;
+				rs.updateXXX(index,a)
+
+
+142.	MS- ACCESS DATABASE
+
+			{35} MSAcessTest
+
+
+
+143. 3 over loaded functons of DriverManager?																-->											(utl) , (url, prop), (url,unme,pwd)
+
+143 .	Batch Process?
+
+144.	methods use in Batch?																						-->										addBatch(qry)
+			
+			{36}BatchDemo
+
+144.	select Qury is allows in Batch Proces?																		->																	no
+
+145.	if any Qry is not exicuted in Batch file,then  is it Error?																-->												No ERROR
+
+144 .	TRANSACTION					X--SEE
+
+145 .	META DATA
+		-dbase meta data
+		-ResltSet meta data
+		-parameter meta data
+
+		{37}pageno:29		app-16
+
+146 .POST GRESS SQL
+
+
+
+
+_____________________________________________________________________________
+
+COMPLETED SUCUSSFULLY
+
+_____________________________________________________________________________
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+												SERVLETS
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Paper Tesko....... Teskunava??? ne Bonda Tesko ra rai....Ans Rasko ra Jaffa
+____________________________________________
+tomcat:		http://127.0.0.1:7080/	[or] 	http://localhost:7080/
+glassfish:						http://localhost:6080/
+
+C:\Program Files\Apache Software Foundation\Tomcat 5.5\common\lib\Servlet-Api.jar
+
+Deploy .war creation:jar cvf DateApp. 
+
+-Dummies
+For testing purposes, you can move the servlet’s class file to c:\tomcat\webapps\ROOT\WEB-INF\classes.
+ Then, type an address like this one in your browser’s address bar:
+http://localhost:8080/servlet/HelloWorld
+
+
+
+init(-)  ,service(-, -) are only LifeCycle Methods
+init()  ,service() are NOT LifeCycle Methods
+
+
+____________________________________________
+1.StandAlone App?
+
+1.website?web applcation?
+
+2.web resource Prog?
+
+3.NormalText ,HyperText??	hw they read data?
+
+4.Static,Dynamic web pages?real time ex..Chepra ra....???																		-->											Terms & cond. yahoo homepage
+
+6.Web Technologies??     x
+
+5.Container??? Servlet Container ,JSP Container??
+
+7.WebServer?? Responcibilities??
+
+8.Deploying??
+
+9.Clinet side web technologis??
+
+9.server side web technologis??
+
+10.rules VS guidelines?? How the vendor & Devlopers uses that.?
+
+11.what are the faclites Need to Develop webApp[b,cliTec, ser, serTech, Db,]?
+
+11.is serveside Applns are Server Dependent?																	-->															yes
+
+11,Respocibiltes of WebServer?
+
+11.Architecture of Java bsed WebServer?
+
+11.Tomcat server. 
+	Name of Servlt Container						C:\Program Files\Apache Software Foundation\Tomcat 5.5\server\lib\catalina.jar
+	Name of JSP Container							C:\Program Files\Apache Software Foundation\Tomcat 5.5\server\lib\
+
+11.Demon process?																									->												When sever is statred one demon proces is creted to listen the rqst from clint
+
+11.ProcessBased, thred based?
+
+11.Specifcation, rules, gudlins?
+
+11.how the vendors, devlopers use these spec?
+
+11.Specfication is nothng but	____ ?																			-->												API
+
+11.Approches to devlop WebApps[3]   Servlt,Genrc,Http 
+
+			(1)HelloSrv
+
+12.Where u use Abstrct class & Interfaces in ur Project??
+
+13.Steps 4 crating & executing servlets??
+
+14.Which Situation  SE,IOException may Occure??
+
+15.Where Servlt prog Complile & Exceution takes place??
+
+16.web.xml?
+
+17.Flow of excecuton of Servlet Prog??
+
+18.how many class objects are created for an Applcation for any no.of Requests?											-->																[one Object, no.of threds]
+
+18.how many Req,Res objects are created for an Applcation for any no.of Requests?											-->													       [many no.of Objects]
+
+18.pw.println("")	output goes to																					-->														BROWSER
+
+18.System.out.println("")	output goes to																					-->														SERVER Console cmd prompt
+
+18.is hashCode of an Object is 'address'?																		-->											no
+
+18.Req,Res Objcects ??  Req,Res Objcect class names in CATALINA.jar??												-->															reqfactade, responcefactade
+
+		i.App. dffernt MIME types?		application/msword	application/pdf		text/xml
+
+18.how to know clas names of req, res objests?																		-->										req.getclass
+
+18.if modifaction done to web.xml then server Recogizes It?																	-->																yes
+
+18.if modifaction done to Servlet prog then server Recogizes It?																	-->																no
+
+18.API attributer Lsters are Added -replaced -  Removed (or) created -Destroyed														-->											a-r-re
+
+19.in pw.printn("");  --->wrte attribtes wth single Quotes !
+
+20.singleton class?																							-->													cretes only one object for jvm
+
+21.how many types of Servlts are there??																		-->															many
+
+22.Diff GenericServlet, HttpServlet???
+
+23.which is protocal independed?
+
+21.is constructor is alloed in Servlet?																			-->													yes
+
+		4.--------
+
+21.is 1-param constructor is alloed in Servlet?																			-->													yes
+
+21.is 1-param constructor is exceted by Container?																			-->													no
+
+21.If there is only 1-param constructor, no defalt constructor. what happens?													-->							ERROR
+
+
+23.ERRORS	
+				405: Mismatch of Syntax
+				404: Directory Stuctre
+				500:unable to create objcet
+
+24.how the Container Creates Object??with what Constructor??	 #
+
+25.0-param Constror & 1 -param Constror in our Servlrt Prog?
+
+26.what happen if we put 1-param cons?? Error or Not??
+
+27.why WEB-INF is not visible at Browser Rqst??
+
+28.diff btwn http://localhost:7080/LoginApp/Homepage.html   and http://localhost:7080/classes/WEB-INF/LoginApp/Homepage.html
+
+29.types of URL pattrens[exct - dir - exten]
+
+30.Wrte web.xml if Sevlet prog in a pkg?														-->															<servlet-class>P1.ConSrv</servlet-class>
+
+		ii.App to add Image to Servlet
+
+
+31.HTTP Protocal?wat happens if 20 reqst give to  same Servlet & how many Req , Res objcts may Create?							-->									 1 Servle obj,  no of req, res
+
+32.StateLess??
+
+33.Request URL? Wat it contains H2P2??[http methods, headers,    path,   parameters]
+
+34.wat are the H2P2 In this URL	:	http://localhost:7080/DateApp/test?uname=satya&pword=jjjjjj
+
+35.GET  &  POST  methods??
+
+36.Rqst Headers, Rqst Parameters?
+
+37. HttpRequest Url details & it' s  Block Diagram?
+
+38.Apprchs to get Rqst parameter values?								-->
+																																								-String s  =	req.getParameter("sno");
+																																								-Enumeration e = req.getParameterNames();
+																																								-String s[] = req.getParameterValues();
+
+39.Apprchs to get RqstHeaders values?
+		- String s  =	req.getHeader("user-agent");
+		
+40.HttpRequest methods in API??
+		-Remote --->indicates Client / Browser
+		-ContextPath ----> <url-pattern> /app</>  this "/app"
+		-RqstUrl ---->http://localhost:7080/DateApp/test
+		-RqstUri-----> /DateApp/test
+		-getQueryString----->test?uname=satya&pword=jjjjjj
+
+41.After the servlet container calls destroy method, is it allow to  call the service method again ??											-->																	No, go to API.word
+
+41. ServletContext		[X - max]				-->																													for one context per "web application
+	ServletConfig						-->		[skp now- last good]																												one for "Servlet prog"
+
+41. is ServletContext object is contained within the ServletConfig object?													-->																	yes
+
+41.HttpResponse  methods in API??  SCH??   Status - Content - Headers
+			-setIntHeader("refresh",  10);
+
+
+42.Cache??	Opera	:	tools--->Advancd --> cache 
+
+										-->																												setHeader("cache-control", "no cache");
+
+43.How to change Default Status code[404, 405, 500]
+
+										-->																																					res.setStatus()
+
+44.Servlet Life Cycle?? 3 Events ??
+
+45.publc void init(),publc void init( - )	which is Lifecycle method?										-->													A convenience method , Life Cy method
+
+45.publc void service(-,-),protected void service( - )	which is Lifecycle method?										-->													protected convenience method , publc Life Cy method
+
+45.wat will happen when our Servlet prog gets 1st rqst from browser window?
+		-ServletConfig, Req, Res Objcts how they created
+
+46.wat will happen when our Servlet prog gets  othen then 1st rqst from browser window?
+
+46.Obj of servlt is created when ever 1st reqst comes! bt how to create object for servlt when ever we deploy the servlt?		-->												< load-on-startup >  enabled
+
+47.Instanciation & Intialzation ?																		-->																	normal obj creation, when 1st rqst comes
+
+47.Pre- Instanciation & Pre - Intialzation ?																		-->																	<load -on-startup> obj creation, when servlt deplyoed in server
+
+48.< load-on-startup > ??? what happens if ENABLE & DISABLE?	 
+
+48.why program is slow when 1st rqst comes & fast when 2nd Rqst on words?
+
+49.when servlet container cretes our servlet class Object?
+
+49.when servlet container destroy our servlet class Object?
+
+49.if webapp has many serlts, which servlt class obj. is created when <load-on-statup>
+											1 -max
+											10-min
+											0-least
+
+49.if webapp has many serlts, each class has same priorty value, which servlt class obj. is created when <load-on-statup>						-->														contaner uses it' s Own algritm
+
+49.Priorty Value??
+
+50.wat happens if destroy() is called manually from service() method.											-->											it is excuted, but it does not  Destroy's the Servlet - till Event is Raised
+
+51.wat happens if init() is called manually from service() method.	 										-->											it is excuted, but it does not intilizes  the Servlet - till Event is Raised
+
+52.wat happens if main() is called manually from service() method.										-->													No compli time Error, but it never Excutes main()-bcoz it is not life cycle method
+
+53.How Servlets are executng with out main()? what's the flow?
+	[C:\Program Files\Apache Software Foundation\Tomcat 5.5\bin\bootstrap.jar\org\apache\catalina\startup ]
+
+54. what happens we clck Tomcat.exe												-->																		tomact.exe	->	bootstrap.jar[no.of clases, one cls contan main]	->	activates contaner	->	container creates obj. for servlt cls	->	call LCycl methods
+
+Forms
+---------
+54.forms without  ReqParameters?
+			iii.wishsrv
+
+54.forms with ReqParameters?
+			iv.votersev
+
+55.Apporchs 2 devlop HttpServlet pro's[ 3 App  - ser -doxxx()- xyz()] 
+
+56.Homepage																									-->										<welcome - file-list>
+																																										[<welcome - file>] ----
+																																						</welcome - file-list>
+
+56. if thir exist no.of hompages, which will takes first?																		-->								by Order
+
+57.procedure to devlop HomepageServlet Prog?
+
+58.Form Valdations?
+
+59.Form validation VS BusinesssLogic?? 
+
+59.checking uname, passwd formate  is	_____________ 
+
+59.checking uname, passwd Valid/Invalid  is	_____________ 
+
+60.form valdations , in Clint side best or server side best??
+
+61.wat happens if u place return stmt without value in void method?												-->								cntrl		go to caller method
+
+61.where we use return stmt without value?																	-->		`									Serverside Validation
+
+62.Serverside Validation Example
+
+63.which scrpt used for Clint side Validation ?																	-->													java, onSubmit = return validate()
+
+63.Clint side Validation Example
+
+64.how to hide javascrpt from view-->sorce option
+
+65.what happens if we change view--->source code?
+
+66.GET   x    POST? whch is recomended
+
+67.'Idem-potent??	non Idem-potent??		x													-->												sending more rqsts frm a same clnt - cancelng when mulple rqst from same clnt
+
+67.why it is recomded to put doGet in doPost()															-->													Bcoz idempotent behavr of doGet
+
+67.doXXX are LCMethods?																		->																			no
+
+68.init(ServletConfig	cg)	internal  execution?
+		3 Approches[super, current ,]
+
+69.init(-)  X  init()
+
+70.service(req,res)   X service(Hreq,	Hres)
+
+71.doXxx		[7 methods ]
+
+71.in which doGet(), doPost supports
+		form		-	g+p
+		hyperlink	-	g
+		rqsturl		-	g
+
+72.glashfish server
+
+72.wat happens if both sevce(-,-) are placed in our prog?/
+
+73.hard deployment?												copy-paste
+
+74.web server   X applcation server
+
+74.how to handle applcation has multple submit buttons?																-->												same name , but Dffrent caption[value]
+
+75.threads based servlets?
+
+76.Database programng? 3 Approchs?
+		1.init								->	not tbhred safe
+		2.service/doXXX						->	thread safe but for evry rqst 1 connection obj is created
+		3.service/doXXX connection pool	->	
+
+77.how many ways to added ojdbc14.jar driver in our App(2)?														-->																		WEB-INF\lib  ,   <tomacat_home>\lib\
+
+77.ServletContext	X	ServletConfig	
+		2 Approches for each
+
+79.	InitParameters?   where they are placed?
+
+80.Which type of values we are placed in initparams?															-->															Technical values
+
+81.<init-param> tag in web.xml																				-->													 <init-param>    <param-name >, <paramvalue>
+
+81.which object is used to read InitParam values?															-->														config
+
+82.Approches to read initparams from web.xml
+		1.String s1 = cg.getInitParameter("s1")
+		2.Enumaration  e[] = cg.getInitParameterNames()
+
+
+83.If webApp of many servlts having same data which parameters are placed in web.xml?
+
+84.ContextParameters?   where they are placed?
+
+85.<context-param> tag in web.xml																				-->													 <context-param> <param-name >, <paramvalue>
+
+81.which object is used to read CotextParam values?															-->														context
+
+81.what happens if we replace  'init(-,-)'  with 'constructor'  
+
+82.which object is created after constrctor - before init()	exceution											-->													config
+
+83.ServletConfig creation is posible in Constructor?															-->													No
+
+84.webLogic Application server
+
+85.JDBC connection pool?
+
+86.Data Source Object?																							-->													represents JDBC Connction pool
+
+87.JBoss  Application
+
+88.Ecllipse
+
+89.MyEclipse
+
+90.GlassFish
+
+91.ServletChaining?
+
+92. is the input values given by the clint is visible to All servts?									-->																							yes
+
+93. which class Object for ServletChanig?														-->														RqstDisptcher
+
+94.Approches to create 'RqstDispatcher' Object  [3]		x									
+
+95. forword()
+
+96.include()
+
+97.getRequstDispatcher		VS getNamedDispatcher	 x
+
+98. create 'RqstDispatcher' Object  poiniting to destnation URL
+						RequstDispatcher rd = sc /	req			getRequstDispatcher("/url")
+						RequstDispatcher rd = sc /	req			getRequstDispatcher("logical name of dest. servlt")
+
+99. which approch is used for
+		- when s1, s2 in same webApp  in same server																		-->												[req, contxt]
+		- when s1 in WebApp1,  s2 in  webApp2	  in same server																			-->									        [contxt]  
+		- when s1 in WebApp1,  s2 in  webApp2	  in Diff server																			-->									        [sendRedrect]  
+ 
+
+100.forword--> i/p number , cal sqaue in s1 - if sqr>100 forword rqst to  s2
+
+111.what happen if we call pw.close before rd.forword, rd.include.
+
+112.which 'forword' is excete , when we place many 'forwords'																			-->									1st
+
+113.Limitations of	'RqstDispatcher' Object in servlt chaing?
+
+114.what happens if we put multple forwords?																							-->		java.lang.IllegalStateException: Cannot forward after response has been committed
+		rd1.forward(req,res);
+		rd2.forward(req,res);
+
+		rd1.forward(req,res);																								-->		java.lang.IllegalStateException: Cannot forward after response has been committed
+		rd1.forward(req,res);
+
+		rd1.include(req,res);																								-->		work
+		rd2.forward(req,res);
+		
+		rd1.include(req,res);										
+		rd2.include(req,res);
+
+													-->output:
+													From SRV1 - before calls 
+													From SRV2 - before calls 
+													SRV3 
+													From SRV2 - After calls 
+													SRV3 
+													From SRV1 - After calls
+
+
+115.sendRedirect.
+
+																														---------------------------------------	go to venkat is good	-------------------
+
+116.in sendRedirect middle pages output is included in HTML																---->							no
+
+117.Session
+		- Working
+		-hirarchi
+		-methods
+
+118.Attrbutes?	uses?	they related to html,xml?
+
+119.how to pass the data from source serlt to desnation servlt?
+
+120	req Attrbutes
+
+120	Session Attrbutes
+
+120	ServltContext Attrbutes
+			Applicatn
+
+121.	Static WebPages, Dynamic webpages?
+
+122. Dynamic webpages	developed by using_________?
+
+123.	Stateless webApps
+
+123.	Statefull webApps
+
+124.	by defalut all webApps are _________- apps
+
+125.	html based by deflut	 _______
+
+126.if brwse gives 10 rqsts , 10 connction obj's creted , each rqst handlrd by each resonce obj
+
+127.why protocal http given as stateless protocal?  -->																									 connection is buzy for more time
+
+128.what happens if we give http as statefull.
+
+128.in which behavoiur connction object engage by browser for long time .									-->											statefull
+
+128.in which behavoiur connction object not engage by browser for long time .								-->												Stateless
+
+129.how to make stateless to statefull behaviour?	which is we ahve to eanble?											->							seesion
+
+130.What are the Session Tracking Teqnics?
+
+			- Hidden form feilds [HeddinBoxes]
+			- Http Cookies
+			- Http Session with Cookies
+			- Http Session with URL re -writing
+
+131. whre we see Session Tracking Teqnics in real time?
+
+132.is Session data is Rememered only durrng session?
+
+133.if use ServletConext attributes the session data is Strored perimently?
+
+134. Hidden form feilds [HeddinBoxes]
+		- workng, Adv, DisAdbv
+
+135.	Cockies?	types?
+
+136.	in-mem cookie
+
+136.	persistance cookie
+
+137.each n evry valus of form data stored as cokkie?
+
+138.cookie mem in IntrntEXploror
+		C:\Documents and Settings\satya\Cookies
+
+139.Http Session with Cookies
+
+140.Http Session API
+
+141.Cookie API
+
+142. Http Session with Cookies
+
+143.URL re-writng? 
+
+144.Which method is used for URL rewrinting?											-->																					encodeURL(str)
+
+145.	venkat q's
+		-wat is  session
+		-wat is sessiontracking
+		-hw many types of session tracking teqniqs-4
+		-diff btwn session , coke
+		-session management-2
+		-state managemnnt - 4
+		- clint state imf
+		- mthod 4 url rewritng
+		-which is best s track based on situaton?
+
+146.	Event Handling--->  [skip]
+
+147.Filters?	->	skipd
+
+
+
+------------------------------			completd sucessfully	-----------------------6/30/2012
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+													JSP
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+JSP
+------------------
+1.JSP stands for?
+
+1.JSP is Specfcation?
+
+1.JSP used for whch Appln Devlopment?
+
+1.Before SErvlets
+	- CGI  Year,fun, ADv, DIsAdv			
+	- Servltes  Year,fun,ADv, DIsAdv		1995
+	- ASP.net Year,fun, ADv, DIsAdv		1995
+	- JSP x C#  Year,fun, ADv, DIsAdv		2000
+	- Strts Ready made product apche	2000
+	-JSF same as Struts
+
+			servlets - 10 lines
+			jsp		-1 line
+			structs	-0 lines
+
+2.JSP Engine
+
+2.JSP engine s develpoerd or put in Existing server?
+
+2.Functionality of JSP Engne?																-->																jsp -> servlet
+
+3.JSP Architecture
+
+4.JSP ELEMTNES
+	i.Scriptlets
+	ii.Declarations
+	iii.Expressions
+	iv.Comments
+
+5.JSP Implecet Objects[9]
+	
+	(i).first.jsp
+	
+	jsp-deploy	:	C:\Program Files\Apache Software Foundation\Tomcat 5.5\webapps\ROOT
+
+	jsp_servlet Code	:	C:\Program Files\Apache Software Foundation\Tomcat 5.5\work\Catalina\localhost\_\org\apache\jsp
+
+6.JSP _Servlet conversion Process
+
+7.JSP Life Cycle methods
+	(ii)second.jsp
+
+8.Where u Write the elemets Exactly Compair with Servlet's Prog??
+	(iii)count.jsp
+	(iv)date.jsp,	time.jsp
+	(v)table.jsp
+
+9.Directives
+	-<%@  include file = " ">
+
+	-<%@  page   __     = " ">[language,import,errorPage,isErrorpage,	Session,info,buffer,flushbuffer,     extends,contentType,pageEncoding,isThredBased,isELIgnored]
+	
+	-<%@ taglib	%>
+
+9.when Garbage Collector Enter ?												-->																			cpu at idle tme only
+
+10.Actions
+
+11.Diff btwn "<@ include> tage and include in Acton?
+
+11.what is JavaBean?
+
+11.which can suppare bussines logic from presentation logic?
+
+11.JSP Coustom tags?
+
+11.types?
+
+11.emptytag with out Attributes?
+
+11.emptytag with  Attributes?
+
+11.bodytag with out Attributes?
+
+11.bodytag with  Attributes?
+
+11.flow of exceution?
+
+11.JSP EL
+
+12.why it is introduced?
+
+12.Expression Lanuge Operators?  [+,-,*,%,<,>,>=,<=,]
+
+12.in which jsp	vesion  JSP EL Introduced?																		-->													jsp 2.0
+
+12.in which Tomcat	vesion  JSP EL Supports?																		-->													tomcat 5.0 above
+
+12.by deflt Expression Lanuge is Enabled or Disabled?															-->															Enabled
+
+12.JSP EL implecet objects?
+
+12.JSP EL API?
+
+12.JSTL
+	-CORE
+	-SQL
+	-XML
+	-Format
+	-functions
+
+13.is JSTL is Developed in Server or we have 2 place?							-->																	we have to plce by download
+
+13.JSTL LIB paths?
+
+13.XML
+
+14.REFLECTION

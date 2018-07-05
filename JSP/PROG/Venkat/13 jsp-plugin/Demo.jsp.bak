@@ -1,0 +1,8 @@
+<html>
+<body>
+<h1>PLUG N</h1>
+<jsp:plugin type = "applet" code ="Demo"	 width = 300	height =300	hspace = 50		vspace = 50	 />
+
+
+</body>
+</html>

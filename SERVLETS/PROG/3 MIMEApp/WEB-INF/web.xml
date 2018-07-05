@@ -1,0 +1,41 @@
+<web-app>
+
+<servlet>
+        <servlet-name>a</servlet-name>
+        <servlet-class>WordSrv</servlet-class>
+</servlet>
+  <servlet-mapping>
+        <servlet-name>a</servlet-name>
+        <url-pattern>/word</url-pattern>
+    </servlet-mapping>
+
+	<servlet>
+        <servlet-name>b</servlet-name>
+        <servlet-class>HtmlSrv</servlet-class>
+</servlet>
+  <servlet-mapping>
+        <servlet-name>b</servlet-name>
+        <url-pattern>/html</url-pattern>
+    </servlet-mapping>
+
+	<servlet>
+        <servlet-name>c</servlet-name>
+        <servlet-class>PdfSrv</servlet-class>
+</servlet>
+  <servlet-mapping>
+        <servlet-name>c</servlet-name>
+        <url-pattern>/see</url-pattern>
+    </servlet-mapping>
+
+
+	<servlet>
+        <servlet-name>ab</servlet-name>
+        <servlet-class>XmlSrv</servlet-class>
+</servlet>
+  <servlet-mapping>
+        <servlet-name>ab</servlet-name>
+        <url-pattern>/xml</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>

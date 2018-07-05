@@ -1,0 +1,17 @@
+class  InetAddressClass
+{
+	public static void main(String[] args) 
+	{
+
+		String  getHostName()
+
+String  getHostAddress()
+
+Static InetAddress  getByName(String)
+
+Static InetAddress[]  getAllByName(string)
+
+Static InetAddress  getLocalHost()
+		System.out.println("Hello World!");
+	}
+}

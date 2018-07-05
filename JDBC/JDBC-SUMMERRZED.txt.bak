@@ -1,0 +1,47 @@
+21.is it Possible main(-) contains Another Static method?				-->																				[No, Compl_Err: illegal start of Expression]
+
+21.is it Possible non-static Datamembers use in  Static block/method?				-->																[No, Compl_Err: non -static member cannot reffenced from statc Context]
+
+21.Class.forName
+			(ii)ClassForName	-->static
+			(iii)ClassForName	--> main
+
+22.Class.forname("Demo")  --> it loads the class , but t never Creates the Object ! is it TRUE?
+
+26.which is used to Create the 'Object' at Complile time?																-->														[ new ]
+
+26.which is used to Create the 'Object' at Runtime?																-->														[ newInstance()]
+
+62.DriverManager?			[11. PIC]
+
+63.Prog to make a connction using Type-1 Driver
+				vi.Type1Demo
+
+64."jdbc:odbc:oradsn"	Exp each Term?
+
+73.types of excution of Querys in Db?
+	- excecuteQuery()
+	-executeUpdate()
+
+74.ResultSet?		[img.14]
+83.excecuteUpdate();		AUTOCOMMIT		Can't	ROLLBACK
+
+89.which method used to exceute both SELECT & NON-SELECT QUETYS ?												-->														Public boolean execute()
+
+89.whch methods for getting Resultset Data?					[[19. PIC]]														-->									getResultSet
+
+89.whch methods for getting Updatecount Data?																		-->									getUpdateCount		
+
+96.what is "clint db s/w" ? wat it's use?																-->																		to get vendor db lib
+
+94.Vendor DB Library for Oracle		[ .dll	 ]??		[21. PIC]		F:\Oracle\app\oracle\product\10.2.0\server\BIN\oci.dll
+
+107.Statements?   use?   how many types?
+
+111.PreparedStatement  ?		[26. PIC]
+
+120.	BLOB  &	CLOB		[27. PIC]
+
+132.	Callable Statement?[29. PIC]
+
+143 .	Batch Process?[32. PIC]

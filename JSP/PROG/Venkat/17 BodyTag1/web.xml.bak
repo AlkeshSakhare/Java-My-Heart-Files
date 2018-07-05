@@ -1,0 +1,8 @@
+<web-app>
+<taglib-uri>http://www.abc.com/taglib</taglib-uri>
+<taglib-location>/WEB-INF/tlds/</taglib-location>
+
+
+
+
+</web-app>

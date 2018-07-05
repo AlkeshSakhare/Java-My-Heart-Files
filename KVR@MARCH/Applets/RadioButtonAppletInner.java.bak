@@ -1,0 +1,83 @@
+import java.awt.*;
+import java.awt.event.*;
+
+ class LoveClass extends Frame implements ActionListener
+{
+	Label l1,l2,l3;
+	TextField a,b;
+	Button sub,e;
+
+	LoveClass()
+	{
+		FlowLayout fl = new FlowLayout();
+		setLayout(fl);
+		setTitle("SatyaJohnny's :LOVE HATING");
+		setSize(300,300);
+		
+	
+		l1 = new Label("Your name",Label.LEFT);
+		a = new TextField(20);
+		l2 = new Label("Ur X name",Label.LEFT);
+		b = new TextField(20);
+
+		sub = new Button("SUBMIT");
+		e = new Button("OUT");
+		l3 = new Label("HATTING",Label.CENTER);
+		add(l1);
+		add(a);
+		add(l2);
+		add(b);
+		
+		add(sub,"CENTER");
+		add(e,"CENTER");
+		add(l3);
+
+
+
+		sub.addActionListener(this);
+				e.addActionListener(this);
+		
+		setVisible(true);
+	
+	}//constrctor
+
+	public void actionPerformed(ActionEvent ae)
+	{
+
+	if(ae.getSource() == sub) 
+		{
+		String s = a.getText();
+		String ss = b.getText();
+		
+		if(s.equals(ss))
+			{
+				l3.setText("U LOVNG 100%");	
+		}
+
+
+		else
+			{
+int low = 1; // the lowest value in the range
+int high = 100; // the highest value in the range
+int rnd = (int)(Math.random() * (high - low + 1)) + low;
+
+			l3.setText("U Hating "+rnd+"%");	
+			}
+
+		}
+
+
+	if(ae.getSource() == e) 
+		{
+						System.exit(0);
+		}
+	
+
+	}
+
+}
+
+
+class LoveDemo
+{
+	public st

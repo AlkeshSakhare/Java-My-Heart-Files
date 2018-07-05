@@ -1,0 +1,73 @@
+import java.awt.*;
+import java.awt.event.*;
+
+ class FrameClass extends Frame implements ActionListener
+{
+	Label l;
+	Button a,b,c,d,e;
+
+	FrameClass()
+	{
+		setTitle("FrameClass Text");
+		setSize(300,300);
+		a = new Button("NORTH EXIT");
+		b = new Button("SOUTH");
+		c = new Button("WEST");
+		d = new Button("EAST");
+		l = new Label("OK",Label.CENTER);
+		
+		add(a,"North");
+		add(b,"South");
+		add(c,"East");
+		add(d,"West");
+		add(l,"Center");
+
+		a.addActionListener(this);
+		b.addActionListener(this);
+		c.addActionListener(this);
+		d.addActionListener(this);
+	
+		//defaultCloseOperation(EXIT_ON_CLOSE);
+		setVisible(true);
+	
+	}//constrctor
+
+	public void actionPerformed(ActionEvent ae)
+	{
+
+	if(ae.getSource() == a) 
+		{
+			l.setText("NORTH is Clicked");	
+						System.exit(0);
+		}
+
+
+	if(ae.getSource() == b) 
+		{
+			l.setText("SOUTH is Clicked");	
+		}
+	
+
+	if(ae.getSource() == c) 
+		{
+			l.setText("WEST is Clicked");	
+		}
+
+
+	if(ae.getSource() == d) 
+		{
+			l.setText("EAST is Clicked");	
+		}
+
+	
+
+	}
+
+}
+
+
+class FrameApp1
+{
+	public static void main(String[] args) 
+	{
+	FrameCla

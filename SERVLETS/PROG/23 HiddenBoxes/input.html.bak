@@ -1,0 +1,6 @@
+<form action = "s1"  method = "get">
+Name	 :	<input type = "hidden" name = "t1"><br><br><br>
+Age :	<input type = "hidden" name = "t2"><br><br><br>
+Marrige Status	<input type = "checkbox" name = "t3" value = "yes"><br><br><br>
+<input type = "submit" name = "t4" value = "GO"><br><br><br><br><br>
+</form>

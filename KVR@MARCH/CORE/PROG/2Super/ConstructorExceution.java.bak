@@ -1,0 +1,37 @@
+class Bc
+{
+	Bc()
+	{
+		System.out.println("Im Base Constror");
+	}
+}
+
+class iBc	extends Bc
+{
+	iBc()
+	{
+		System.out.println("Im iBase Constror");
+	}
+}
+
+class Dc	extends iBc
+{
+	Dc()
+	{
+		this();
+		System.out.println("Im Derved Constror");
+	}
+}
+
+
+
+
+
+
+class ConstructorExceution 
+{
+	public static void main(String[] args) 
+	{
+		Dc ob = new Dc();
+	}
+}

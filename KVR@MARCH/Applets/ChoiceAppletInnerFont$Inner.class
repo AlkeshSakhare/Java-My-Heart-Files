@@ -1,0 +1,18 @@
+Compiled from "GridBagLayout.java"
+public class java.awt.GridBagLayout extends java.lang.Object implements java.awt.LayoutManager2,java.io.Serializable{
+    static final int EMPIRICMULTIPLIER;
+    protected static final int MAXGRIDSIZE;
+    protected static final int MINSIZE;
+    protected static final int PREFERREDSIZE;
+    protected java.util.Hashtable comptable;
+    protected java.awt.GridBagConstraints defaultConstraints;
+    protected java.awt.GridBagLayoutInfo layoutInfo;
+    public int[] columnWidths;
+    public int[] rowHeights;
+    public double[] columnWeights;
+    public double[] rowWeights;
+    transient boolean rightToLeft;
+    static final long serialVersionUID;
+    public java.awt.GridBagLayout();
+    public void setConstraints(java.awt.Component, java.awt.GridBagConstraints);
+    public java.awt.Grid

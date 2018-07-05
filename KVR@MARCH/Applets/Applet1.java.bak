@@ -1,0 +1,33 @@
+/*<applet code = Applet1 height = 500 width = 500>
+</applet>*/
+import java.awt.*;
+import java.applet.Applet;
+
+
+public class Applet1  extends Applet
+{
+Label a,b,c,d;
+
+public	Applet1()
+	{
+		a = new Label();
+		a.setText("Nanna");
+		a.setAlignment(Label.LEFT);
+		b = new Label("Satya");
+		b.setAlignment(Label.CENTER);
+		c = new Label("Amma",Label.RIGHT);
+
+		add(a);
+		add(b);
+		add(c);
+
+		setSize(300,300);
+		setVisible(true);
+
+	}
+
+	public static void main(String[] args) 
+	{
+	Applet1 ap =  new Applet1();
+	}
+}

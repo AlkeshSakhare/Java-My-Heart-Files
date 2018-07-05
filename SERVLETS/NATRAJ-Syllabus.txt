@@ -1,0 +1,571 @@
+Paper Tesko....... Teskunava??? ne Bonda Tesko ra rai....Ans Rasko ra Jaffa
+____________________________________________
+tomcat:		http://127.0.0.1:7080/	[or] 	http://localhost:7080/
+glassfish:						http://localhost:6080/
+
+C:\Program Files\Apache Software Foundation\Tomcat 5.5\common\lib\Servlet-Api.jar
+
+Deploy .war creation:jar cvf DateApp. 
+
+-Dummies
+For testing purposes, you can move the servlet’s class file to c:\tomcat\webapps\ROOT\WEB-INF\classes.
+ Then, type an address like this one in your browser’s address bar:
+http://localhost:8080/servlet/HelloWorld
+
+
+
+init(-)  ,service(-, -) are only LifeCycle Methods
+init()  ,service() are NOT LifeCycle Methods
+
+
+____________________________________________
+1.StandAlone App?
+
+1.website?web applcation?
+
+2.web resource Prog?			[PIC.1]
+
+3.NormalText ,HyperText??	hw they read data?
+
+4.Static,Dynamic web pages?real time ex..Chepra ra....???		[PIC.2]																-->											Terms & cond. yahoo homepage
+
+5.Container??? Servlet Container ,JSP Container??
+
+7.WebServer?? Responcibilities??
+
+8.Deploying??[PIC.3]
+
+6.Web Technologies??     
+
+9.Clinet side web technologis??
+
+9.server side web technologis??
+
+10.rules VS guidelines?? How the vendor & Devlopers uses that.?	[PIC.5]
+
+11.what are the faclites Need to Develop webApp[b,cliTec, ser, serTech, Db,]?
+
+11.is serveside Applns are Server Dependent?																	-->															yes
+
+11,Respocibiltes of WebServer?
+
+11.Architecture of Java bsed WebServer?
+
+11.Tomcat server. 
+	Name of Servlt Container						C:\Program Files\Apache Software Foundation\Tomcat 5.5\server\lib\catalina.jar
+	Name of JSP Container							C:\Program Files\Apache Software Foundation\Tomcat 5.5\server\lib\
+
+11.Demon process?																									->												When sever is statred one demon proces is creted to listen the rqst from clint
+
+11.ProcessBased, thred based?
+
+11.Specifcation, rules, gudlins?
+
+11.how the vendors, devlopers use these spec?
+
+11.Specfication is nothng but	____ ?																			-->												API
+
+11.Approches to devlop WebApps[3]   Servlt,Genrc,Http [PIC.6]
+
+			(1)HelloSrv
+
+12.Where u use Abstrct class & Interfaces in ur Project??
+
+13.Steps 4 crating & executing servlets??
+
+14.Which Situation  SE,IOException may Occure??
+
+15.Where Servlt prog Complile & Exceution takes place??
+
+16.web.xml?
+
+17.Flow of excecuton of Servlet Prog??[PIC.12]
+
+18.how many class objects are created for an Applcation for any no.of Requests?						-->																[one Object, no.of threds]
+
+18.how many Req,Res objects are created for an Applcation for any no.of Requests?					-->													       [many no.of Objects]
+
+18.pw.println("")	output goes to																					-->														BROWSER
+
+18.System.out.println("")	output goes to																					-->														SERVER Console cmd prompt
+
+18.is hashCode of an Object is 'address'?																	-->											no
+
+18.Req,Res Objcects ??  Req,Res Objcect class names in CATALINA.jar??												-->															reqfactade, responcefactade
+
+		i.App. dffernt MIME types?		application/msword	application/pdf		text/xml
+
+18.how to know clas names of req, res objests?																		-->										req.getclass
+
+18.if modifaction done to web.xml then server Recogizes It?																	-->																yes
+
+18.if modifaction done to Servlet prog then server Recogizes It?																	-->																no
+
+18.API attributer Lsters are Added -replaced -  Removed (or) created -Destroyed														-->											a-r-re
+
+19.in pw.printn("");  --->wrte attribtes wth single Quotes !
+
+20.singleton class?																							-->													cretes only one object for jvm
+
+21.how many types of Servlts are there??																		-->															many
+
+22.Diff GenericServlet, HttpServlet???
+
+23.which is protocal independed?
+
+21.is constructor is alloed in Servlet?																			-->													yes
+
+		4.--------
+
+21.is 1-param constructor is alloed in Servlet?																			-->													yes,But itnot execute by Continer. bcoz it is not LifCycl method
+
+21.is 1-param constructor is exceted by Container?																			-->													no
+
+21.If there is only 1-param constructor, no defalt constructor. what happens?													-->							ERROR
+
+
+23.ERRORS	
+				405: Mismatch of Syntax
+				404: Directory Stuctre
+				500:unable to create objcet
+
+24.how the Container Creates Object??with what Constructor??	 #
+
+25.0-param Constror & 1 -param Constror in our Servlrt Prog?
+
+26.what happen if we put 1-param cons?? Error or Not??
+
+27.why WEB-INF is not visible at Browser Rqst??															-->														It is private Directory
+
+28.diff btwn http://localhost:7080/LoginApp/Homepage.html   and http://localhost:7080/classes/WEB-INF/LoginApp/Homepage.html
+
+29.types of URL pattrens[exct - dir - exten]
+
+30.Wrte web.xml if Sevlet prog in a pkg?														-->															<servlet-class>P1.ConSrv</servlet-class>
+
+		ii.App to add Image to Servlet
+
+
+31.HTTP Protocal?wat happens if 20 reqst give to  same Servlet & how many Req , Res objcts may Create?							-->									 1 Servle obj,  no of req, res
+
+31.rqst uri with parameters Syntax?																							-->										DateApp/test1 ? sno=107 & sname = raja
+
+31.Rqst Header , Rqst body?																									-->								Header-http://localhost:7080/DateApp/    , body ==  test?uname=satya&pword=jjjjjj
+
+32.StateLess??
+
+33.Request URL? Wat it contains H2P2??[http methods, headers,    path,   parameters]
+
+34.wat are the H2P2 In this URL	:	http://localhost:7080/DateApp/test?uname=satya&pword=jjjjjj
+
+35.GET  &  POST  methods??
+
+36.Rqst Headers, Rqst Parameters?
+
+37. HttpRequest Url details & it' s  Block Diagram?
+
+38.Apprchs to get Rqst parameter values?								-->
+																																								-String s  =	req.getParameter("sno");
+																																								-Enumeration e = req.getParameterNames();
+																																								-String s[] = req.getParameterValues();
+
+39.Apprchs to get RqstHeaders values?
+		- String s  =	req.getHeader("user-agent");
+		
+40.HttpRequest methods in API??
+		-Remote --->indicates Client / Browser
+		-ContextPath ----> <url-pattern> /app</>  this "/app"
+		-RqstUrl ---->http://localhost:7080/DateApp/test
+		-RqstUri-----> /DateApp/test
+		-getQueryString----->test?uname=satya&pword=jjjjjj
+
+40.Three Events on Servlet Lfe-cycle?
+	- Intatiaton Evnet
+	- Rqst Processing event
+	- Destrction Event
+
+41.After the servlet container calls destroy method, is it allow to  call the service method again ??											-->																	No, go to API.word
+
+41. ServletContext		[X - max]				-->																													for one context per "web application
+	ServletConfig						-->		[skp now- last good]																												one for "Servlet prog"
+
+41. is ServletContext object is contained within the ServletConfig object?													-->																	yes
+
+41.HttpResponse  methods in API??  SCH??   Status - Content - Headers
+			-setIntHeader("refresh",  10);
+
+
+42.Cache??	Opera	:	tools--->Advancd --> cache 
+
+										-->																												setHeader("cache-control", "no cache");
+
+43.How to change Default Status code[404, 405, 500]
+
+										-->																																					res.setStatus()
+
+44.Servlet Life Cycle?? 3 Events ??
+
+45.publc void init(),publc void init( - )	which is Lifecycle method?										-->													A convenience method , Life Cy method
+
+45.publc void service(-,-),protected void service( - )	which is Lifecycle method?										-->													protected convenience method , publc Life Cy method
+
+45.wat will happen when our Servlet prog gets 1st rqst from browser window?
+		-ServletConfig, Req, Res Objcts how they created
+
+46.wat will happen when our Servlet prog gets  othen then 1st rqst from browser window?
+
+46.Obj of servlt is created when ever 1st reqst comes! bt how to create object for servlt when ever we deploy the servlt?		-->												< load-on-startup >  enabled
+
+47.Pre- Instanciation & Pre - Intialzation ?																		-->																	<load -on-startup> obj creation, when servlt deplyoed in server
+
+47.Instanciation & Intialzation ?																		-->																	normal obj creation, when 1st rqst comes
+
+
+48.< load-on-startup > ??? what happens if ENABLE & DISABLE?	 
+
+48.why program is slow when 1st rqst comes & fast when 2nd Rqst on words?
+
+49.when servlet container cretes our servlet class Object?
+
+49.when servlet container destroy our servlet class Object?
+
+49.if webapp has many serlts, which servlt class obj. is created when <load-on-statup>
+											1 -max
+											10-min
+											0-least
+
+49.if webapp has many serlts, each class has same priorty value, which servlt class obj. is created when <load-on-statup>						-->														contaner uses it' s Own algritm
+
+49.Priorty Value??
+
+50.wat happens if destroy() is called manually from service() method.											-->											it is excuted, but it does not  Destroy's the Servlet - till Event is Raised
+
+51.wat happens if init() is called manually from service() method.	 										-->											it is excuted, but it does not intilizes  the Servlet - till Event is Raised
+
+52.wat happens if main() is called manually from service() method.										-->													No compli time Error, but it never Excutes main()-bcoz it is not life cycle method
+
+53.How Servlets are executng with out main()? what's the flow?
+	[C:\Program Files\Apache Software Foundation\Tomcat 5.5\bin\bootstrap.jar\org\apache\catalina\startup ]
+
+54. what happens we clck Tomcat.exe												-->																		tomact.exe	->	bootstrap.jar[no.of clases, one cls contan main]	->	activates contaner	->	container creates obj. for servlt cls	->	call LCycl methods
+
+Forms
+---------
+54.forms without  ReqParameters?
+			iii.wishsrv
+
+54.forms with ReqParameters?
+			iv.votersev
+
+55.Apporchs 2 devlop HttpServlet pro's[ 3 App  - ser -doxxx()- xyz()] 
+		- service(-,-)  is not Recomeded, bcoz													-->															it is not HTTP specific.use doXXX
+		
+
+56.Homepage																									-->										<welcome - file-list>
+																																										[<welcome - file>] ----
+																																						</welcome - file-list>
+
+56. if thir exist no.of hompages, which will takes first?																		-->								by Order
+
+57.procedure to devlop HomepageServlet Prog?
+
+58.Form Valdations?
+
+59.Form validation VS BusinesssLogic?? 
+
+59.checking uname, passwd formate  is	_____________ 
+
+59.checking uname, passwd Valid/Invalid  is	_____________ 
+
+60.form valdations , in Clint side best or server side best??
+
+61.wat happens if u place return stmt without value in void method?												-->								cntrl		go to caller method
+
+61.where we use return stmt without value?																	-->		`									Serverside Validation
+
+62.Serverside Validation Example
+
+63.which scrpt used for Clint side Validation ?																	-->													java, onSubmit = return validate()
+
+63.Clint side Validation Example
+
+64.how to hide javascrpt from view-->sorce option
+
+65.what happens if we change view--->source code?
+
+66.GET   x    POST? whch is recomended
+
+67.'Idem-potent??	non Idem-potent??		x													-->												sending more rqsts frm a same clnt - cancelng when mulple rqst from same clnt
+
+67.why 'getServletConfig()' method called without Object?										-->														this is the method of GenericServlet.so we can call superclass 'public' methods without Object.
+
+67.why it is recomded to put doGet in doPost()															-->													Bcoz idempotent behavr of doGet
+
+67.doXXX are LCMethods?																		->																			no
+
+68.init(ServletConfig	cg)	internal  execution?
+		3 Approches[super, current ,]
+
+69.init(-)  X  init()
+
+70.service(req,res)   X service(Hreq,	Hres)
+
+71.doXxx		[7 methods ]
+
+71.in which doGet(), doPost supports
+		form		-	g+p
+		hyperlink	-	g
+		rqsturl		-	g
+
+72.glashfish server
+
+72.wat happens if both sevce(-,-) are placed in our prog?/
+
+73.hard deployment?												copy-paste
+
+74.web server   X applcation server
+
+74.how to handle applcation has multple submit buttons?																-->												same name , but Dffrent caption[value]
+
+75.threads based servlets?
+
+76.Database programng? 3 Approchs?
+		1.init								->	not tbhred safe
+		2.service/doXXX						->	thread safe but for evry rqst 1 connection obj is created
+		3.service/doXXX connection pool	->	
+
+77.how many ways to added ojdbc14.jar driver in our App(2)?														-->																		WEB-INF\lib  ,   <tomacat_home>\lib\
+
+77.ServletContext	X	ServletConfig	
+		2 Approches for each
+
+79.	InitParameters?   where they are placed?
+
+80.Which type of values we are placed in initparams?															-->															Technical values
+
+81.<init-param> tag in web.xml																				-->													 <init-param>    <param-name >, <paramvalue>
+
+81.which object is used to read InitParam values?															-->														config
+
+82.Approches to read initparams from web.xml
+		1.String s1 = cg.getInitParameter("s1")
+		2.Enumaration  e[] = cg.getInitParameterNames()
+
+
+83.If webApp of many servlts having same data which parameters are placed in web.xml?
+
+84.ContextParameters?   where they are placed?
+
+85.<context-param> tag in web.xml																				-->													 <context-param> <param-name >, <paramvalue>
+
+81.which object is used to read CotextParam values?															-->														context
+
+81.what happens if we replace  'init(-,-)'  with 'constructor'  
+
+82.which object is created after constrctor - before init()	exceution											-->													config
+
+83.ServletConfig creation is posible in Constructor?															-->													No
+
+84.webLogic Application server
+
+85.JDBC connection pool?
+
+86.Data Source Object?																							-->													represents JDBC Connction pool
+
+87.JBoss  Application
+
+88.Ecllipse
+
+89.MyEclipse
+
+90.GlassFish
+
+91.ServletChaining?
+
+92. is the input values given by the clint is visible to All servts?									-->																							yes
+
+93. which class Object for ServletChanig?														-->														RqstDisptcher
+
+94.Approches to create 'RqstDispatcher' Object  [3]		x									
+
+95. forword()
+
+96.include()
+
+97.getRequstDispatcher		VS getNamedDispatcher	 x
+
+98. create 'RqstDispatcher' Object  poiniting to destnation URL
+						RequstDispatcher rd = sc /	req			getRequstDispatcher("/url")
+						RequstDispatcher rd = sc /	req			getRequstDispatcher("logical name of dest. servlt")
+
+99. which approch is used for
+		- when s1, s2 in same webApp  in same server																		-->												[req, contxt]
+		- when s1 in WebApp1,  s2 in  webApp2	  in same server																			-->									        [contxt]  
+		- when s1 in WebApp1,  s2 in  webApp2	  in Diff server																			-->									        [sendRedrect]  
+ 
+
+100.forword--> i/p number , cal sqaue in s1 - if sqr>100 forword rqst to  s2
+
+111.what happen if we call pw.close before rd.forword, rd.include.
+
+112.which 'forword' is excete , when we place many 'forwords'																			-->									1st
+
+113.Limitations of	'RqstDispatcher' Object in servlt chaing?
+
+114.what happens if we put multple forwords?																							-->		java.lang.IllegalStateException: Cannot forward after response has been committed
+		rd1.forward(req,res);
+		rd2.forward(req,res);
+
+		rd1.forward(req,res);																								-->		java.lang.IllegalStateException: Cannot forward after response has been committed
+		rd1.forward(req,res);
+
+		rd1.include(req,res);																								-->		work
+		rd2.forward(req,res);
+		
+		rd1.include(req,res);										
+		rd2.include(req,res);
+
+													-->output:
+													From SRV1 - before calls 
+													From SRV2 - before calls 
+													SRV3 
+													From SRV2 - After calls 
+													SRV3 
+													From SRV1 - After calls
+
+
+115.sendRedirect.
+
+														---------------------------------------	go to venkat is good	-------------------
+
+116.in sendRedirect middle pages output is included in HTML																---->							no
+
+117.Session
+		- Working
+		-hirarchi
+		-methods
+
+118.Attrbutes?	uses?	they related to html,xml?
+
+119.how to pass the data from source serlt to desnation servlt?
+
+120	req Attrbutes
+
+120	Session Attrbutes
+
+120	ServltContext Attrbutes
+			Applicatn
+
+121.	Static WebPages, Dynamic webpages?
+
+122. Dynamic webpages	developed by using_________?
+
+123.	Stateless webApps
+
+123.	Statefull webApps
+
+124.	by defalut all webApps are _________- apps
+
+125.	html based by deflut	 _______
+
+126.if brwse gives 10 rqsts , 10 connction obj's creted , each rqst handlrd by each resonce obj
+
+127.why protocal http given as stateless protocal?  -->																									 connection is buzy for more time
+
+128.what happens if we give http as statefull.
+
+128.in which behavoiur connction object engage by browser for long time .									-->											statefull
+
+128.in which behavoiur connction object not engage by browser for long time .								-->												Stateless
+
+129.how to make stateless to statefull behaviour?	which is we ahve to eanble?											->							seesion
+
+130.What are the Session Tracking Teqnics?
+
+			- Hidden form feilds [HeddinBoxes]
+			- Http Cookies
+			- Http Session with Cookies
+			- Http Session with URL re -writing
+
+131. whre we see Session Tracking Teqnics in real time?
+
+132.is Session data is Rememered only durrng session?
+
+133.How to invallidate session?
+
+134.<session-timeout> and Inactive are writen in our wepApp. which will exceute First?
+
+133.if use ServletConext attributes the session data is Strored perimently?
+
+134. Hidden form feilds [HeddinBoxes]
+		- workng, Adv, DisAdbv
+
+135.	Cockies?	types?
+
+136.	in-mem cookie
+
+136.	persistance cookie
+
+137.each n evry valus of form data stored as cokkie?
+
+138.cookie mem in IntrntEXploror
+		C:\Documents and Settings\satya\Cookies
+
+139.Http Session with Cookies
+
+140.Http Session API
+
+141.Cookie API
+
+142. Http Session with Cookies
+
+143.URL re-writng? 
+
+144.Which method is used for URL rewrinting?											-->																					encodeURL(str)
+
+145.	venkat q's
+		-wat is  session
+		-wat is sessiontracking
+		-hw many types of session tracking teqniqs-4
+		-diff btwn session , coke
+		-session management-2
+		-state managemnnt - 4
+		- clint state imf
+		- mthod 4 url rewritng
+		-which is best s track based on situaton?
+
+146.	Event Handling--->  [skip]
+
+147.Filters?	->	skipd
+
+
+
+------------------------------			completd sucessfully	-----------------------6/30/2012
+
+
+]0
+
+]1.
+
+]2.
+
+]3.
+
+]4.
+
+]5.
+
+]6.
+
+]7.
+
+]8.
+
+]9.
+
+
+
+
+
+
+		

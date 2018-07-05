@@ -1,0 +1,9 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <BODY>
+	<form action = "\voter" method = "GET">
+				Name	 :	<input type = "text"  name = "t1"><br>
+				AGe	 :	<input type = "text"  name = "t2"><br>
+			<input type = "submit"  name = "OK">
+ </BODY>
+</HTML>

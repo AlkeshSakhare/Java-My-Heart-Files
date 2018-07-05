@@ -1,0 +1,37 @@
+import javax.servlet.*;
+import javax.servlet.http.*;
+import java.io.*;
+
+
+public class srv1 extends HttpServlet
+{
+
+		public void service(HttpServletRequest  req, HttpServletResponse res) throws ServletException, IOException
+		{
+				res.setContentType("text/html");
+				PrintWriter pw = res.getWriter();
+
+				String name = req.getParameter("t1");
+				String age = req.getParameter("t2");
+				String mrg = req.getParameter("t3");
+
+				if(mrg == null)
+				{
+							pw.prinln("<form action = 's2'>");
+						pw.prinln("when do u want to marry	:	<input type = 'text'	name = 'l1'><br>");
+							pw.prinln("why not marry	:	<input type = 'text'	name = 'l2'><br>");
+									pw.prinln("<input type = 'submit' name = 'l4' value = 'OK'><br>");
+				}
+
+				else
+				{
+							pw.prinln("<form action = 's2'>");
+						pw.prinln("Wife name	:	<input type = 'text'	name = 'l1'><br>");
+							pw.prinln("Children	:	<input type = 'text'	name = 'l2'><br>");
+									pw.prinln("<input type = 'submit' name = 'l4' value = 'OK'><br>");
+				
+				
+				}
+
+}
+}

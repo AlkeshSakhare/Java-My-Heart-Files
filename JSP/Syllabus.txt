@@ -1,0 +1,120 @@
+JSP
+------------------
+1.JSP stands for?
+
+1.JSP is Specfcation?
+
+1.JSP used for whch Appln Devlopment?
+
+1.Before SErvlets
+	- CGI  Year,fun, ADv, DIsAdv			
+	- Servltes  Year,fun,ADv, DIsAdv		1995
+	- ASP.net Year,fun, ADv, DIsAdv		1995
+	- JSP x C#  Year,fun, ADv, DIsAdv		2000
+	- Strts Ready made product apche	2000
+	-JSF same as Struts
+
+			servlets - 10 lines
+			jsp		-1 line
+			structs	-0 lines
+
+2.JSP Engine
+
+2.JSP engine s develpoerd or put in Existing server?
+
+2.Functionality of JSP Engne?																-->																jsp -> servlet
+
+3.JSP Architecture
+
+4.JSP ELEMTNES
+	i.Scriptlets
+	ii.Declarations
+	iii.Expressions
+	iv.Comments
+
+5.JSP Implecet Objects[9]
+	
+	(i).first.jsp
+	
+	jsp-deploy	:	C:\Program Files\Apache Software Foundation\Tomcat 5.5\webapps\ROOT
+
+	jsp_servlet Code	:	C:\Program Files\Apache Software Foundation\Tomcat 5.5\work\Catalina\localhost\_\org\apache\jsp
+
+6.JSP _Servlet conversion Process
+
+7.JSP Life Cycle methods
+	(ii)second.jsp
+
+8.Where u Write the elemets Exactly Compair with Servlet's Prog??
+	(iii)count.jsp
+	(iv)date.jsp,	time.jsp
+	(v)table.jsp
+
+9.Directives
+	-<%@  include file = " ">
+
+	-<%@  page   __     = " ">[language,import,errorPage,isErrorpage,	Session,info,buffer,flushbuffer,     extends,contentType,pageEncoding,isThredBased,isELIgnored]
+	
+	-<%@ taglib	%>
+
+9.when Garbage Collector Enter ?												-->																			cpu at idle tme only
+
+10.Actions
+
+11.Actions 3 imp functions?
+		-> tranfer cntrl btwn pages
+		-> use javaBeans in our App
+		-> use Applets in our java Appln
+
+11.Diff btwn "<@ include> tage and include in Acton?										-->																		combne fist then Comple , Comple then Combne
+
+11.what is JavaBean?
+
+11.which can suppare bussines logic from presentation logic?
+
+11.JSP Coustom tags?
+
+12.JSP Coustom tags API
+
+11.types?
+
+11.emptytag with out Attributes?
+
+11.emptytag with  Attributes?
+
+11.bodytag with out Attributes?
+
+11.bodytag with  Attributes?
+
+11.flow of exceution?
+
+11.JSP EL
+
+12.why it is introduced?
+
+12.Expression Lanuge Operators?  [+,-,*,%,<,>,>=,<=,]
+
+12.in which jsp	vesion  JSP EL Introduced?																		-->													jsp 2.0
+
+12.in which Tomcat	vesion  JSP EL Supports?																		-->													tomcat 5.0 above
+
+12.by deflt Expression Lanuge is Enabled or Disabled?															-->															Enabled
+
+12.JSP EL implecet objects?
+
+12.JSP EL API?
+
+12.JSTL
+	-CORE
+	-SQL
+	-XML
+	-Format
+	-functions
+
+13.is JSTL is Developed in Server or we have 2 place?							-->																	we have to plce by download
+
+13.JSTL LIB paths?
+
+13.XML
+
+14.REFLECTION

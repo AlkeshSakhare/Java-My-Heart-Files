@@ -1,0 +1,32 @@
+Compiled from "DriverManager.java"
+public class .DriverManager extends Object
+{
+    static final .SQLPermission SET_LOG_PERMISSION;
+
+    public static .PrintWriter getLogWriter();
+
+    public static void setLogWriter(.PrintWriter);
+
+    public static .Connection getConnection(String, java.util.Properties)       throws .SQLException;
+
+    public static .Connection getConnection(String, String, String)       throws .SQLException;
+
+    public static .Connection getConnection(String)       throws .SQLException;
+
+    public static .Driver getDriver(String)       throws .SQLException;
+
+    public static synchronized void registerDriver(.Driver)       throws .SQLException;
+
+    public static synchronized void deregisterDriver(.Driver)       throws .SQLException;
+
+    public static java.util.Enumeration getDrivers();
+
+    public static void setLoginTimeout(int);
+    public static int getLoginTimeout();
+    public static void setLogStream(.PrintStream);
+    public static .PrintStream getLogStream();
+    public static void println(String);
+    static void initialize();
+    static {};
+}
+

@@ -1,0 +1,67 @@
+import java.awt.*;
+import java.awt.event.*;
+import java.awt.Frame;
+
+
+class OuterDemo extends Frame implements ActionListener
+{
+TextField t1,t2,t3;
+Label l1,l2,l3;
+Button b1,b2,b3,b4;
+
+OuterDemo()
+	{
+	setSize(300,300);
+	setVisible(true);
+	setTitle("TextField FRAME INNER");
+
+	FlowLayout f = new FlowLayout();
+	setLayout(f);
+
+		t1 = new TextField(15);
+		t2 = new TextField(15);
+		t3 = new TextField(15);
+
+		l1 = new Label("Enter First Value:");
+		l2 = new Label("Enter Second Value:");
+		l3 = new Label("RESULT:");
+
+		b1 = new Button("SUM");
+		b2 = new Button("SUB");
+		b3 = new Button("MUL");
+		b4 = new Button("EXIT");
+
+		add(l1);		add(t1);		add(l2);		add(t2);		add(l3);		add(t3);		add(b1);		add(b2);		add(b3);		add(b4);	
+
+
+TextFieldFrameThis ob = new TextFieldFrameThis();
+	b1.addActionListener(this);
+	b2.addActionListener(this);
+	b3.addActionListener(this);
+	b4.addActionListener(this);
+
+	}//constr
+
+public void actionPerformed(ActionEvent ae)
+	{
+	if(ae.getSource() == b1)
+		{
+		String s1 = t1.getText();
+		String s2 = t2.getText();
+		int a = Integer.parseInt(s1)+Integer.parseInt(s2);
+		String s3 = String.valueOf(a);
+		t3.setText(s3);
+		}
+
+
+if(ae.getSource() == b2)
+		{
+		String s1 = t1.getText();
+		String s2 = t2.getText();
+		int a = Integer.parseInt(s1)-Integer.parseInt(s2);
+		String s3 = String.valueOf(a);
+		t3.setText(s3);
+		}
+
+
+if(ae.getSou

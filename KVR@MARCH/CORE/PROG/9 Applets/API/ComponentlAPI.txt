@@ -1,0 +1,400 @@
+Compiled from "Component.java"
+public abstract class   Component extends   Object implements   image.ImageObserver,  MenuContainer,java.io.Serializable{
+    transient   peer.ComponentPeer peer;
+    transient   Container parent;
+    transient sun.awt.AppContext appContext;
+    int x;
+    int y;
+    int width;
+    int height;
+      Color foreground;
+      Color background;
+      Font font;
+      Font peerFont;
+      Cursor cursor;
+    java.util.Locale locale;
+    transient   GraphicsConfiguration graphicsConfig;
+    transient   image.BufferStrategy bufferStrategy;
+    boolean ignoreRepaint;
+    boolean visible;
+    boolean enabled;
+    boolean valid;
+      dnd.DropTarget dropTarget;
+    java.util.Vector popups;
+    java.util.Set[] focusTraversalKeys;
+    static final   Object LOCK;
+      Dimension minSize;
+    boolean minSizeSet;
+      Dimension prefSize;
+    boolean prefSizeSet;
+      Dimension maxSize;
+    boolean maxSizeSet;
+    transient   ComponentOrientation componentOrientation;
+    boolean newEventsOnly;
+    transient   event.ComponentListener componentListener;
+    transient   event.FocusListener focusListener;
+    transient   event.HierarchyListener hierarchyListener;
+    transient   event.HierarchyBoundsListener hierarchyBoundsListener;
+    transient   event.KeyListener keyListener;
+    transient   event.MouseListener mouseListener;
+    transient   event.MouseMotionListener mouseMotionListener;
+    transient   event.MouseWheelListener mouseWheelListener;
+    transient   event.InputMethodListener inputMethodListener;
+    transient   RuntimeException windowClosingException;
+    static final   String actionListenerK;
+    static final   String adjustmentListenerK;
+    static final   String componentListenerK;
+    static final   String containerListenerK;
+    static final   String focusListenerK;
+    static final   String itemListenerK;
+    static final   String keyListenerK;
+    static final   String mouseListenerK;
+    static final   String mouseMotionListenerK;
+    static final   String mouseWheelListenerK;
+    static final   String textListenerK;
+    static final   String ownedWindowK;
+    static final   String windowListenerK;
+    static final   String inputMethodListenerK;
+    static final   String hierarchyListenerK;
+    static final   String hierarchyBoundsListenerK;
+    static final   String windowStateListenerK;
+    static final   String windowFocusListenerK;
+    long eventMask;
+    static boolean isInc;
+    static int incRate;
+    public static final float TOP_ALIGNMENT;
+    public static final float CENTER_ALIGNMENT;
+    public static final float BOTTOM_ALIGNMENT;
+    public static final float LEFT_ALIGNMENT;
+    public static final float RIGHT_ALIGNMENT;
+    boolean isPacked;
+    transient   EventQueueItem[] eventCache;
+    transient   Component$NativeInLightFixer nativeInLightFixer;
+    javax.accessibility.AccessibleContext accessibleContext;
+    static final boolean $assertionsDisabled;
+
+Methods
+_________________
+
+
+    int getBoundsOp();
+    void setBoundsOp(int);
+
+    protected   Component();
+    void initializeFocusTraversalKeys();
+      String constructComponentName();
+    public   String getName();
+    public void setName(  String);
+    
+    public   Container getParent();
+    final   Container getParent_NoClientCode();
+    public   peer.ComponentPeer getPeer();
+    public synchronized void setDropTarget(  dnd.DropTarget);
+    public synchronized   dnd.DropTarget getDropTarget();
+    public   GraphicsConfiguration getGraphicsConfiguration();
+    final   GraphicsConfiguration getGraphicsConfiguration_NoClientCode();
+    
+    void resetGC();
+    void setGCFromPeer();
+    void checkGD(  String);
+    public final   Object getTreeLock();
+    public   Toolkit getToolkit();
+    final   Toolkit getToolkitImpl();
+    public boolean isValid();
+    public boolean isDisplayable();
+    
+    public boolean isVisible();
+    
+    boolean isRecursivelyVisible();
+      Point pointRelativeToComponent(  Point);
+      Component findUnderMouseInWindow(  PointerInfo);
+    public   Point getMousePosition()       throws   HeadlessException;
+    boolean isSameOrAncestorOf(  Component, boolean);
+    public boolean isShowing();
+    public boolean isEnabled();
+    final boolean isEnabledImpl();
+    public void setEnabled(boolean);
+    public void enable();
+    public void enable(boolean);
+    public void disable();
+    public boolean isDoubleBuffered();
+    public void enableInputMethods(boolean);
+    public void setVisible(boolean);
+    
+    public void show();
+    
+    public void show(boolean);
+    boolean containsFocus();
+    void clearMostRecentFocusOwnerOnHide();
+    void clearCurrentFocusCycleRootOnHide();
+    public void hide();
+    
+    public   Color getForeground();
+    
+    public void setForeground(  Color);
+    
+    
+    public boolean isForegroundSet();
+    
+    public   Color getBackground();
+    
+    public void setBackground(  Color);
+    
+    public boolean isBackgroundSet();
+    
+    public   Font getFont();
+    
+    final   Font getFont_NoClientCode();
+    
+    public void setFont(  Font);
+    
+    public boolean isFontSet();
+    public java.util.Locale getLocale();
+    public void setLocale(java.util.Locale);
+    public   image.ColorModel getColorModel();
+    public   Point getLocation();
+    public   Point getLocationOnScreen();
+    final   Point getLocationOnScreen_NoTreeLock();
+    public   Point location();
+    public void setLocation(int, int);
+    public void move(int, int);
+    public void setLocation(  Point);
+    public   Dimension getSize();
+    public   Dimension size();
+    public void setSize(int, int);
+    public void resize(int, int);
+    public void setSize(  Dimension);
+    public void resize(  Dimension);
+    public   Rectangle getBounds();
+    public   Rectangle bounds();
+    public void setBounds(int, int, int, int);
+    public void reshape(int, int, int, int);
+    public void setBounds(  Rectangle);
+    
+    public int getX();
+    
+    public int getY();
+    
+    public int getWidth();
+    
+    public int getHeight();
+    
+    public   Rectangle getBounds(  Rectangle);
+    public   Dimension getSize(  Dimension);
+    public   Point getLocation(  Point);
+    public boolean isOpaque();
+    public boolean isLightweight();
+    public void setPreferredSize(  Dimension);
+    public boolean isPreferredSizeSet();
+    public   Dimension getPreferredSize();
+    public   Dimension preferredSize();
+    public void setMinimumSize(  Dimension);
+    public boolean isMinimumSizeSet();
+    public   Dimension getMinimumSize();
+    public   Dimension minimumSize();
+    public void setMaximumSize(  Dimension);
+    public boolean isMaximumSizeSet();
+    public   Dimension getMaximumSize();
+    
+    public float getAlignmentX();
+    
+    public float getAlignmentY();
+    
+    public int getBaseline(int, int);
+    public   Component$BaselineResizeBehavior getBaselineResizeBehavior();
+    public void doLayout();
+    public void layout();
+    public void validate();
+    public void invalidate();
+    public   Graphics getGraphics();
+    final   Graphics getGraphics_NoClientCode();
+    public   FontMetrics getFontMetrics(  Font);
+    public void setCursor(  Cursor);
+    final void updateCursorImmediately();
+    public   Cursor getCursor();
+    public boolean isCursorSet();
+    
+    public void paint(  Graphics);
+    
+    public void update(  Graphics);
+    public void paintAll(  Graphics);
+    void lightweightPaint(  Graphics);
+    void paintHeavyweightComponents(  Graphics);
+    
+    public void repaint();
+    
+    public void repaint(long);
+    public void repaint(int, int, int, int);
+    public void repaint(long, int, int, int, int);
+    public void print(  Graphics);
+    public void printAll(  Graphics);
+    void lightweightPrint(  Graphics);
+    void printHeavyweightComponents(  Graphics);
+    public boolean imageUpdate(  Image, int, int, int, int, int);
+    public   Image createImage(  image.ImageProducer);
+    public   Image createImage(int, int);
+    public   image.VolatileImage createVolatileImage(int, int);
+    public   image.VolatileImage createVolatileImage(int, int,   ImageCapabilities)       throws   AWTException;
+    public boolean prepareImage(  Image,   image.ImageObserver);
+    public boolean prepareImage(  Image, int, int,   image.ImageObserver);
+    public int checkImage(  Image,   image.ImageObserver);
+    public int checkImage(  Image, int, int,   image.ImageObserver);
+    void createBufferStrategy(int);
+    void createBufferStrategy(int,   BufferCapabilities)       throws   AWTException;
+      image.BufferStrategy getBufferStrategy();
+      Image getBackBuffer();
+    public void setIgnoreRepaint(boolean);
+    public boolean getIgnoreRepaint();
+    public boolean contains(int, int);
+    public boolean inside(int, int);
+    public boolean contains(  Point);
+    public   Component getComponentAt(int, int);
+    public   Component locate(int, int);
+    public   Component getComponentAt(  Point);
+    public void deliverEvent(  Event);
+    public final void dispatchEvent(  AWTEvent);
+    void dispatchEventImpl(  AWTEvent);
+    void autoProcessMouseWheel(  event.MouseWheelEvent);
+    boolean dispatchMouseWheelToAncestor(  event.MouseWheelEvent);
+    boolean checkWindowClosingException();
+    boolean areInputMethodsEnabled();
+    boolean eventEnabled(  AWTEvent);
+    boolean eventTypeEnabled(int);
+    public boolean postEvent(  Event);
+    public synchronized void addComponentListener(  event.ComponentListener);
+    public synchronized void removeComponentListener(  event.ComponentListener);
+    public synchronized   event.ComponentListener[] getComponentListeners();
+    public synchronized void addFocusListener(  event.FocusListener);
+    public synchronized void removeFocusListener(  event.FocusListener);
+    public synchronized   event.FocusListener[] getFocusListeners();
+    public void addHierarchyListener(  event.HierarchyListener);
+    public void removeHierarchyListener(  event.HierarchyListener);
+    public synchronized   event.HierarchyListener[] getHierarchyListeners();
+    public void addHierarchyBoundsListener(  event.HierarchyBoundsListener);
+    public void removeHierarchyBoundsListener(  event.HierarchyBoundsListener);
+    int numListening(long);
+    int countHierarchyMembers();
+    int createHierarchyEvents(int,   Component,   Container, long, boolean);
+    public synchronized   event.HierarchyBoundsListener[] getHierarchyBoundsListeners();
+    void adjustListeningChildrenOnParent(long, int);
+    public synchronized void addKeyListener(  event.KeyListener);
+    public synchronized void removeKeyListener(  event.KeyListener);
+    public synchronized   event.KeyListener[] getKeyListeners();
+    public synchronized void addMouseListener(  event.MouseListener);
+    public synchronized void removeMouseListener(  event.MouseListener);
+    public synchronized   event.MouseListener[] getMouseListeners();
+    public synchronized void addMouseMotionListener(  event.MouseMotionListener);
+    public synchronized void removeMouseMotionListener(  event.MouseMotionListener);
+    public synchronized   event.MouseMotionListener[] getMouseMotionListeners();
+    public synchronized void addMouseWheelListener(  event.MouseWheelListener);
+    public synchronized void removeMouseWheelListener(  event.MouseWheelListener);
+    public synchronized   event.MouseWheelListener[] getMouseWheelListeners();
+    public synchronized void addInputMethodListener(  event.InputMethodListener);
+    public synchronized void removeInputMethodListener(  event.InputMethodListener);
+    public synchronized   event.InputMethodListener[] getInputMethodListeners();
+    public java.util.EventListener[] getListeners(  Class);
+    public   im.InputMethodRequests getInputMethodRequests();
+    public   im.InputContext getInputContext();
+    protected final void enableEvents(long);
+    protected final void disableEvents(long);
+    final boolean isCoalescingEnabled();
+    protected   AWTEvent coalesceEvents(  AWTEvent,   AWTEvent);
+    protected void processEvent(  AWTEvent);
+    protected void processComponentEvent(  event.ComponentEvent);
+    protected void processFocusEvent(  event.FocusEvent);
+    protected void processKeyEvent(  event.KeyEvent);
+    protected void processMouseEvent(  event.MouseEvent);
+    protected void processMouseMotionEvent(  event.MouseEvent);
+    protected void processMouseWheelEvent(  event.MouseWheelEvent);
+    boolean postsOldMouseEvents();
+    protected void processInputMethodEvent(  event.InputMethodEvent);
+    protected void processHierarchyEvent(  event.HierarchyEvent);
+    protected void processHierarchyBoundsEvent(  event.HierarchyEvent);
+    public boolean handleEvent(  Event);
+    public boolean mouseDown(  Event, int, int);
+    public boolean mouseDrag(  Event, int, int);
+    public boolean mouseUp(  Event, int, int);
+    public boolean mouseMove(  Event, int, int);
+    public boolean mouseEnter(  Event, int, int);
+    public boolean mouseExit(  Event, int, int);
+    public boolean keyDown(  Event, int);
+    public boolean keyUp(  Event, int);
+    public boolean action(  Event,   Object);
+    public void addNotify();
+    public void removeNotify();
+    public boolean gotFocus(  Event,   Object);
+    public boolean lostFocus(  Event,   Object);
+    public boolean isFocusTraversable();
+    public boolean isFocusable();
+    public void setFocusable(boolean);
+    final boolean isFocusTraversableOverridden();
+    public void setFocusTraversalKeys(int, java.util.Set);
+    public java.util.Set getFocusTraversalKeys(int);
+    final void setFocusTraversalKeys_NoIDCheck(int, java.util.Set);
+    final java.util.Set getFocusTraversalKeys_NoIDCheck(int);
+    public boolean areFocusTraversalKeysSet(int);
+    public void setFocusTraversalKeysEnabled(boolean);
+    public boolean getFocusTraversalKeysEnabled();
+    public void requestFocus();
+    void requestFocus(sun.awt.CausedFocusEvent$Cause);
+    protected boolean requestFocus(boolean);
+    boolean requestFocus(boolean, sun.awt.CausedFocusEvent$Cause);
+    public boolean requestFocusInWindow();
+    boolean requestFocusInWindow(sun.awt.CausedFocusEvent$Cause);
+    protected boolean requestFocusInWindow(boolean);
+    boolean requestFocusInWindow(boolean, sun.awt.CausedFocusEvent$Cause);
+    final boolean requestFocusHelper(boolean, boolean);
+    final boolean requestFocusHelper(boolean, boolean, sun.awt.CausedFocusEvent$Cause);
+    static synchronized void setRequestFocusController(sun.awt.RequestFocusController);
+    final void autoTransferFocus(boolean);
+    public void transferFocus();
+    public   Container getFocusCycleRootAncestor();
+    public boolean isFocusCycleRoot(  Container);
+    public void nextFocus();
+    boolean nextFocusHelper();
+      Component preNextFocusHelper();
+    static boolean postNextFocusHelper(  Component);
+    public void transferFocusBackward();
+    public void transferFocusUpCycle();
+    public boolean hasFocus();
+    public boolean isFocusOwner();
+    public synchronized void add(  PopupMenu);
+    public synchronized void remove(  MenuComponent);
+    protected   String paramString();
+    public   String toString();
+    public void list();
+    public void list(java.io.PrintStream);
+    public void list(java.io.PrintStream, int);
+    public void list(java.io.PrintWriter);
+    public void list(java.io.PrintWriter, int);
+      Container getNativeContainer();
+    public synchronized void addPropertyChangeListener(java.beans.PropertyChangeListener);
+    public synchronized void removePropertyChangeListener(java.beans.PropertyChangeListener);
+    public synchronized java.beans.PropertyChangeListener[] getPropertyChangeListeners();
+    public synchronized void addPropertyChangeListener(  String, java.beans.PropertyChangeListener);
+    public synchronized void removePropertyChangeListener(  String, java.beans.PropertyChangeListener);
+    public synchronized java.beans.PropertyChangeListener[] getPropertyChangeListeners(  String);
+    protected void firePropertyChange(  String,   Object,   Object);
+    protected void firePropertyChange(  String, boolean, boolean);
+    protected void firePropertyChange(  String, int, int);
+    public void firePropertyChange(  String, byte, byte);
+    public void firePropertyChange(  String, char, char);
+    public void firePropertyChange(  String, short, short);
+    public void firePropertyChange(  String, long, long);
+    public void firePropertyChange(  String, float, float);
+    public void firePropertyChange(  String, double, double);
+    public void setComponentOrientation(  ComponentOrientation);
+    public   ComponentOrientation getComponentOrientation();
+    public void applyComponentOrientation(  ComponentOrientation);
+    final boolean canBeFocusOwner();
+      Window getContainingWindow();
+    static   Window getContainingWindow(  Component);
+    public javax.accessibility.AccessibleContext getAccessibleContext();
+    int getAccessibleIndexInParent();
+    javax.accessibility.AccessibleStateSet getAccessibleStateSet();
+    static boolean isInstanceOf(  Object,   String);
+    static   Insets access$000(  Component);
+    static boolean access$100(  Class);
+    static {};
+}
+

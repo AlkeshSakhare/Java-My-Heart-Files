@@ -1,0 +1,4 @@
+C:\Program Files\Apache Software Foundation\Tomcat 5.5\webapps\jsp-examples\WEB-INF\lib 
+2 files copy to
+
+C:\Program Files\Apache Software Foundation\Tomcat 5.5\common\lib

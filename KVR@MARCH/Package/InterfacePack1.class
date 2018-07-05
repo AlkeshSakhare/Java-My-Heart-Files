@@ -1,0 +1,48 @@
+class Bc
+{
+	int a,b;
+	void op(int x,int y)
+	{
+		a =x;
+		b =y;
+	System.out.println("BC:Sum is :"+(a+b));
+	}
+}
+
+class IDc extends Bc
+{
+	int a,b;
+	void op(int x,int y)
+	{
+		super.op(x,y);
+		a =x;
+		b =y;
+	System.out.println("IDC	:MINUS is :"+(a-b));
+	}
+}
+
+class Dc extends IDc
+{
+	int a,b;
+	void op(int x,int y)
+	{
+		//super.op(a,b); //a,b not intialized so super.op(0,0); will go
+		super.super.op(x,y);
+		//super.op(x,y);   is not Possible.....
+		a =x;
+		b =y;
+	System.out.println("DC	:MUL is :"+(a*b));
+	}
+}
+
+
+
+
+
+
+
+class SuperAtOverridingLevel  
+{
+	public static void main(String[] args) 
+	{
+     i

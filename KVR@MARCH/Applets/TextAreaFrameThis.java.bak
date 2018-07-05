@@ -1,0 +1,54 @@
+import  java.awt.*;
+import  java.awt.event.*;
+import java.awt.Frame;
+
+class TextAreaComp extends  Frame implements TextListener
+{
+	Label l1,l2;
+	TextField t1;
+	TextArea ta;
+
+	TextAreaComp()
+	{
+		setSize(400,400);
+		setVisible(true);
+		FlowLayout f = new FlowLayout();
+		setLayout(f);
+
+		l1 = new Label("Enter Line of Text:");
+		l2 = new Label("Ur Text:");
+		t1 = new TextField(10);
+		ta = new TextArea(10,20);
+
+		add(l1); 		add(t1); 		add(l2); 		add(ta);
+
+		
+		t1.addTextListener(this);
+
+
+	}//cons
+
+	public void textValueChanged(TextEvent te)
+	{
+
+		String s1 = t1.getText();
+
+		ta.append(s1);
+		
+		}//method
+
+
+
+
+
+}//class 1st
+
+
+
+class  TextAreaFrameThis
+{
+	public static void main(String[] args) 
+	{
+		TextAreaComp o = new TextAreaComp();
+	}
+}

@@ -1,0 +1,21 @@
+
+enum Alpha
+{
+	a,b,c,d,e;
+}
+
+
+class EnumWithValues
+{
+	enum a[10];
+
+	public static void main(String[] args) 
+	{
+		 a[] = Alpha.values();
+		System.out.println(e);
+	}
+
+}
+
+
+

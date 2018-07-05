@@ -1,0 +1,76 @@
+Compiled from "Scanner.java"
+public final class Scanner extends Object implements Iterator{
+ 
+    public Scanner(Readable);
+    public Scanner(InputStream);
+    public Scanner(InputStream, String);
+    
+    public Scanner(File)       throws FileNotFoundException;
+    public Scanner(File, String)       throws FileNotFoundException;
+    public Scanner(String);
+    
+    public Scanner(java.nio.channels.ReadableByteChannel);
+    public Scanner(java.nio.channels.ReadableByteChannel, String);
+    public void close();
+    public IOException ioException();
+    public regex.Pattern delimiter();
+    public Scanner useDelimiter(regex.Pattern);
+    public Scanner useDelimiter(String);
+    public Locale locale();
+    public Scanner useLocale(Locale);
+    public int radix();
+    public Scanner useRadix(int);
+    public regex.MatchResult match();
+    public String toString();
+    public boolean hasNext();
+    
+    public String next();
+    
+    public void remove();
+    public boolean hasNext(String);
+    
+    public String next(String);
+    public boolean hasNext(regex.Pattern);
+    public String next(regex.Pattern);
+    public boolean hasNextLine();
+    public String nextLine();
+    
+    public String findInLine(String);
+    public String findInLine(regex.Pattern);
+    public String findWithinHorizon(String, int);
+    public String findWithinHorizon(regex.Pattern, int);
+    public Scanner skip(regex.Pattern);
+    public Scanner skip(String);
+    public boolean hasNextBoolean();
+    public boolean nextBoolean();
+    public boolean hasNextByte();
+    public boolean hasNextByte(int);
+    public byte nextByte();
+    public byte nextByte(int);
+    public boolean hasNextShort();
+    public boolean hasNextShort(int);
+    public short nextShort();
+    public short nextShort(int);
+    public boolean hasNextInt();
+    public boolean hasNextInt(int);
+    public int nextInt();
+    public int nextInt(int);
+    public boolean hasNextLong();
+    public boolean hasNextLong(int);
+    public long nextLong();
+    public long nextLong(int);
+    public boolean hasNextFloat();
+    public float nextFloat();
+    public boolean hasNextDouble();
+    public double nextDouble();
+    public boolean hasNextBigInteger();
+    public boolean hasNextBigInteger(int);
+    public java.math.BigInteger nextBigInteger();
+    public java.math.BigInteger nextBigInteger(int);
+    public boolean hasNextBigDecimal();
+    public java.math.BigDecimal nextBigDecimal();
+    public Scanner reset();
+    public Object next();
+    static {};
+}
+

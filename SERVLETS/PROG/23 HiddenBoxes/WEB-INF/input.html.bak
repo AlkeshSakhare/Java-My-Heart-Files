@@ -1,0 +1,6 @@
+<form action = "s1"  method = "get">
+Name	 :	<input type = "text" name = "t1">
+Age :	<input type = "text" name = "t2">
+Marrige Status	<input type = "choice" name = "t3" value = "yes">
+<input type = "submit" name = "t4" value = "GO">
+</form>

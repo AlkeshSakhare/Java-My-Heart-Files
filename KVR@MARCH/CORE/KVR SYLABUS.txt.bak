@@ -1,0 +1,1363 @@
+CORE JAVA By K.V.Rao
+______________________________________________
+
+1.WHAT IS S/W ...?TYPES OF S/W???--->PG:1[pic - 1]
+
+1.JVM Archtecture?				[pic - 01]    [pic - ]
+
+2.types of archtectures???[pic - 2]
+
+	-protocal
+	-db s/w
+	-firewal
+	-resourec poll
+
+	HTTP	VS		FTP
+
+3.how the java Real wrold projects clasified?
+j2se - j2ee - firewal - dbase
+
+3.cilent ? server?
+
+
+
+3.Data persstancy???
+
+4.FireWall??
+
+5.Stateless, StateFull Protocal??
+
+-History of java   [1990 - 1995]    [pic - 2]
+
+6.Exp uses of J2SE - J2EE - J2ME
+
+
+
+6.java Features[13] /BUZZWORDS?    [pic - 3]
+ 1- simple
+ 2- platform independent
+ 3-arch. neutral
+4 -portable
+5 -networked
+6 -distributed
+ 7-multithreaded
+ 8-hig performane
+ 9- higly interpreted
+ 10- secred
+ 11-Robust
+ 12.Dynamic
+ 13-OOPs
+
+
+6.OOPS PRICIPLES?
+
+
+7.Threads?Types?? pg.7
+
+8.class & object???
+
+	(1)Demo.java
+
+9.Memory Spaces?
+
+9.Class Loader System in JVM??
+
+10.Data Abstraction??[3 levels]????    [pic - 6]    [pic - 11]
+
+11.Data Encapsulation?    [pic - 6]
+
+11.Inhertance?
+
+11.Polymaorphisum?
+
+11.Dynamic Binding?
+
+11.message passing??
+
+12.Data members in java?
+
+13.types of variables???[i,s]
+
+	(2).IntanceVsStatic.java
+
+13.Constants?
+
+13.strcure of java prog?
+
+14.Hungary Notations?
+
+																																							14.FINAL[vari,method,class]??pg.22
+15.exicition logic,Busnesss Logic???
+
+16.actual ,Formal perametrs[     sum(int F_p),   o.sum(A_P)      ]
+
+17.wrapper class???[String---->fun. datatype values]
+
+18.length attribute?
+
+18.Constructor?advantages?types???	    [pic - 12]
+		--3 RULES???[1.defalt,2.param,3.def+param]
+
+		(3)ConstructorAll.java
+
+19.OBJECT PARAMETERIZED CONSTRUCTOR????
+		(4)ObjectSum.java
+
+20.'THIS' object???Uses??    [pic - 13]
+		--RULES[1.1st stmt,without this how forml,actual parms behaves??]
+		-this.varible
+		-this.cons(-)
+		-this.method()
+
+		(5)ThisDemo.java
+
+21.Source object,Target obj??[  ob.sum(),   ob.sum(T)   ]
+
+
+23.Inheritance? rules for creating Object?
+
+24,How memoey space is created ? 1st Base or Derived cls?? 
+
+	- is constrctors patcpate in inheitance?
+
+24.is 'private ' class is in java?																							-->													no
+
+22.Types of relation ships??[IS-A:simple extends...........HAS-A: obj in another Class.....USES-A: method uses Obj of another]
+examole  to each in our dily prog	lke extends Object, Sysem.out.println, p s v main( - )      [pic - 14]
+
+
+23.which is deflaule relaton shp in java?																					-->													is-a
+
+23.Super??    [pic - 15]
+	-At vaible level
+		(6)SuperAtVariable.java
+
+	-At method level	
+		(7)SuperAtMethod.java
+
+	-At Method Overriding
+		(8)SuperAtMethodOverride.java
+
+	-At Cons. level[ 4 possiblites]
+		(9)ConstructorExceution.java
+
+23.	Possibleites of super class at constrctor?    [pic - 16]
+
+24.diff btwn this(),this(....) and super (), super(....)?
+
+24.is it possible call the constctor from method?										-->																No, Const can call only from cons
+	class A
+	{
+	 -- - - 
+	 void show()
+	 {
+		super()
+	 }
+	}
+
+24.Factory method??[3 rules]
+	- purpose?
+	Rules
+	public static Class = Class.forName();
+	(3)		(2)		(1)
+
+25.factory is Disgn pattern or n built in java?
+
+25.Design Patterns?    [pic - 17]
+
+25.ploymorphisum?	 - implemented in the form of "Method Overriding"		    [pic - 18]
+
+26.types of polymorphisums?[s,d] which is supported by java?    [pic - 19]
+
+Static -> Complitime		javac a.java
+Dynamic -> Runtime		java a
+
+27.Memory for 'Varibles '   allocats at ____________ time [c]
+
+27.Memory for 'Methods '   allocats  at  ____________ time [r]
+
+25,Plain old java Execution									-->																						[inheritance]
+
+25. Dynamic Binding?  what it says for Object Creation?                 -->
+
+25.Types of classes? [															-->																	c,a]
+
+26.Abstract Class[3 Levels]???
+	-one Abs.cls - no.of Fully derivrd
+	-one Abs. cls - no of Abs Dervd - one Concrete cls
+	-Null body.....
+
+	(10)Abstract1.java
+	(11)Abstract2.java
+	(12)NullBodyMethod.java
+
+26.Abs.method?
+
+ 26.Object of Abs. class = Obj. of it's	________________?												-->													Derived class
+
+ 26.is Abs. class n methods are declared as 'final'?
+
+ 27.is it possible to place 'Constructors' in Abs. class?	-->																														[Yes, ]
+
+27. is defiend things alloes in Abs. clses?																-->														yes
+
+ 27.Abs. derived class?
+
+ 27.Consequnecs of Abs. clses?  [Nullbody method, methods wth no solution/use]
+
+26.NullBodyMethod?
+
+27.abstrct Dis[2----]???...is Constror allowed in Abs.Class??
+
+
+28.Interface??    [pic - 21]
+
+what Type Signature of DataMembers  & Methods???
+	-public?
+	-static?																																-->    create memory space only once?
+	-final?
+
+28.'implenmets'	keyword?
+
+28.'extends'	keyword?
+
+29.Interfaces 3 Approches ?????
+
+	(13)InterfaceApp1	[	interface i1  , interface i2   ]	-->  class C1 implements i1,i2    ==  class  InterfaceApp1
+
+	(14)InterfaceApp2	[  interface i1 ]	-->	[	interface i2 extends i1	]  -->  class C1 implements i2   ==	class InterfaceApp2 
+
+	(15)InterfaceApp3	interface i1		--> 	 interface i2  extends i1			--> abstract class C2 extends C1 implements  i2			--> class C3 extends C2			--> class InterfaceApp3 
+	
+	(16)Fonts.java	Display System Fonts Program?
+
+30. is defiend things alloes in interfaces?				-->																										[no]
+
+30. is 'Constutors'  alloes in interfaces?				-->																										[no]
+
+30. is 'final'  alloes in interfaces?	 				-->																											[no]
+
+30. is 'main() method'  alloes in interfaces?	 		-->																											[no]
+
+30. is 'public'  is must for methods  in interfaces?	 				-->																											[yes, other wise complite time error]
+
+-----------------------------------x     interfaces		x	-------------------------------
+
+30.packages???									[3 types  8+1x+etc ]??    [pic - 23]
+
+31.API is Collection of ____________ 
+
+31.Pkg is Collection of ____________ +__________+ _____________									
+
+31.Need of pkg?
+
+31.Types of pkgs [] 
+- pre- def.	[	awt,lang,io........]
+-user		[iiird paty oracle.jdbc.]
+
+31.Collection Frame work???[skip it]
+
+32.Arrays VS C.F.W?
+
+32.Steps/ Guidlines to Develop Pakages?[5]   --->																																{1.pkg stmt must be 1st, 2.cls 'public',	3.constructor 'public',	4.methods 'public',	5.save with clsname.java}
+
+javac -d . filename.java
+
+		(17)Test.java
+		(18)ITest.java
+
+		
+
+32.Packge import stmts[2 Approches]???
+
+		- import stmt
+		-fully Qulified Approch
+
+33.Rules for Access Specifiers?    [pic - 24]
+
+		(19) Write a JAVA program which illustrates the concept of access rules?
+
+33.rt.jar?
+
+33.Where we have to place a java class containg 'main()' method ? and 'with out Containg main() method'?[p]
+
+
+------------
+33.Error Typers??    [pic - 25]
+
+33.Exception???types??    [pic - 26]
+
+34.Error Classes  list?
+
+34 .Exception Classes list?   
+
+34.Pre defiend Exception?    [pic - 28]
+
+34.what is Asynchos, Synchrnos Exceptions? Example Classes??
+
+34.Cheked, Unchekd Exceptions? Example Classes?
+
+34.Exception Class Hirarchi??
+
+35.JVM working on Exception Handling??    [pic - 29]
+
+36.try,catch,finally,throw ????    [pic - 31]
+
+36.what happens we write some code immdiatyly after try , before catch?
+
+36.is cntl come back to try after excute catch? is even we use 'return' stmt
+
+36.it is nessary to place catch afrer try block?
+
+36.try ...inner try is possible?
+
+36.is possible catch contans try blocks?
+
+36.is possible finally contans try..catch  blocks?
+
+36.Try, catch, finally internal working?
+
+36.Throws? dog exmp?    [pic - 32]
+
+36.Throes deals with methods only ...not by class!
+
+36.Calling, called funtions?
+
+	- Ex1.java
+	- Ex2.java
+
+37.rethrowing???
+
+37. What happens if we put 'return;' in try block?
+A.it returns back to called function after executing finally block and it doent excute the remainng stmts in the callng function
+
+37.Number of ways to find details of the exception?    [pic - 33]
+	-	Using an object of java.lang.Exception
+	-	Using printStackTrace method
+	-	Using getMessage method
+
+38.User Defiend Exceptions???     [pic - 34]
+
+38.How to Create User Defiend Exceptions??? 6 Steps? 
+
+38.User Defiend Exception Stages?? 3??Exp. Programs???
+
+38.out,in,err in system class?
+
+38.Throw VS	throws?	     [pic - 36]
+
+-------------------------------------------------------------------	X	exceptions	X	---------------------------------------------------------
+
+38.DataConversions in Java Programme?
+		- String						-->		Fundametal DataType																						[  int x = Inreger.parseInt  ]
+		- Fundametal DataType		-->		String							------------>  ANSWERS																				[ String s	=	valueOf(a)]
+		- Fundametal DataType		-->		Object																										[ Integer i	=	Integer(int)]
+		- Object						-->		Fundametal DataType																						[  int i		=	ob.intValue() ]
+		- String						-->		ObjectData																									[							]
+		- Object						-->		String						[							]
+
+
+38.Desing Patterns?	 [PIC- 38]			[ PIC -   38]
+
+38.Factory method?		Exm prog?		[ PIC -   38]
+
+38.Singleton Class?		Exm prog?	    [30%]		[ PIC -   38]																										--->																whose Object is creted one per jvm
+
+
+----------------------------------------	Applets		--------------------------------------------
+
+
+38.Standalone		VS		Distributed	Applicatons
+
+38.what is the life cycle method in Standalone Applications?
+
+38.what is the aim of Applets?
+
+38.what is ment by "Life Cycle method"?[ PIC -   39]
+
+39.Applets?5 life cycle methos?
+public void init ()
+public void start ()
+public void stop () 
+public void destroy ().
+
+39.what is paint()? when it is Executed? write flow?
+
+40.Approches to Run Applet Program?[ PIC -   40]
+
+41.java.awt.*;
+
+41.AWT Hirarchi?[ PIC -   41]
+
+41.Standalone Gui, Distributed GUI?
+
+41.Components?	Active?	passive?
+
+41.Layout managers? 2 steps for using layout managers?[ PIC -   42]
+
+41.Layouts?? 4 layouts??
+
+42.Components	
+	-Label
+	-Button
+	-Checkbox
+	-Radiobutton
+	-Choice
+	-List
+	-TextComponent
+		TextFeild
+		TextArea
+	
+
+(Q) mutators?? Inspectors??
+
+43.Label? Use? API? 
+	- DataMembers
+	- Contrctors
+	- Methods
+
+	(22).LabelDemo.java
+	(23).LabelAPI.java
+
+43.Event Deligation Model?? 4 phases??
+
+44.Active , Pasive Components??
+
+45.Button ? Use? API? 
+	- DataMembers
+	- Methods
+
+	(24).java prog when we click button , and that Label is displyed in CENTER
+
+45.
+		-	getSource()
+		-	System.exit(0)
+		-	disopose()````-terminate wndow
+
+
+45.Steps for FRAME APPLICATION DEVELOPMENT??
+ 
+46.Steps for APPLET APPLICATION DEVELOPMENT??
+
+47.Checkbox	?Use? API? 
+	- DataMembers
+	- Methods
+	- prog. using Frame, Applet, Inner, This
+
+
+48.RadioButton?
+		- CheckboxGroup?	Use?	
+
+48.Steps to convert Checkbox into RadioButton?
+
+49.Object Type Casting	-->  x																														Baseclas reffence into Subcls refferce
+
+
+50.Choice?Use? API? 
+	- DataMembers
+	- Methods
+	- prog. using Frame, Applet, Inner, This
+
+51.TextComponent
+
+		-TextFeild
+				Echo-TextFeild?
+				Non-Echo-TextFeild?
+
+		-TextArea
+
+52.List
+	-singleitem selection?
+	-Multiple item selection?
+
+**53.AdapterClass??? 
+
+54.Window Component?
+		7 methods?
+
+54.Axiulary Components	&	Logical Components?
+
+54.MouseHandling Operations
+
+55.Event Deligation model of Mouse?
+
+
+	------------------------------	APPLTS	-------------------------------
+
+56.Collection Frame Work
+
+56.Diff Arrars - CFWork
+
+56.Characterstics of CFW [4... 4.1,4.2,4.3]
+		- performance, Adaptablity, Extenciable, Algo. Orented(Serching, Sorting, stack-Q-LinkedLst)
+
+57.Types of CFW??
+
+57.New Collection Frame work
+	1D:Hirarchi & follwing[wrte on table]
+
+	i.Hirarchi
+	ii.Fuctionaly
+	iii.Organising
+	iv.Data of Displyaing
+	v.Retriving
+	
+58.1D :CFW PROCESS CHAR DIAGRAM[6 STPS]
+
+59.java.util.Collecton[hirarchi,desc,fun, methos]
+
+60.java.util.List[hirarchi,desc,fun, methos]
+
+61.java.util.Set[hirarchi,desc,fun, methos]
+
+62.java.util.SortedSet[hirarchi,desc,fun, methos]
+
+63.LinkedList  [desc, Constr, Methods, Prog]
+		-Limitations??		[more space, Execution]
+
+64.ArrayList  [desc, Constr, Methods, Prog]
+
+65.HashSet  [desc, Constr, Methods, Prog]
+
+66.TreeSet  [desc, Constr, Methods, Prog]
+
+67.2D :CFW PROCESS CHAR DIAGRAM[7 STPS]
+
+	-java.util.Map			[hirarchi,desc,fun, methos]
+	-java.util.Map.Entry		[hirarchi,desc,fun, methos]
+	-java.util.SortedMap		[hirarchi,desc,fun, methos]
+
+68.HashMap  ???   prog ???
+
+69.TreeMap    ???   prog ???
+
+69.Synchronzed[1 by 1]	non-Synchronzed[concurnt]
+
+70.LEGACY  :CFW PROCESS 
+
+	Interfaces
+		-Enumaration
+
+	1D.F.W. Classes
+		-Vector
+		-Stack
+
+	2D.F.W. Classes
+		-Dictonary
+		-Hashtable	[Late Memory Allocation, Advanced Mem Allocaton, ]
+		-Properties
+
+70.Propety file/ Resource Bundile file?(.prop, .rbf)
+
+71.
+
+71.Scanner class?
+		-public xxx nextXxx()
+		-public String nextLine();
+
+72.java.util.StringTokenizer ?
+	-Functionalty
+	-Hirarchi
+	-methods
+
+--------------------------------- CFW--------------------------------------
+
+72.Multi therading ??  Ur view examples?
+
+73.ForeGround Thread	??
+
+74.BackGround Thread??
+
+75.where RealTme implementation of threads takes place?
+
+76.How u justfi "each and every java prog is Multi threded"
+
+77.Program		X		Process
+
+78.Optimization instructions?
+
+79.Context Switch --  ?  Ex. ?
+
+80.Types of Applications? [PBA	-	TBA]
+
+81.PBA		X		TBA
+
+82.AddresSpace  / workspace?
+
+83.li8 weight , heavy weght proceses?
+
+84.Internal  workng of a  Thread? 
+
+85.Life Cycle of Thread??[ 5 states ]
+
+86.FCFS - SJF	- ROUND ROBIN ??
+
+87.Which algrothm java threds follwing?
+
+88.about 6 waiting() conditions?
+
+89.In - memory States,Out - memory States ?
+
+90.No. of ways creatng a Thread?
+
+91.No. of ways creatng a Thread in java.lang.Thread class?
+
+92.java.lang.Thread class		
+	-Datamembers[3],	
+	-Constructors[4]	
+	-InstanceMethods[11]
+	-Static methods[]
+
+93.start() method?  Services gven to thread?
+
+94.PCB working ? how they usefull to threads?
+
+95.suspend()	 -functionality?use of PCB in this?
+
+96.resume()	 -functionality?use of PCB in this?
+
+97.stop()	 -functionality?use of PCB in this?
+
+98.join()	 -functionality?use of PCB in this?
+
+99.when InturreptedException will occure in join()?
+
+100.currentThread 	 -functionality?
+
+101.sleep()	 -functionality?
+
+102.when InturreptedException will occure in sleep()?
+
+103.Intrernal flow of threads [11]
+
+			(30)print  1 to10 num with 1sec of gap
+			
+
+104.java.lang.Runnable.
+			(32)sum,sub using both Thread[c]	 , Runnable [i]
+			(33)Thread appln Scrolling Msg
+			(34)Generates Numbers Automatically
+
+105.Synchronization?		non-Synchronization?		Example?
+
+106.Need of Synchronztin?  [10,20,bal]
+
+107.when LOCKING & UNLOCKING by JVM?
+
+108.Synchronzn methods?  [2]
+
+109.Synchronzn Blocks?  [1]
+
+110.Need for Synchronzn Blocks?
+		-prog 10,20,bal;
+
+111.which O.S's 'Synxchzed ' keyword mandatory, Optional,Recomended?
+
+112.InterThread Communction?
+
+113.java.lang.Object  methods for I.T.C?
+
+-------------------------			threads		-------------------------
+
+114.	volataile App's	?		non-volataile App's?
+
+115.in which memory TEMP data is Strored?
+
+116.approaches we have  To store the data ?
+
+117. Files Disadv?	DataBase Adv?
+
+118.File?	Record?	Field?	
+
+119.Stream?
+
+120.Type Of Operations on Fles?
+
+121.READ opertion steps?
+
+121.WRITE opertion steps?
+
+122.Types of Streams in FILES?
+
+123.Byte Streams?
+		- Hirarchi?
+		- Functionality?
+
+124.FileInputStream 
+
+125.FileOuputStream 
+
+		(33) write the Data 1to 10, Read the Data from 1to 10
+
+124.DataInputStream 
+
+125.DataOuputStream 
+		sum of 2 numbers
+
+126.which is recomended  Scanner / DataInputStream?
+
+127.	Serilzation  ?	de-Serilzation?
+
+128.	Phases of Serilzation  ?	de-Serilzation?
+			(i)developing serialization sub-class: prog
+			(ii)SERIALIZATION PROCESS:prog
+			(iii)De-SERIALIZATION PROCESS:prog
+
+129.Marker Interface?
+
+130.Types of serialization:?
+
+131.-complete serialization	[whole Data mem]
+	  -selective serialization	[transein D.m]
+	- manual serialization	[imp Ser]
+	-automatic serialization	[extends ser]
+
+132. transeint?
+
+133.Character Streams?
+		- Hirarchi?
+
+134.diff btwn Applets  SWINGS?
+
+135.Network Programming-------->  venkat go to venkat
+
+136.Arrays
+	-	1D array with for loop
+	-	1D array with for each loop
+	-	2D array with for loop
+	-	2D array with for each loop
+	-	Jagged Arrays
+
+
+145.	Strings
+		-	String class
+		-	String Tokenizer
+		-	String Buffer
+		-	Strng Builder
+
+146.	Assertions			--> go to JDBC	back
+
+		- assert exp1;
+		- assert exp1:exp 2;
+
+
+
+---------------venkat--------
+
+136.Array
+
+137.forEach loop?
+
+138.Acess Specifires?
+
+139.step 2 create Documenation
+
+140.StringHandling
+
+wrapper
+
+AutoBox, unbox
+
+exception handlng
+
+Straems
+
+Applets
+
+swngs
+
+inner classes
+
+Synchronzation
+
+InterThred Communcation
+
+Deemon Thread
+
+DeadLock
+
+Netwotk Programming
+
+TCP - UDP
+
+Collections
+
+Generics / Templates
+
+annotations
+
+Enumarations
+
+
+------------------------------------------------------------------------------	COMPLTED SUCESSFULLY	-----------------------------------
+Naresh java
+
+1.The native modifier indicates that a method is implemented in platform-dependent code, often in C
+
+2.native can be applied only to methods—not classes, not variables, just methods.
+
+3.a native method's body must be a semicolon (;) 
+
+4.Var-arg type 
+
+5.constructor can't ever, ever, ever, have a return type…ever!
+
+6.Transient	:	put the varibles cannot participate in Serialization
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Naresh java
+
+Bytecode?
+
+
+- compiler convers java code to ByteCode
+
+- that ByteCode mst be Excuted by JVM 
+
+-So,JVM Must be Installed. Ex.savevid , java plugin
+
+
+-JDK has both.	JDK+JRE+JVM
+
+-main method is Compuory?																-->							Only for Exceution
+
+- is it possible to call main() implectly?
+	class A()
+	{
+		pvsm()
+		{
+		 - - - -
+		}
+	}
+	class B()
+	{
+	A.main(String[0])
+	}
+
+
+-->	JVM
+
+--> Acces Modifers
+
+-->Methods , Type of Methods
+
+
+return
+------------------------
+
+-->JVM provides memory only if we use 'Static '  or 'new'
+
+- All the Statements are must be  inside the methods having return type "void" & "non- void"
+
+Type of Return Statements?
+ -return;	 -> sends the CNTL back to calling function WITHOUT Value
+ -return <value>;	 -> sends the CNTL back to calling function WITH Value
+
+ varible
+ -----------------------```
+
+ Executing method, Excuting  varible
+
+ Excuting  varible	-  JVM allocates memory when encrted varble
+
+ - dff btwn varble callng, method calling
+
+ -Local varibles cannot used with out Intialization
+
+1. NON - static variables are acceseed from static block block trough Object only
+
+class A
+{
+int x = 10;
+	pvsm
+	{
+	S.o.p(x);    // wrong CE:			-->  ob.x;   //ri8
+	}
+
+}
+
+2.Local varibels can be DEcalrd as Stattic?			--> no
+
+class A
+{
+int x =10;//Y
+void m1()
+{
+	int b = 21;	//Y
+	static int a = 100;	//WRONG.	Bcoz static varibles get the memory only at the time of class Loading, 
+								but method cannot load automatically.
+}								IT is Loaded when ever call is come to this method.
+								So, Local varbles cannot Declere as 'Static'	
+}
+
+3.the varables craeted in insde the statc block are Static  -> what ever the varibels inside the Block they are Local variables only.
+
+
+4.Transient Varibles
+--------------------
+	If we put 'Transient' keyword to any Varible , that means this varible  cannot store in the file in Object Serilzation.
+Since, local varibles are not part of Object .So, we dont put 'Transient' to local Varibles
+
+loacl varbles cannot declare as Trancient
+
+class A
+{
+static transient int a =10;			_/
+	   transient int b =20;			_/
+
+	  void m1()
+	  {
+		static transient int c =10;	X
+			transient int d =20;		X
+	   }
+
+}
+
+
+5.Volatile Varibles
+---------------------------
+If we declared varibles as 'volatile ' then we tell to JVM , we dont want to change the value concurrently by multiple threds
+So, Local varibles are not directly accesed  by threds .So, we dnt Declre local varibles as 'volatile'
+
+
+6.Intial & Default values
+----------------------------------
+
+Default values applicaple only for class level varibles, not Local varables
+
+
+7.JVM ARCHITECTURE			[insde the jvm by Bill venners]
+---------------------------
+
+VM [Virtual mechine]	: creation of no.of Exceutable environmnts
+
+how we  start JVM PROSESS?																	-->																	java filename
+
+Javahotspot Clint vm			-->		java flname
+Javahotspot Server vm			-->		java -server MyApp
+
+
+classloadar ->applcation loader, ext loader, bootstrp lod
+memarea
+heap
+pc
+stack
+native stack
+excuton 
+ninterface
+
+8.Memory used by java Object[138]
+----------------------------------------
+Shallo size		-> only this object
+Deep Size		->	refferincbg objects
+
+size changes from vm to vm
+
+8  bytes			[hashcode] + [reffence]
+
+
+
+9.Static members
+---------------------------
+
+- can we declare local members as static ?		-->																												no
+
+class A
+{
+static int a;
+	int a;//CE: Varibel already Decalred
+
+}
+
+
+- How compiler and JVM search for a Varible Defintion?
+
+	1st looks in method block   ---not found
+	goto class area		              ---not found	
+	CE: cannot find Symbol
+
+
+class Example2
+{
+	static int a = m1();
+	public static int m1()
+	{
+		System.out.println("a is creadtd");
+		return 10;
+	}
+
+
+	static int b = m2();
+	public static int m2()
+	{
+		System.out.println("b is created");
+		return 20;
+	}
+
+	public static void main(String[] args) 
+	{
+		System.out.println("main");
+		System.out.println("a:	"+a);
+		System.out.println("b:	"+b);
+	}
+}	
+
+output
+-----------
+a created		//varbles are intalzed frst before static blocks
+b created 
+main
+a:10
+b:20
+
+
+class Example2
+{
+	static int a = m1();
+	public static int m1()
+	{
+		System.out.println("a is creadtd");
+		return 10;
+	}
+
+
+	public static int m2()
+	{
+		System.out.println("b is created");
+		return 20;
+	}
+
+	public static void main(String[] args) 
+	{
+		System.out.println("main");
+		System.out.println("a:	"+a);
+		System.out.println("b:	"+b);
+	}
+
+		static int b = m2();
+}
+
+
+output
+-----------
+a created		//varible b is last , but how jvm reconizes it?
+b created			Ans: Exceution of Static [class] memeres are done in two faces
+main				1.Identication phase	: At the time of Classloding JVM Identifes the Static data membmes.
+											[Static varibles -  allocates the memory , with deft values      Static method - Remembers Prototype]
+a:10				2.Exceuton phase		:   varible Exceuton - Assing the values, method excution - Excute logic	
+b:20
+
+
+Q.How to Exit from a method Abnormally?
+A.System.exit(0);
+
+
+Q.How non-static Block Excution takes place?
+
+A.Non-Static block will execute
+	-After execution of MAIN() method
+	-Before Excuton of Consteructor
+	But it wll excute each & evry time when Object i created
+
+
+	class A
+	{
+		{
+			sop("Block");
+		}
+
+		A()
+		{
+			SOP("Conteutor");
+		}
+
+		PVSM()
+		{
+			A ob = new A();
+		}
+	}
+
+
+Q.
+A.
+
+
+Q.
+A.
+
+
+Q.
+A.
+
+
+Q. is static methods are excuted automatcally by jvm like static varables?
+A.	No, they are excutes only if method is call by the programmer
+
+
+int a = 10;
+a=a  //valid  but old as same
+
+
+
+Q.modularity
+A. Divng large code into small
+
+Q.Statc blocks
+A. A static bklock is one which has only "Static" keyword
+	- it is excuted only once when class is loaded for the 1st time
+
+	* "static block always exceutes before main() method"
+
+	class StaticBlockDemo 
+	{
+	static 
+	{
+		System.out.println("SB");
+	}
+
+	public static void main(String[] args) 
+	{
+		System.out.println("main");
+	}
+}
+
+output
+--------------
+sb
+main
+
+class StaticBlockDemo 
+	{
+	static 
+	{
+		System.out.println("SB");
+	}
+}
+
+comple : ok
+excution	:  sb
+exception in thred mainnosuchMethodError	: main
+
+
+Q.nesting of statc blocks are allowed?
+A. no
+
+Q.    static
+	{
+		sop("sb ");
+	}
+
+	static int b = m1()
+
+	out
+	-----
+	Sb   --> static block , static varibles have same priority .so it Depends upon the Order
+
+
+Q.excute main method at the time of class loading
+
+static
+{
+	main(new String[0])
+}
+
+
+9.NON-STATIC MEMBERS
+-----------------------------------------
+
+Q.Object?
+A.Object is a continous memory location of a non-static varbles, methods of a class.and points to Object base Address
+			(or)
+	it is a encapsulated form of all static & non-static members of a class
+
+
+Q.what is the outut if we print-->  A  ob = new A();
+s.o.p(ob);	classname@12456f		A@12456f
+
+Q.which method is used internally Object?
+A.toString()
+
+ Q.	Employee e = null;
+        s.o.p(e)// null
+
+Q.
+int x=10;
+int y =20
+
+void m1(int x , int y)  --> m1(30,40)
+{
+x =x;		//10		NOT CHANGED SAME AS Before
+y = y;		//20
+}
+
+
+Q.is RETURN stamet is allowd in contrutor?
+A. allowed , but with out value.
+	return;
+	return 100;  X
+
+10.NON-STATIC BLOCK
+----------------------------------------
+
+Non- Static block is Executed , each and Every time when the Object is Created
+
+class A
+{
+	{
+		S.o.p("iam non static block");
+	}
+}
+
+Q.Non - static block are exceuted before constrctor
+
+Q.what hapapens JVM internally when we craete Object?
+A.
+	- JVM Call the constrctor, but it is not Excute the Body of the Constrctor
+	- But Instead of it excutes all the 'non -static' varibles, then 'non - static ' blocks
+	- then finally constror logic will execute
+
+
+13.Garbage Collection
+-------------------------------
+
+Q.Reffrencing Object?
+A.  A ob = new A();
+	ob.sum();
+
+Q.Non- Reffrencing Object?
+A.	new A();
+	new A().sum();
+
+Q.java.lang.OutOfMemoryError
+A. there is no space in Heap
+
+Q.Garbage Collection
+A.The proceess of Destroying Unreffereced Objects are Known as "Garbage collection"
+
+Q.Garbage Collection in C++?
+A.Manually by calling "destructors"
+
+Q.which thred used by JVM for Garbage Collection proces?
+A.'Demon Thred' Internally Runs
+
+Q.How can we Rqst JVM to Do GC?
+A.	"System.gc()"
+	"Runtime.getRunTime().gc()"
+
+Q.Garbage Collection Runs in ____memory
+A.HEAP
+
+
+
+
+14.Reffrence Variables
+------------------------------------
+
+
+15.OOPs
+-----------------------------
+
+Q.Encapsulation?
+A.Hiddenig the data of a class
+	Implemeted by declreing "Private"
+	setter ,  getter methods
+
+Q.Final class?
+A.the Final class varibles are not FINAL
+
+final class x
+{
+int a=10;		//that means we can access FINAL CLASS DATA whch are not Declared as 'final', but we can modify it
+}
+
+class B
+{
+x ob = new x()
+s.o.p(x.a );
+}
+
+
+15.Arrays
+--------------------------
+
+16.API
+------------------------
+> javadoc filename.java
+
+
+
+17.Fundamental of Classes
+----------------------------------------
+
+Q.Cloning?
+A. crete the Dublicate object using curent Object
+
+Q.both have same reffrence?
+A.No, Diffrent Refference, but both are in Same state
+
+Q.why 'new '/ 'constructor ' not best for Cloning?
+A.if we use them we creates Object with "Intial state", but not current State
+
+
+class A implemets Clonnable
+{
+	A()
+	{
+	 - - - 
+	}
+
+	public Object clone()
+	{
+	A ob = (A)super.clone()
+	return ob;
+	}
+}
+
+class B
+{
+pvsm()\
+{
+	
+}
+
+}
+
+	Strings
+	-------------
+
+	String s1 = "a";
+	String s2 = "a";
+	SOP(s1==s2)//true
+
+	String s1 = new String("a");
+	String s2 = new String("a");
+	SOP(s1==s2)//false
+
+	this is bcoz of String pooling
+
+
+
+Q.Strng pooling?
+A.If String are  strored with drectly then if both hav same value then they are Refferedby same mem location
+
+Q.what happens if we place stetments after 'Finally block'?
+A.	C.E : Unreachable Statement, that too when ERROR is come
+	Other wise it will excute!
+	
+	class A
+	{
+		try {
+			--
+			}catch()
+			{
+			 -- - -
+			}
+			finally()
+			{
+			 - - - -
+			}
+		S.o.p ("Unarachable Statement");
+	}
+
+

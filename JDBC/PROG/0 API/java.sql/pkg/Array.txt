@@ -1,0 +1,27 @@
+Compiled from "Array.java"
+public interface      Array
+
+{
+    public abstract  String getBaseTypeName()       throws      SQLException;
+
+    public abstract int getBaseType()       throws      SQLException;
+
+    public abstract	    Object getArray()       throws      SQLException;
+
+    public abstract      Object getArray(     Map)       throws      SQLException;
+
+    public abstract      Object getArray(long, int)       throws      SQLException;
+
+    public abstract      Object getArray(long, int,      Map)       throws      SQLException;
+
+    public abstract      ResultSet getResultSet()       throws      SQLException;
+
+    public abstract      ResultSet getResultSet(     Map)       throws      SQLException;
+
+    public abstract      ResultSet getResultSet(long, int)       throws      SQLException;
+
+    public abstract      ResultSet getResultSet(long, int,      Map)       throws      SQLException;
+
+    public abstract void free()       throws      SQLException;
+}
+
